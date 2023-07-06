@@ -6,8 +6,6 @@ source ~/.exports
 source ~/.functions
 
 setup_nvm
-setup_iterm
-
 ##############################################################
 # User configuration (keep at bottom)
 ##############################################################

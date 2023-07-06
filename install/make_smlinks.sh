@@ -1,3 +1,5 @@
+#! /usr/bin/env zsh
+
 # link this folder to .dotfiles
 DOTFILES="$(realpath "$(dirname "$0")/..")"
 rm -rf ~/.dotfiles
@@ -9,3 +11,9 @@ source ~/.dotfiles/dots/.exports
 for FILE in $DOTS_DIRECTORY/dots/.*; do
   [ -f "$FILE" ] && ln -sfv $FILE ~
 done
+
+if which zsh >/dev/null; then
+    source ~/.zshrc
+fi
+
+source ~/.bashrc

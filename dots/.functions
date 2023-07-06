@@ -30,9 +30,3 @@ function setup_nvm(){
     nvm use "$NODE_VERSION" || nvm install "$NODE_VERSION"
   fi
 }
-
-function setup_iterm(){
-  setopt PROMPT_SUBST
-  PROMPT='%B%F{40}%n@%m%F{248}: %F{31}${(%):-%~}%f %b%F{248}$%f '
-  autoload -Uz compinit && compinit # autocomplete
-}
