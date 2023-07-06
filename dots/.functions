@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# format and displaya JWT token as JSON
+function jwtd(){
+  if [ -z "$1" ]; then
+    echo "Usage: jwtd <jwt_token>"
+    return 1
+  fi
+  jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
+}
+
+
+##############################################################
+# Background functions
+##############################################################
+
+function setup_nvm(){
+  export NVM_DIR="$HOME/.nvm"
+  # Check if NVM is installed through Homebrew, and source nvm.sh accordingly
+  if [ -d $(brew --prefix nvm 2>/dev/null) ]; then
+    source $(brew --prefix nvm)/nvm.sh
+  elif [ -f "$NVM_DIR/nvm.sh" ]; then
+    source "$NVM_DIR/nvm.sh"
+  fi
+
+  # Check for .nvmrc file and NVM_DIR existence
+  if [ -f .nvmrc ] && [ -d "$NVM_DIR" ]; then
+    NODE_VERSION=$(cat .nvmrc)
+    # Attempt to use the desired Node.js version; if not installed, install and use it
+    nvm use "$NODE_VERSION" || nvm install "$NODE_VERSION"
+  fi
+}
+
+function setup_iterm(){
+  setopt PROMPT_SUBST
+  PROMPT='%B%F{40}%n@%m%F{248}: %F{31}${(%):-%~}%f %b%F{248}$%f '
+  autoload -Uz compinit && compinit # autocomplete
+}

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## add colors to folders on 'ls' command
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+
+# Prefer US English and use UTF-8.
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# Used to setup NVM when new terminal launches
+export NVM_DIR="$HOME/.nvm"
+
+# Used for installation of this files on the machine
+export DOTS_DIRECTORY=~/.dotfiles
+

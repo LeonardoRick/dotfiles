@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Easier navigation: .., ..., .... and ~~
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ~~="cd ~" # `cd` is probably faster to type though
+
+alias python=python3
+alias pip=pip3
+alias g=git
+alias n=npm
+alias text="open -a TextEdit"
+
+
+# Directory shortcut
+alias desktop="cd ~/Desktop/"
+alias documents="cd ~/Documents/"
