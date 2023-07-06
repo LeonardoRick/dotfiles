@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# (~/.logging takes precendence since all other alias depend on it)
+source ~/.logging
 
 source ~/.aliases
 source ~/.exports

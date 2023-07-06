@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	email = leonardo@lanytecnologia.com.br
+	name = Leonardo Rick
+[pager]
+	branch = false

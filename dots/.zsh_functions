@@ -2,8 +2,7 @@
 ##############################################################
 # Background functions (zsh only)
 ##############################################################
-function setup_iterm(){
-  setopt PROMPT_SUBST
-  PROMPT='%B%F{40}%n@%m%F{248}: %F{31}${(%):-%~}%f %b%F{248}$%f '
+function set_custom_zsh_theme_leonardorick(){
+  ZSH_THEME=leonardorick
   autoload -Uz compinit && compinit # autocomplete
 }
