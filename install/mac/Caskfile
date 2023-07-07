@@ -11,6 +11,7 @@ cask karabiner-elements  # Keyboard customizer
 cask "bettertouchtool"  # Customizes shortcuts
 cask "choosy"  # Chooses which browser to open links
 cask "alt-tab"  # Windows-like alt-tab
+cask "iterm2" # terminal
 
 # # Microsoft (installed on mas)
 # cask "onedrive"  # Microsoft OneDrive

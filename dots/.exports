@@ -16,5 +16,5 @@ export LC_ALL='en_US.UTF-8';
 export NVM_DIR="$HOME/.nvm"
 
 # Used for installation of this files on the machine
-export DOTS_DIRECTORY=~/.dotfiles
+export DOTFILES=~/.dotfiles
 

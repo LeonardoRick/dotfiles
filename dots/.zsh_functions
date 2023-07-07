@@ -14,3 +14,37 @@ function set_zsh_with_leonardorick_theme(){
   source $ZSH/oh-my-zsh.sh
   autoload -Uz compinit && compinit # autocomplete
 }
+
+# Set default mic to internal
+function defmic() {
+  # Get the current audio source
+  current_input=$(SwitchAudioSource -c)
+
+  # Set the desired (default) audio source
+  default_input=$(SwitchAudioSource -a | grep -E '(MacBook|Bulti-in).*Micro')
+
+  # Check if current source matches the default
+  if [ "$current_input" != "$default_input" ]; then
+      # Change audio input to default
+      SwitchAudioSource -s "$default_input" -t input
+  else
+      echo "Audio input is already $default_input"
+  fi
+}
+
+# Set default speaker to internal
+function defspeak() {
+  # Get the current audio source
+  current_output=$(SwitchAudioSource -c)
+
+  # Set the desired (default) audio source
+  default_output=$(SwitchAudioSource -a | grep -E '(MacBook|Bulti-in).*Speak')
+
+  # Check if current source matches the default
+  if [ "$current_output" != "$default_output" ]; then
+      # Change audio output to default
+      SwitchAudioSource -s "$default_output"
+  else
+      echo "Audio input is already $default_output"
+  fi
+}

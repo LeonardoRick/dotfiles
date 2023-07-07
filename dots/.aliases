@@ -10,8 +10,9 @@ alias python=python3
 alias pip=pip3
 alias n=npm
 
-
-
 # Directory shortcut
 alias desktop="cd ~/Desktop/"
 alias documents="cd ~/Documents/"
+
+# fun
+alias stfu="osascript -e 'set volume output muted true'"

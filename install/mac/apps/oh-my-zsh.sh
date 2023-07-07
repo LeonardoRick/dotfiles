@@ -28,6 +28,6 @@ if [ ! -d $COMPLETIONS_DIR ]; then
   git clone https://github.com/zsh-users/zsh-completions.git $COMPLETIONS_DIR
 fi
 
-ln -sfv $DOTS_DIRECTORY/config/oh-my-zsh/themes/leonardorick.zsh-theme ~/.oh-my-zsh/themes/leonardorick.zsh-theme
+ln -sfv $DOTFILES/config/oh-my-zsh/themes/leonardorick.zsh-theme ~/.oh-my-zsh/themes/leonardorick.zsh-theme
 # Print zsh version
 log.success "Installed oh-my-zsh on $(zsh --version)!"

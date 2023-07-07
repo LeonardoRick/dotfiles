@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 source ~/.bashrc
 
-MAC_DIR=$DOTS_DIRECTORY/install/mac
+MAC_DIR=$DOTFILES/install/mac
 if test ! $(which brew); then;
     log.info 'Installing Homebrew...'
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"

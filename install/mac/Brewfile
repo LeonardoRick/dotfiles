@@ -10,6 +10,6 @@ brew "ccat"
 brew "nvm"
 # install mongoldb
 brew "mongodb/brew/mongodb-community"
-
-
+# install switchaudio-osx to switch audio output from command line
+brew "switchaudio-osx"
 
