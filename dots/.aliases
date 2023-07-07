@@ -9,7 +9,7 @@ alias ~~="cd ~" # `cd` is probably faster to type though
 alias python=python3
 alias pip=pip3
 alias n=npm
-alias text="open -a TextEdit"
+
 
 
 # Directory shortcut

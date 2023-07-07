@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source ~/.logging
 
 # format and displaya JWT token as JSON
 function jwtd(){
@@ -9,7 +10,39 @@ function jwtd(){
   jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"
 }
 
+function text() {
+  if [ $# -eq 0 ]; then
+    open -a TextEdit
+  else
+    open -a TextEdit "$@"
+  fi
+}
 
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+
+# shortcut to open VSCode on a new window
+function coden() {
+  code -n "$@"
+}
+
+# kill process on specified port
+function killport() {
+  pid=$(lsof -ti tcp:$1)
+  if [ -n "$pid" ]; then
+    kill $pid
+    log.success "Process on port $1 killed"
+  else
+    log.info "No process found on port $1"
+  fi
+}
 ##############################################################
 # Background functions
 ##############################################################
