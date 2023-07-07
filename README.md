@@ -10,4 +10,4 @@ Read and study to improve terminal usage:
 
 
 todo:
-setup brew and git installations
+setup git installation
