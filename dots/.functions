@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 source ~/.logging
 
+##############################################################
+# callable functions (zsh only)
+##############################################################
+
 # format and displaya JWT token as JSON
 function jwtd(){
   if [ -z "$1" ]; then

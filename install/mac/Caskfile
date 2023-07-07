@@ -1,0 +1,40 @@
+##############################################################
+# install ui apps. This file will log errors if your app was installed
+# from a different source than cask since cask can't track apps not installed from it.
+# this logs don't stop the program execution so thats fine
+##############################################################
+
+# Productivity
+cask "rectangle"  # Shortcuts for moving and sizing windows
+cask "mos"  # Smooths out your mouse scrolling
+cask karabiner-elements  # Keyboard customizer
+cask "bettertouchtool"  # Customizes shortcuts
+cask "choosy"  # Chooses which browser to open links
+cask "alt-tab"  # Windows-like alt-tab
+
+# # Microsoft (installed on mas)
+# cask "onedrive"  # Microsoft OneDrive
+# cask "microsoft-excel" # Microsoft Excel
+# cask "microsoft-word" # Microsoft Word
+# cask "microsoft-onenote" # Microsoft OneNote
+
+# Development
+cask "visual-studio-code"
+cask "postman"
+cask "figma"
+
+# Fun
+cask "spotify"
+cask "discord"
+
+# Browser
+cask "brave-browser"
+cask "google-chrome"
+cask "firefox"
+
+# Communication
+cask "slack"  # Slack
+cask "zoom"  # Zoom
+
+# Others
+cask "1password"  # Password manager

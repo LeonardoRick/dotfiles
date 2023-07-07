@@ -1,5 +1,11 @@
 #!/usr/bin/env zsh
 ##############################################################
+# callable functions (zsh only)
+##############################################################
+
+# PUT HERE FUNCTIONS THAT YOU WANT TO CALL FROM TERMINAL
+
+##############################################################
 # Background functions (zsh only)
 ##############################################################
 function set_zsh_with_leonardorick_theme(){

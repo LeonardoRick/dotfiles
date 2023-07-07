@@ -20,5 +20,6 @@ plugins=(
 )
 
 source ~/.bash_profile
+source ~/.zsh_exports
 source ~/.zsh_functions
 set_zsh_with_leonardorick_theme

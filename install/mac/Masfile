@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Mac App Store
+
+# Microsoft
+mas "Microsoft Word", id: 462054704
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "OneDrive", id: 823766827
+
+# Others
+mas "Xcode", id: 497799835
+mas "WhatsApp Desktop", id: 1147396723
+mas "Key Codes", id: 414568915 # used for finding key codes when typing

@@ -1,0 +1,15 @@
+# Mac App Store command-line interface (https://github.com/mas-cli/mas)
+brew "mas"
+# Install ZShell (https://sourabhbajaj.com/mac-setup/iTerm/zsh.html)
+brew "zsh"
+# Get lightweight comand line json processor
+brew "jq"
+# ccat is the colorizing cat (https://github.com/owenthereal/ccat)
+brew "ccat"
+# nvm to control node used node version
+brew "nvm"
+# install mongoldb
+brew "mongodb/brew/mongodb-community"
+
+
+
