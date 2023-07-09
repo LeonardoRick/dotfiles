@@ -6,6 +6,7 @@ source ~/.logging
 source ~/.aliases
 source ~/.exports
 source ~/.functions
+source ~/.zsh_exports # we need that to access brew on mac
 
 setup_nvm
 ##############################################################
