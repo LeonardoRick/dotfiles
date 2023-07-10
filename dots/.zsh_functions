@@ -62,15 +62,16 @@ function wsdontsleep() {
   fi
 
   while true;
+  now=[$(date '+%Y-%m-%d %H:%M:%S')]
   do
     curl -sSfL $website > /dev/null
     if [ $? -eq 0 ]; then
-      log.success "Keeping $website up!"
+      log.success "$now Keeping $website up!"
     else
-      log.fail "Website is down. Unable to ping $website"
+      log.fail "$now Website is down. Unable to ping $website"
     fi
 
-    log.warning "Next ping in $time_to_sleep minutes"
+    log.warning "$now Next ping in $time_to_sleep minutes"
     sleep $(($time_to_sleep * 60))
   done
 }

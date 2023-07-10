@@ -1,0 +1,661 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+;",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+cmd+q",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+l",
+	    "command": "workbench.action.terminal.focus"
+    },
+	{
+        "key": "cmd+l",
+	    "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "alt+tab",
+        "command": "workbench.action.quickSwitchWindow",
+        "when": "isMacNative"
+    },
+    {
+        "key": "cmd+shift+k",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+alt+k",
+        "command": "workbench.action.terminal.newInActiveWorkspace",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-deleteAllLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "-deleteLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+cmd+1",
+        "command": "-workbench.action.moveEditorToFirstGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "-workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "-workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "-workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "-workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "-workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "-workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "-workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "-workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "cmd+4",
+        "command": "-workbench.action.focusFourthEditorGroup"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "cmd+5",
+        "command": "-workbench.action.focusFifthEditorGroup"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.focusSixthEditorGroup"
+    },
+    {
+        "key": "cmd+6",
+        "command": "-workbench.action.focusSixthEditorGroup"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.focusSeventhEditorGroup"
+    },
+    {
+        "key": "cmd+7",
+        "command": "-workbench.action.focusSeventhEditorGroup"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.focusEighthEditorGroup"
+    },
+    {
+        "key": "cmd+8",
+        "command": "-workbench.action.focusEighthEditorGroup"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-editor.action.goToReferences",
+        "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    {
+        "key": "shift+f12",
+        "command": "-goToPreviousReference",
+        "when": "inReferenceSearchEditor || referenceSearchVisible"
+    },
+    // ==================== CURSOR MOVE SHORTCUTS: BEGINNING  ====================
+    // comented to use extension (Move to next/previous member)
+    // {
+    //     "key": "ctrl+up",
+    //     "when": "editorTextFocus || isInDiffEditor",
+    //     "command": "macros.multiCursorUp5"
+    //     // can't use cursorMove with args because it breaks when we want to jump
+    //     // a folded object. It opens it navigating through it
+    //     // "command": "cursorMove",
+    //     // "args": {
+    //     //   "by": "line",
+    //     //   "to": "up",
+    //     //   "value": 5
+    //     // }
+    // },
+    // {
+    //     "key": "ctrl+down",
+    //     "when": "editorTextFocus || isInDiffEditor",
+    //     "command": "macros.multiCursorDown5"
+    //     // can't use cursorMove with args because it breaks when we want to jump
+    //     // a folded object. It opens it navigating through it
+    //     // "command": "cursorMove",
+    //     // "args": {
+    //     //   "by": "line",
+    //     //   "to": "down",
+    //     //   "value": 5
+    //     // }
+    // },
+    {
+        "key": "ctrl+shift+cmd+up",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorUpSelect5"
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "up",
+        //   "value": 5,
+        //   "select": true
+        // }
+    },
+    {
+        "key": "ctrl+shift+cmd+down",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorDownSelect5",
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "down",
+        //   "value": 5,
+        //   "select": true
+        // }
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorUp10",
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "up",
+        //   "value": 10,
+        // }
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorDown10",
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove"
+        // "args": {
+        //   "by": "line",
+        //   "to": "down",
+        //   "value": 10,
+        // }
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+up",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorUpSelect10"
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "up",
+        //   "value": 10,
+        //   "select": true
+        // }
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+down",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorDownSelect10"
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "down",
+        //   "value": 10,
+        //   "select": true
+        // }
+    },
+    // navigate through files
+    {
+        "key": "ctrl+up",
+        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "command": "macros.multiLineJumpUp5",
+    },
+    {
+        "key": "ctrl+down",
+        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "command": "macros.multiLineJumpDown5"
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "command": "macros.multiLineJumpUp10",
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "command": "macros.multiLineJumpDown10"
+    },
+    // ==================== CURSOR MOVE SHORTCUTS: END  ====================
+    // Stage changes when source control is visible
+    {
+        "key": "ctrl+alt+m",
+        "command": "git.stage",
+        "when": "view.workbench.scm.visible"
+    },
+    {
+        "key": "ctrl+alt+cmd+m",
+        "command": "git.unstage",
+        "when": "view.workbench.scm.visible"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "git.clean",
+        "when": "view.workbench.scm.visible"
+    },
+    {
+        "key": "ctrl+alt+a",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus || isInDiffEditor"
+    },
+    // Select entire object or function body (inner brackets)
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "editor.action.selectToBracket",
+        "when": "editorFocus || isInDiffEditor"
+    },
+    // =============== START remap jump to bracket
+    {
+        "key": "ctrl+shift+\\",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    // ================= END
+    // Select between html content tags (including tags)
+    {
+        "key": "ctrl+shift+cmd+\\",
+        "command": "editor.emmet.action.balanceOut"
+    },
+    // toggle between opening and enclosing tags
+    {
+        "key": "shift+cmd+\\",
+        "command": "editor.emmet.action.matchTag"
+    },
+    // open changes of file only when 'changes editor' is not already open.
+    // The same shortcut is the default to open the default file view when
+    // 'change editor' is already open
+    {
+        "key": "ctrl+alt+o",
+        "command": "git.openChange",
+        "when": "!isInDiffEditor"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "git.openFile",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+cmd+\\",
+        "command": "workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    // change focus to terminal tabs since we are using the default shortcut to select html tags
+    {
+        "key": "shift+cmd+\\",
+        "command": "-workbench.action.terminal.focusTabs",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+n",
+        "command": "explorer.newFile"
+    },
+    // removed to allow the above shortcut to work
+    {
+        "key": "ctrl+alt+cmd+n",
+        "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "-extension.switchTs"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "-bito.menu.styleCheck"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "bito.menu.generateUnitTest"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+shift+.",
+        "command": "breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible && breadcrumbsVisible"
+    },
+    {
+        "key": "ctrl+alt+delete",
+        "command": "-deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+backspace",
+        "command": "-deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+backspace",
+        "command": "deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+delete",
+        "command": "-deleteWordRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "-deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteInsideWord"
+    },
+    {
+        "key": "ctrl+cmd",
+        "command": "workbench.action.openDefaultKeybindingsFile"
+    },
+    {
+        "key": "ctrl+cmd",
+        "command": "keybindings.editor.clearSearchHistory"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "justgotoline.gotoline"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "-notebook.focusNextEditor",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "-notebook.cell.focusInOutput",
+        "when": "notebookCellHasOutputs && notebookEditorFocused"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "activateBito.sidebar.focus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "bito.palette.insertCodeIntoBitoPalette"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    // use ctrl e to show error message or warning message that was suposed to show on hover
+    {
+        "key": "ctrl+e",
+        "command": "-cursorLineEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+2",
+        "command": "macros.multiScrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "macros.multiScrollLineUp",
+        "when": "textInputFocus",
+        "args": {
+            "by": "line",
+            "to": "up",
+            "value": 10,
+        }
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+c",
+        "command": "center-editor-window.center",
+        "when": "editorTextFocus || findWidgetVisible"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-center-editor-window.center",
+        "when": "editorTextFocus || findWidgetVisible"
+    },
+    // go to parent fold shorftcut
+    {
+        "key": "alt+cmd+p",
+        "command": "-togglePreserveCase",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+cmd+p",
+        "command": "editor.gotoParentFold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.compareEditor.focusOtherSide"
+    },
+]

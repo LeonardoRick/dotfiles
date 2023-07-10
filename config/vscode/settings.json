@@ -1,0 +1,347 @@
+{
+    "window.titleBarStyle": "custom",
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontSize": 12,
+    "editor.snippetSuggestions": "top",
+
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "css.customData": [".vscode/css_custom_data.json"],
+    "launch": {
+      "configurations": [],
+      "compounds": []
+    },
+    "css.validate": false,
+    "stylelint.enable": true,
+    "peacock.favoriteColors": [
+      {
+        "name": "Angular Red",
+        "value": "#dd0531"
+      },
+      {
+        "name": "Azure Blue",
+        "value": "#007fff"
+      },
+      {
+        "name": "JavaScript Yellow",
+        "value": "#f9e64f"
+      },
+      {
+        "name": "Mandalorian Blue",
+        "value": "#1857a4"
+      },
+      {
+        "name": "Node Green",
+        "value": "#215732"
+      },
+      {
+        "name": "React Blue",
+        "value": "#61dafb"
+      },
+      {
+        "name": "Something Different",
+        "value": "#832561"
+      },
+      {
+        "name": "Svelte Orange",
+        "value": "#ff3d00"
+      },
+      {
+        "name": "Vue Green",
+        "value": "#42b883"
+      }
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "tailwindCSS.includeLanguages": {
+      "plaintext": "html"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features",
+    },
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": []
+      }
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+    },
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "angular.view-engine": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.requireConfig": true,
+    "react-native-tools.showUserTips": false,
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "git.suggestSmartCommit": false,
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": true,
+      "markdown": false,
+      "scminput": false
+    },
+    "vue.inlayHints.optionsWrapper": false,
+    "github.copilot.advanced": {},
+    "html.format.wrapAttributes": "force-expand-multiline",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
+    "terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}",
+    "editor.formatOnSave": false,
+    "better-comments.tags": [
+      {
+        "tag": "!",
+        "color": "#FF2D00",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "?",
+        "color": "#3498DB",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "//",
+        "color": "#474747",
+        "strikethrough": true,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "todo",
+        "color": "#FF8C00",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      },
+      {
+        "tag": "*",
+        "color": "#98C379",
+        "strikethrough": false,
+        "underline": false,
+        "backgroundColor": "transparent",
+        "bold": false,
+        "italic": false
+      }
+    ],
+    "macros": {
+      "multiLineJumpUp5": [
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp"
+      ],
+      "multiLineJumpDown5": [
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown"
+      ],
+      "multiLineJumpUp10": [
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp",
+          "list.focusUp"
+      ],
+      "multiLineJumpDown10": [
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown",
+          "list.focusDown"
+      ],
+      "multiScrollLineDown": [
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+        "scrollLineDown",
+      ],
+      "multiScrollLineUp": [
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp",
+        "scrollLineUp"
+      ],
+      "multiCursorUp5": [
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp"
+      ],
+      "multiCursorDown5": [
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown"
+      ],
+      "multiCursorUp10": [
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+        "cursorUp",
+      ],
+      "multiCursorDown10": [
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+        "cursorDown",
+      ],
+      "multiCursorUpSelect5": [
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+      ],
+      "multiCursorDownSelect5": [
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+      ],
+      "multiCursorUpSelect10": [
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+        "cursorUpSelect",
+      ],
+      "multiCursorDownSelect10": [
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+        "cursorDownSelect",
+      ],
+  },
+  "editor.guides.bracketPairs": true,
+  "importCost.largePackageDarkColor": "#ff8a8a",
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.mermaidTheme": "dark",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "todo"
+  ],
+  "todo-tree.highlights.enabled": false,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "turboConsoleLog.quote": "'",
+  "terminal.integrated.env.osx": {},
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "CodeGPT.organizationId": "org-JzFVQ5d6DvaOLI3xiSfbjbfQ",
+  "center-editor-window.offset": 1,
+  "editor.cursorWidth": 3,
+  "mdb.confirmRunAll": false,
+  "black-formatter.args": [
+    "--skip-string-normalization"
+  ],
+  "window.zoomLevel": -1,
+  "workbench.colorCustomizations": {
+    // colors from iterm2 Tango Dark color preset
+    "terminal.ansiBrightMagenta": "#bc93b6",
+    "terminal.ansiBrightBlue": "#83afd8",
+  }
+  }
