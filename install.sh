@@ -11,5 +11,5 @@ if [ $(uname) == "Darwin" ]; then
     $DOTFILES/config/osx.sh
     $INSTALL_DIR/mac/apps/brew.sh
     $INSTALL_DIR/mac/apps/oh-my-zsh.sh
-    $INSTALL_DIR/mac/mac.sh
+    $INSTALL_DIR/mac/mac.sh # run this after brew.sh
 fi
