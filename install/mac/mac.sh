@@ -8,3 +8,4 @@ ln -sfv $DOTFILES/config/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKey
 # vscode mac setup
 ln -sfv $DOTFILES/config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -sfv $DOTFILES/config/vscode/mac-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sfv $DOTFILES/config/vscode/global-snippets.code-snippets ~/Library/Application\ Support/Code/User/snippets/global-snippets.code-snippets

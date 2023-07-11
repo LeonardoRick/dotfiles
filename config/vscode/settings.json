@@ -121,7 +121,7 @@
     "terminal.integrated.defaultProfile.linux": "bash",
     "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
     "terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "better-comments.tags": [
       {
         "tag": "!",
