@@ -294,7 +294,7 @@
         "cursorUpSelect",
         "cursorUpSelect",
         "cursorUpSelect",
-        "cursorUpSelect",
+        "cursorUpSelect"
       ],
       "multiCursorDownSelect10": [
         "cursorDownSelect",
@@ -306,8 +306,8 @@
         "cursorDownSelect",
         "cursorDownSelect",
         "cursorDownSelect",
-        "cursorDownSelect",
-      ],
+        "cursorDownSelect"
+      ]
   },
   "editor.guides.bracketPairs": true,
   "importCost.largePackageDarkColor": "#ff8a8a",
@@ -328,8 +328,8 @@
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.quote": "'",
   "terminal.integrated.env.osx": {},
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "CodeGPT.organizationId": "org-JzFVQ5d6DvaOLI3xiSfbjbfQ",
   "center-editor-window.offset": 1,
@@ -342,6 +342,6 @@
   "workbench.colorCustomizations": {
     // colors from iterm2 Tango Dark color preset
     "terminal.ansiBrightMagenta": "#bc93b6",
-    "terminal.ansiBrightBlue": "#83afd8",
+    "terminal.ansiBrightBlue": "#83afd8"
   }
   }

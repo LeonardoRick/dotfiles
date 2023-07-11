@@ -12,11 +12,11 @@
     },
     {
         "key": "cmd+l",
-	    "command": "workbench.action.terminal.focus"
+        "command": "workbench.action.terminal.focus"
     },
-	{
+    {
         "key": "cmd+l",
-	    "command": "workbench.action.focusActiveEditorGroup",
+        "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
     {
@@ -262,34 +262,35 @@
         "command": "-goToPreviousReference",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
     },
-    // ==================== CURSOR MOVE SHORTCUTS: BEGINNING  ====================
-    // comented to use extension (Move to next/previous member)
-    // {
-    //     "key": "ctrl+up",
-    //     "when": "editorTextFocus || isInDiffEditor",
-    //     "command": "macros.multiCursorUp5"
-    //     // can't use cursorMove with args because it breaks when we want to jump
-    //     // a folded object. It opens it navigating through it
-    //     // "command": "cursorMove",
-    //     // "args": {
-    //     //   "by": "line",
-    //     //   "to": "up",
-    //     //   "value": 5
-    //     // }
-    // },
-    // {
-    //     "key": "ctrl+down",
-    //     "when": "editorTextFocus || isInDiffEditor",
-    //     "command": "macros.multiCursorDown5"
-    //     // can't use cursorMove with args because it breaks when we want to jump
-    //     // a folded object. It opens it navigating through it
-    //     // "command": "cursorMove",
-    //     // "args": {
-    //     //   "by": "line",
-    //     //   "to": "down",
-    //     //   "value": 5
-    //     // }
-    // },
+    // ##############################################################
+    // # MOVE CURSOR
+    // ##############################################################
+    {
+        "key": "ctrl+up",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorUp5"
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "up",
+        //   "value": 5
+        // }
+    },
+    {
+        "key": "ctrl+down",
+        "when": "editorTextFocus || isInDiffEditor",
+        "command": "macros.multiCursorDown5"
+        // can't use cursorMove with args because it breaks when we want to jump
+        // a folded object. It opens it navigating through it
+        // "command": "cursorMove",
+        // "args": {
+        //   "by": "line",
+        //   "to": "down",
+        //   "value": 5
+        // }
+    },
     {
         "key": "ctrl+shift+cmd+up",
         "when": "editorTextFocus || isInDiffEditor",
@@ -305,7 +306,7 @@
     {
         "key": "ctrl+shift+cmd+down",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorDownSelect5",
+        "command": "macros.multiCursorDownSelect5"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove",
@@ -319,7 +320,7 @@
     {
         "key": "ctrl+cmd+up",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorUp10",
+        "command": "macros.multiCursorUp10"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove",
@@ -332,7 +333,7 @@
     {
         "key": "ctrl+cmd+down",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorDown10",
+        "command": "macros.multiCursorDown10"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove"
@@ -370,11 +371,29 @@
         //   "select": true
         // }
     },
+    // remap next/previous member extension shortcuts since ctrl + vertical arrows
+    // are being used to go up/down 5 lines. The next one navigate through symbols
+    {
+        "key": "ctrl+alt+cmd+up",
+        "command": "gotoNextPreviousMember.previousMember"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-gotoNextPreviousMember.previousMember"
+    },
+        {
+        "key": "ctrl+alt+cmd+down",
+        "command": "gotoNextPreviousMember.nextMember"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-gotoNextPreviousMember.nextMember"
+    },
     // navigate through files
     {
         "key": "ctrl+up",
         "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
-        "command": "macros.multiLineJumpUp5",
+        "command": "macros.multiLineJumpUp5"
     },
     {
         "key": "ctrl+down",
@@ -384,14 +403,17 @@
     {
         "key": "ctrl+cmd+up",
         "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
-        "command": "macros.multiLineJumpUp10",
+        "command": "macros.multiLineJumpUp10"
     },
     {
         "key": "ctrl+cmd+down",
         "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
         "command": "macros.multiLineJumpDown10"
     },
-    // ==================== CURSOR MOVE SHORTCUTS: END  ====================
+
+    // ##############################################################
+    // # SOURCE CONTROL
+    // ##############################################################
     // Stage changes when source control is visible
     {
         "key": "ctrl+alt+m",
@@ -413,15 +435,11 @@
         "command": "editor.action.selectHighlights",
         "when": "editorFocus || isInDiffEditor"
     },
-    // Select entire object or function body (inner brackets)
+    // ##############################################################
+    // # BRACKETS NAVIGATION AND SELECTION
+    // ##############################################################
     {
-        "key": "ctrl+shift+alt+\\",
-        "command": "editor.action.selectToBracket",
-        "when": "editorFocus || isInDiffEditor"
-    },
-    // =============== START remap jump to bracket
-    {
-        "key": "ctrl+shift+\\",
+        "key": "ctrl+alt+\\",
         "command": "editor.action.jumpToBracket",
         "when": "editorTextFocus"
     },
@@ -430,16 +448,21 @@
         "command": "-editor.action.jumpToBracket",
         "when": "editorTextFocus"
     },
-    // ================= END
+    // Select entire object or function body (inner brackets)
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "editor.action.selectToBracket",
+        "when": "editorFocus || isInDiffEditor"
+    },
+    // Toggle between opening and enclosing tags
+    {
+        "key": "ctrl+cmd+\\",
+        "command": "editor.emmet.action.matchTag"
+    },
     // Select between html content tags (including tags)
     {
         "key": "ctrl+shift+cmd+\\",
         "command": "editor.emmet.action.balanceOut"
-    },
-    // toggle between opening and enclosing tags
-    {
-        "key": "shift+cmd+\\",
-        "command": "editor.emmet.action.matchTag"
     },
     // open changes of file only when 'changes editor' is not already open.
     // The same shortcut is the default to open the default file view when
@@ -610,7 +633,7 @@
         "args": {
             "by": "line",
             "to": "up",
-            "value": 10,
+            "value": 10
         }
     },
     {
@@ -633,7 +656,7 @@
         "command": "-center-editor-window.center",
         "when": "editorTextFocus || findWidgetVisible"
     },
-    // go to parent fold shorftcut
+    // go to parent fold shorttcut
     {
         "key": "alt+cmd+p",
         "command": "-togglePreserveCase",
@@ -657,5 +680,81 @@
     {
         "key": "ctrl+alt+p",
         "command": "workbench.action.compareEditor.focusOtherSide"
+    },
+    // ##############################################################
+    // # PREVIOUS/NEXT CHANGE
+    // ##############################################################
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "isInDiffEditor || textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "isInDiffEditor || textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    // ##############################################################
+    // # PREVIOUS/NEXT SYMBOL HIGHLIGHTED
+    // ##############################################################
+    {
+        "key": "f7",
+        "command": "-editor.action.diffReview.next",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "f7",
+        "command": "-editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
     }
 ]
