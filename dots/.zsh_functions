@@ -3,18 +3,6 @@
 # callable functions (zsh only)
 ##############################################################
 
-# PUT HERE FUNCTIONS THAT YOU WANT TO CALL FROM TERMINAL
-
-##############################################################
-# Background functions (zsh only)
-##############################################################
-function set_zsh_with_leonardorick_theme(){
-  export ZSH=/Users/$USER/.oh-my-zsh
-  ZSH_THEME=leonardorick # set theme before sourcing oh-my-zsh
-  source $ZSH/oh-my-zsh.sh
-  autoload -Uz compinit && compinit # autocomplete
-}
-
 # Set default mic to internal
 function defmic() {
   # Get the current audio source
@@ -74,4 +62,14 @@ function wsdontsleep() {
     log.warning "$now Next ping in $time_to_sleep minutes"
     sleep $(($time_to_sleep * 60))
   done
+}
+
+##############################################################
+# Background functions (zsh only)
+##############################################################
+function set_zsh_and_apply_leonardorick_theme(){
+  export ZSH=/Users/$USER/.oh-my-zsh
+  ZSH_THEME=leonardorick # set theme before sourcing oh-my-zsh
+  source $ZSH/oh-my-zsh.sh
+  autoload -Uz compinit && compinit # autocomplete
 }

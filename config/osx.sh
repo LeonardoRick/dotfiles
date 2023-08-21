@@ -27,6 +27,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
 
+# Show volume icon on the top menu bar
+defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
+
 # Disable opening and closing window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 

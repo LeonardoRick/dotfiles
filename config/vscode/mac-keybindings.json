@@ -468,12 +468,12 @@
     // The same shortcut is the default to open the default file view when
     // 'change editor' is already open
     {
-        "key": "ctrl+alt+o",
+        "key": "ctrl+alt+.",
         "command": "git.openChange",
         "when": "!isInDiffEditor"
     },
     {
-        "key": "ctrl+alt+o",
+        "key": "ctrl+alt+.",
         "command": "git.openFile",
         "when": "isInDiffEditor"
     },
@@ -629,12 +629,7 @@
     {
         "key": "shift+cmd+1",
         "command": "macros.multiScrollLineUp",
-        "when": "textInputFocus",
-        "args": {
-            "by": "line",
-            "to": "up",
-            "value": 10
-        }
+        "when": "textInputFocus"
     },
     {
         "key": "ctrl+pageup",
@@ -668,7 +663,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+=",
+        "key": "ctrl+shift+-",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
     },
@@ -678,14 +673,27 @@
         "when": "canNavigateForward"
     },
     {
-        "key": "ctrl+alt+p",
+        "key": "ctrl+alt+,",
         "command": "workbench.action.compareEditor.focusOtherSide"
     },
     // ##############################################################
-    // # PREVIOUS/NEXT CHANGE
+    // # GO TO DEFINITION
     // ##############################################################
     {
-        "key": "ctrl+[",
+        "key": "ctrl+]",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    // // ##############################################################
+    // // # PREVIOUS/NEXT CHANGE
+    // // ##############################################################
+    {
+        "key": "ctrl+,",
         "command": "workbench.action.editor.nextChange",
         "when": "editorTextFocus && !textCompareEditorActive"
     },
@@ -695,7 +703,7 @@
         "when": "editorTextFocus && !textCompareEditorActive"
     },
     {
-        "key": "ctrl+[",
+        "key": "ctrl+,",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "isInDiffEditor || textCompareEditorVisible"
     },
@@ -705,7 +713,7 @@
         "when": "textCompareEditorVisible"
     },
     {
-        "key": "ctrl+[BracketLeft]",
+        "key": "ctrl+shift+,",
         "command": "workbench.action.editor.previousChange",
         "when": "editorTextFocus"
     },
@@ -715,7 +723,7 @@
         "when": "editorTextFocus && !textCompareEditorActive"
     },
     {
-        "key": "ctrl+[BracketLeft]",
+        "key": "ctrl+shift+,",
         "command": "workbench.action.compareEditor.previousChange",
         "when": "isInDiffEditor || textCompareEditorVisible"
     },
@@ -728,17 +736,7 @@
     // # PREVIOUS/NEXT SYMBOL HIGHLIGHTED
     // ##############################################################
     {
-        "key": "f7",
-        "command": "-editor.action.diffReview.next",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "shift+f7",
-        "command": "-editor.action.diffReview.prev",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+]",
+        "key": "ctrl+[Semicolon]",
         "command": "editor.action.wordHighlight.next",
         "when": "editorTextFocus && hasWordHighlights"
     },
@@ -748,7 +746,12 @@
         "when": "editorTextFocus && hasWordHighlights"
     },
     {
-        "key": "ctrl+'",
+        "key": "f7",
+        "command": "-editor.action.diffReview.next",
+        "when": "isInDiffEditor"
+    },
+    {
+        "key": "ctrl+shift+[Semicolon]",
         "command": "editor.action.wordHighlight.prev",
         "when": "editorTextFocus && hasWordHighlights"
     },
@@ -756,5 +759,48 @@
         "key": "shift+f7",
         "command": "-editor.action.wordHighlight.prev",
         "when": "editorTextFocus && hasWordHighlights"
-    }
+    },
+        {
+        "key": "shift+f7",
+        "command": "-editor.action.diffReview.prev",
+        "when": "isInDiffEditor"
+    },
+    // ##############################################################
+    // # PREVIOUS/NEXT ERROR INSIDE SINGLE FILE
+    // ##############################################################
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+[BracketLeft]",
+        "command": "multiCommand.goToNextProblemAndCenter",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+f8",
+        "command": "-editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+[BracketLeft]",
+        "command": "multiCommand.goToPrevProblemAndCenter",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+f8",
+        "command": "-editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+shift+[BracketLeft]",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
 ]

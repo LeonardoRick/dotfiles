@@ -170,7 +170,7 @@
       }
     ],
     "macros": {
-      "multiLineJumpUp5": [
+            "multiLineJumpUp5": [
           "list.focusUp",
           "list.focusUp",
           "list.focusUp",
@@ -268,21 +268,21 @@
         "cursorDown",
         "cursorDown",
         "cursorDown",
-        "cursorDown",
+        "cursorDown"
       ],
       "multiCursorUpSelect5": [
         "cursorUpSelect",
         "cursorUpSelect",
         "cursorUpSelect",
         "cursorUpSelect",
-        "cursorUpSelect",
+        "cursorUpSelect"
       ],
       "multiCursorDownSelect5": [
         "cursorDownSelect",
         "cursorDownSelect",
         "cursorDownSelect",
         "cursorDownSelect",
-        "cursorDownSelect",
+        "cursorDownSelect"
       ],
       "multiCursorUpSelect10": [
         "cursorUpSelect",
@@ -309,6 +309,31 @@
         "cursorDownSelect"
       ]
   },
+  "multiCommand.commands": [
+    // somehow this was not working with macros so I had to install multicommand
+    {
+      "command": "multiCommand.goToNextProblemAndCenter",
+      "sequence": [
+        "editor.action.marker.next",
+        "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multiCommand.goToPrevProblemAndCenter",
+      "sequence": [
+        "editor.action.marker.prev",
+        "center-editor-window.center"
+      ]
+    },
+    {
+      "command": "multiCommand.goToLineAndCenter",
+      "interval": 1000,
+      "sequence": [
+        "justgotoline.gotoline",
+        "center-editor-window.center"
+      ]
+    }
+  ],
   "editor.guides.bracketPairs": true,
   "importCost.largePackageDarkColor": "#ff8a8a",
   "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
@@ -327,9 +352,11 @@
   "todo-tree.highlights.enabled": false,
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.quote": "'",
-  "terminal.integrated.env.osx": {},
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "CodeGPT.organizationId": "org-JzFVQ5d6DvaOLI3xiSfbjbfQ",
   "center-editor-window.offset": 1,
@@ -338,10 +365,11 @@
   "black-formatter.args": [
     "--skip-string-normalization"
   ],
-  "window.zoomLevel": -1,
   "workbench.colorCustomizations": {
     // colors from iterm2 Tango Dark color preset
     "terminal.ansiBrightMagenta": "#bc93b6",
     "terminal.ansiBrightBlue": "#83afd8"
-  }
+  },
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": -1
   }

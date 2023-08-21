@@ -4,3 +4,4 @@
 	name = Leonardo Rick
 [pager]
 	branch = false
+	stash = false

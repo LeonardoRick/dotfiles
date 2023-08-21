@@ -6,13 +6,27 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias ~~="cd ~" # `cd` is probably faster to type though
 
+alias gsta="git stash" # overwrite 'git stash push' from git oh-my-zsh plugin
+
 alias python=python3
 alias pip=pip3
+
 alias n=npm
+alias nr="npm run"
+alias nrb="npm run build"
+alias nrs="npm run serve"
+alias nrd="npm run dev"
+alias ns="npm start"
+alias ni="npm install"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
+alias nig="npm install -g"
+
 
 # Directory shortcut
 alias desktop="cd ~/Desktop/"
 alias documents="cd ~/Documents/"
+alias downloads="cd ~/Downloads/"
 
 # fun
 alias stfu="osascript -e 'set volume output muted true'"

@@ -34,6 +34,5 @@ Read and study to improve terminal usage:
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
 
 
-This file may serve as a todo because probably everything here can be automated. The this is what exactly I want to automate and what not:
-
-1- setup git installation
+This file may serve as a todo because probably everything here can be automated:
+1 - setup git installation

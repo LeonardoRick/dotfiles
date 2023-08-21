@@ -31,6 +31,14 @@
 		],
 		"description": "Wrap selected text with console.log(JSON.parse(JSON.stringify())); with a comment"
 	},
+	"JSON Stringify": {
+		"scope": "javascript,typescript",
+		"prefix": "cjson",
+		"body": [
+			"JSON.parse(JSON.stringify(${1:$CLIPBOARD}))"
+		],
+		"description": "Wrap selected text with JSON.parse(JSON.stringify())"
+	},
 	"console dir": {
 		"scope": "javascript,typescript",
 		"prefix": "dir",
