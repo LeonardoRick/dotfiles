@@ -20,5 +20,8 @@ set_zsh_and_apply_leonardorick_theme
 source ~/.bash_profile
 source ~/.zsh_exports
 
+# allow the usage of direnv to manage environment variables and .envrc files
+eval "$(direnv hook zsh)"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

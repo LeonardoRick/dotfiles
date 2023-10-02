@@ -16,3 +16,5 @@ brew "switchaudio-osx"
 brew "fig"
 # install pyenv to manage python versions
 brew "pyenv"
+# install direnv to manage environment variables
+brew "direnv"
