@@ -42,22 +42,35 @@ function defspeak() {
 # pings the web service every X minutes to keep it awake. The default sleep time is 10 minute s
 # since renderer sleeps after 15 minutes of inactivity. https://render.com/docs/free#free-web-services
 function wsdontsleep() {
- website=$1
- time_to_sleep=${2:-10}
- if [ -z "$website" ]; then
-    log.info "Usage: wsdontsleep <website_to_ping> <time_in_minutes_to_sleep_after_ping_again (default 10)>"
+  websites=()
+  time_to_sleep=10
+
+  # Parse arguments
+  for arg in "$@"; do
+    case "$arg" in
+      sleep=*)
+        time_to_sleep="${arg#*=}"
+        ;;
+      *)
+        websites+=("$arg")
+        ;;
+    esac
+  done
+
+  if [ ${#websites[@]} -eq 0 ]; then
+    log.info "Usage: wsdontsleep [website1] [website2] [...] [sleep=<time_in_minutes>] (default sleep=10)"
     return 1
   fi
-
-  while true;
-  now=[$(date '+%Y-%m-%d %H:%M:%S')]
-  do
-    curl -sSfL $website > /dev/null
-    if [ $? -eq 0 ]; then
-      log.success "$now Keeping $website up!"
-    else
-      log.fail "$now Website is down. Unable to ping $website"
-    fi
+  while true; do
+    now=[$(date '+%Y-%m-%d %H:%M:%S')]
+    for website in "${websites[@]}"; do
+      curl -sSfL $website > /dev/null
+      if [ $? -eq 0 ]; then
+        log.success "$now Keeping $website up!"
+      else
+        log.fail "$now Website is down. Unable to ping $website"
+      fi
+    done
 
     log.warning "$now Next ping in $time_to_sleep minutes"
     sleep $(($time_to_sleep * 60))

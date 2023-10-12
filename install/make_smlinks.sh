@@ -6,3 +6,5 @@ source ~/.dotfiles/dots/.exports
 for FILE in $DOTFILES/dots/.*; do
   [ -f "$FILE" ] && ln -sfv $FILE ~
 done
+
+ln -sfv $DOTFILES/dots/.ssh/config ~/.ssh/config
