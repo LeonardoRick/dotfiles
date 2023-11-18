@@ -18,3 +18,5 @@ brew "fig"
 brew "pyenv"
 # install direnv to manage environment variables
 brew "direnv"
+# install stripe cli
+brew "stripe/stripe-cli/stripe"
