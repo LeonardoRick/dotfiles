@@ -502,14 +502,6 @@
         "command": "-extension.switchTs"
     },
     {
-        "key": "shift+alt+u",
-        "command": "-bito.menu.styleCheck"
-    },
-    {
-        "key": "shift+alt+u",
-        "command": "bito.menu.generateUnitTest"
-    },
-    {
         "key": "shift+cmd+x",
         "command": "-workbench.view.extensions",
         "when": "viewContainer.workbench.view.extensions.enabled"
@@ -586,14 +578,6 @@
         "key": "ctrl+cmd+down",
         "command": "-notebook.cell.focusInOutput",
         "when": "notebookCellHasOutputs && notebookEditorFocused"
-    },
-    {
-        "key": "shift+cmd+x",
-        "command": "activateBito.sidebar.focus"
-    },
-    {
-        "key": "shift+alt+i",
-        "command": "bito.palette.insertCodeIntoBitoPalette"
     },
     {
         "key": "shift+alt+i",
@@ -803,4 +787,26 @@
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
+    {
+        "key": "ctrl+shift+;",
+        "command": "extension.nestComments",
+        "when": "editorHasSelection && editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+/",
+        "command": "-extension.nestComments",
+        "when": "editorHasSelection && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "turboConsoleLog.uncommentAllLogMessages"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "-turboConsoleLog.uncommentAllLogMessages"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "extension.switchTs"
+    }
 ]

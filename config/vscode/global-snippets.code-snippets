@@ -10,10 +10,17 @@
 		"scope": "javascript,typescript",
 		"prefix": "log",
 		"body": [
-			"console.log($1);",
+			"console.log(${1:$CLIPBOARD});",
 			"$2"
 		],
 		"description": "Log output to console"
+	},
+	"console.log shortcut": {
+		"scope": "javascript,typescript",
+		"prefix": "lg",
+		"body": [
+			"console.log"
+		]
 	},
 	"consoleLogJSONStringify": {
 		"scope": "javascript,typescript",

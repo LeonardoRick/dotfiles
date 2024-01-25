@@ -53,12 +53,19 @@ function killport() {
 
 function setup_nvm(){
   export NVM_DIR="$HOME/.nvm"
-  # Check if NVM is installed through Homebrew, and source nvm.sh accordingly
-  if [ -d $(brew --prefix nvm 2>/dev/null) ]; then
-    source $(brew --prefix nvm)/nvm.sh
-  elif [ -f "$NVM_DIR/nvm.sh" ]; then
-    source "$NVM_DIR/nvm.sh"
-  fi
+
+  # new version of NVM configuration!!
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+  # old version of NVM configuration (homebrew)
+   # Check if NVM is installed through Homebrew, and source nvm.sh accordingly
+  # if [ -d $(brew --prefix nvm 2>/dev/null) ]; then
+  #   source $(brew --prefix nvm)/nvm.sh
+  # elif [ -f "$NVM_DIR/nvm.sh" ]; then
+  #   source "$NVM_DIR/nvm.sh"
+  # fi
+
 
   # Check for .nvmrc file and NVM_DIR existence
   if [ -f .nvmrc ] && [ -d "$NVM_DIR" ]; then
