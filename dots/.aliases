@@ -24,6 +24,19 @@ alias nis="npm install --save"
 alias nisd="npm install --save-dev"
 alias nig="npm install -g"
 
+alias pn="pnpm"
+alias pnr="pnpm run"
+alias pnrb="pnpm run build"
+alias pnrs="pnpm run serve"
+alias pnrt="pnpm run test"
+alias pnrl="pnpm run lint"
+alias pnrd="pnpm run dev"
+alias pns="pnpm start"
+alias pni="pnpm install"
+alias pnis="pnpm install --save"
+alias pnisd="pnpm install --save-dev"
+alias pnig="pnpm install -g"
+
 
 # Directory shortcut
 alias desktop="cd ~/Desktop/"

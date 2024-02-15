@@ -18,7 +18,6 @@ set_zsh_and_apply_leonardorick_theme
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 source ~/.bash_profile
-source ~/.zsh_exports
 
 # allow the usage of direnv to manage environment variables and .envrc files
 eval "$(direnv hook zsh)"

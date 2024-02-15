@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
-# file to all zsh global variables (used by brew, for example)# Brew Configuration
+# file to all zsh global variables (used by brew, for example)
+# Brew Configuration
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";

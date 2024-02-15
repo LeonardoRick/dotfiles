@@ -9,7 +9,8 @@ source ~/.logging
 source ~/.aliases
 source ~/.exports
 source ~/.functions
-source ~/.zsh_exports # we need that to access brew on mac
+# we need .zsh_exports imported here to access brew on mac from now (on setup_nvm for example)
+source ~/.zsh_exports
 
 setup_nvm
 setup_pyenv
