@@ -392,5 +392,9 @@
   "files.trimTrailingWhitespace": true,
   // settings for webgl + glsl extensions
   "glsl-canvas.refreshOnChange": false,
-  "vite.autoStart": false // avoid inner browser inside vscode on vite projects
+  // avoid inner browser inside vscode on vite projects
+  "vite.autoStart": false,
+  "go.alternateTools": {
+    "go": "/opt/homebrew/bin/go"
+  }
 }

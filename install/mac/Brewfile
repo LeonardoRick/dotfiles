@@ -21,4 +21,6 @@ brew "direnv"
 # install stripe cli
 brew "stripe/stripe-cli/stripe"
 # instal watchman to avoid ulimit on watched files
-brew watchman
+brew "watchman"
+# install go language binary
+brew "go"
