@@ -2,6 +2,7 @@
     "window.titleBarStyle": "custom",
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.scrollback": 2000,
     "workbench.colorTheme": "Atom One Dark",
     "editor.fontSize": 12,
     "editor.snippetSuggestions": "top",
