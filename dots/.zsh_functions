@@ -68,7 +68,7 @@ function wsdontsleep() {
       if [ $? -eq 0 ]; then
         log.success "$now Keeping $website up!"
       else
-        log.fail "$now Website is down. Unable to ping $website"
+        log.error "$now Website is down. Unable to ping $website"
       fi
     done
 

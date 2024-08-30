@@ -39,3 +39,5 @@ cask "zoom"  # Zoom
 
 # Others
 cask "1password"  # Password manager
+
+cask "flux" # yellow light

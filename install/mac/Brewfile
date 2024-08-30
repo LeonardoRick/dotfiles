@@ -12,8 +12,6 @@ brew "nvm"
 brew "mongodb/brew/mongodb-community"
 # install switchaudio-osx to switch audio output from command line
 brew "switchaudio-osx"
-# install fig for terminal suggestions
-brew "fig"
 # install pyenv to manage python versions
 brew "pyenv"
 # install direnv to manage environment variables

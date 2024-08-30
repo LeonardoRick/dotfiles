@@ -39,12 +39,22 @@ function coden() {
 
 # kill process on specified port
 function killport() {
-  pid=$(lsof -ti tcp:$1)
-  if [ -n "$pid" ]; then
-    kill $pid
-    log.success "Process on port $1 killed"
+  if ! [[ $1 =~ ^[0-9]+$ ]] || [ $1 -lt 1 ] || [ $1 -gt 65535 ]; then
+    log.error "Invalid port number: $1. Port number must be an integer between 1 and 65535."
+    return 1
+  fi
+
+  pids=$(lsof -ti tcp:$1)
+  pidsPrint="${pids//$'\n'/, }" #processes with no line breaks
+
+  if [ -n "$pids" ]; then
+    # https://stackoverflow.com/a/35927896/10526869
+    while read -r pid; do
+      kill $pid
+    done <<< "$pids"
+    log.success "Process(es) $pidsPrint on port $1 killed"
   else
-    log.info "No process found on port $1"
+    log.info "No processes found on port $1"
   fi
 }
 ##############################################################

@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 plugins=(
     git
     zsh-syntax-highlighting
@@ -22,9 +20,14 @@ source ~/.bash_profile
 # allow the usage of direnv to manage environment variables and .envrc files
 eval "$(direnv hook zsh)"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
 
 # Load Angular CLI autocompletion.
 { source <(ng completion script); } &>/dev/null
+
+# pnpm
+export PNPM_HOME="/Users/leonardorick/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
