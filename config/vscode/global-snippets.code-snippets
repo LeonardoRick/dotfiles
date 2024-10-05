@@ -53,5 +53,5 @@
 			"console.dir(${1:$CLIPBOARD}, { depth: null });"
 		],
 		"description": "Wrap selected text with console.dir();"
-	},
+	}
 }

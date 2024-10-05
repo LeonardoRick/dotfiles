@@ -381,7 +381,7 @@
         "key": "ctrl+up",
         "command": "-gotoNextPreviousMember.previousMember"
     },
-        {
+    {
         "key": "ctrl+alt+cmd+down",
         "command": "gotoNextPreviousMember.nextMember"
     },
@@ -410,7 +410,6 @@
         "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
         "command": "macros.multiLineJumpDown10"
     },
-
     // ##############################################################
     // # SOURCE CONTROL
     // ##############################################################
@@ -744,7 +743,7 @@
         "command": "-editor.action.wordHighlight.prev",
         "when": "editorTextFocus && hasWordHighlights"
     },
-        {
+    {
         "key": "shift+f7",
         "command": "-editor.action.diffReview.prev",
         "when": "isInDiffEditor"

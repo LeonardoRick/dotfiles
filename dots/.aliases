@@ -7,6 +7,7 @@ alias ....="cd ../../.."
 alias ~~="cd ~" # `cd` is probably faster to type though
 
 alias gsta="git stash" # overwrite 'git stash push' from git oh-my-zsh plugin
+alias gcan="git commit --amend --no-edit"
 
 alias python=python3
 alias pip=pip3
