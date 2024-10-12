@@ -14,7 +14,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -34,7 +35,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -54,7 +56,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -79,7 +82,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -99,7 +103,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -119,7 +124,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -144,7 +150,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -164,7 +171,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -184,7 +192,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -209,7 +218,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -229,7 +239,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -249,7 +260,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -274,7 +286,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -294,7 +307,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -314,7 +328,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -339,7 +354,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -359,7 +375,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -379,7 +396,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -404,7 +422,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -424,7 +443,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -444,7 +464,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -469,7 +490,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -489,7 +511,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -509,7 +532,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -534,7 +558,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -554,7 +579,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -574,7 +600,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -599,7 +626,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -619,7 +647,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -639,7 +668,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -664,7 +694,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -684,7 +715,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -704,7 +736,8 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -729,7 +762,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -749,7 +783,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -769,77 +804,13 @@
                       "left_command"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
                 "to": {
                   "key_code": "slash",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "spacebar",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "spacebar",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "spacebar",
                   "modifiers": [
                     "left_control"
                   ]
@@ -859,7 +830,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -879,7 +851,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -904,7 +877,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -924,7 +898,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -949,7 +924,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -969,7 +945,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -994,7 +971,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1014,7 +992,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1039,7 +1018,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1059,7 +1039,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1084,7 +1065,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1104,12 +1086,60 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
                 "to": {
                   "key_code": "z",
+                  "modifiers": [
+                    "left_command"
+                  ]
+                },
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control"
+                    ],
+                    "optional": [
+                      "shift",
+                      "caps_lock"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "spacebar",
+                  "modifiers": [
+                    "left_command"
+                  ]
+                },
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "shift",
+                      "caps_lock"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "spacebar",
                   "modifiers": [
                     "left_command"
                   ]
@@ -1129,7 +1159,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1149,7 +1180,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1167,6 +1199,10 @@
                   "modifiers": {
                     "mandatory": [
                       "left_option"
+                    ],
+                    "optional": [
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1191,7 +1227,8 @@
                       "left_control"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1211,7 +1248,8 @@
                       "fn"
                     ],
                     "optional": [
-                      "any"
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },
@@ -1229,6 +1267,10 @@
                   "modifiers": {
                     "mandatory": [
                       "left_option"
+                    ],
+                    "optional": [
+                      "shift",
+                      "caps_lock"
                     ]
                   }
                 },

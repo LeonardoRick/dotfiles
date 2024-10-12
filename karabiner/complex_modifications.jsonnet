@@ -9,13 +9,13 @@ local From(code, mod) = {
 // If you do not include any in modifiers.optional, your manipulator does not change event if extra modifiers
 // (modifiers which are not included in modifiers.mandatory) are pressed.
 // https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/from/modifiers/
-local FromStrict(code, mod) = {
+local FromStrict(code, mod, optional = ['shift', 'caps_lock']) = {
   key_code: code,
   modifiers: {
-    mandatory: [mod]
+    mandatory: [mod],
+    optional: optional
   },
 };
-
 
 local To(code, mod) = {
   key_code: code,
@@ -29,12 +29,12 @@ local To(code, mod) = {
 
 local ReplaceCtrlCmdOneDirection(code) = [
   {
-    from: From(code, 'left_control'),
+    from: FromStrict(code, 'left_control'),
     to: To(code, 'left_command'),
     type: 'basic',
   },
   {
-    from: From(code, 'fn'),
+    from: FromStrict(code, 'fn'),
     to: To(code, 'left_command'),
     type: 'basic',
   },
@@ -44,7 +44,7 @@ local ReplaceCtrlCmd(code) =
   ReplaceCtrlCmdOneDirection(code)
   + [
       {
-        from: From(code, 'left_command'),
+        from: FromStrict(code, 'left_command'),
         to: To(code, 'left_control'),
         type: 'basic',
       },
@@ -66,8 +66,8 @@ local ReplaceCtrlCmdItemOneDirection(code) =
 };
 
 
-local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['d' ,'f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 't', 'x', 'slash', 'spacebar']);
-local ReplaceCtrlCmdRulesOneDirection() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'k','c', 'v', 'w', 'z']);
+local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['d' ,'f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 't', 'x', 'slash']);
+local ReplaceCtrlCmdRulesOneDirection() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'k','c', 'v', 'w', 'z', 'spacebar']);
 
 /**
  * Ctrl to Option
@@ -76,12 +76,12 @@ local ReplaceCtrlOption(code) = {
   description: 'Remap Ctrl/Fn + ' + std.asciiUpper(code) + ' to Option + ' + std.asciiUpper(code),
   manipulators: [
     {
-      from: From(code, 'left_control'),
+      from: FromStrict(code, 'left_control'),
       to: To(code, 'left_option'),
       type: 'basic',
     },
     {
-      from: From(code, 'fn'),
+      from: FromStrict(code, 'fn'),
       to: To(code, 'left_option'),
       type: 'basic',
     },
