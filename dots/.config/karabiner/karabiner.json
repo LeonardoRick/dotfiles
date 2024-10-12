@@ -784,6 +784,71 @@
             ]
           },
           {
+            "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "spacebar",
+                  "modifiers": [
+                    "left_command"
+                  ]
+                },
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "fn"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "spacebar",
+                  "modifiers": [
+                    "left_command"
+                  ]
+                },
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": {
+                  "key_code": "spacebar",
+                  "modifiers": [
+                    "left_control"
+                  ]
+                },
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Remap (Ctrl + A or Fn + A to Cmd + A)",
             "manipulators": [
               {
@@ -1102,9 +1167,6 @@
                   "modifiers": {
                     "mandatory": [
                       "left_option"
-                    ],
-                    "optional": [
-                      "any"
                     ]
                   }
                 },
@@ -1167,9 +1229,6 @@
                   "modifiers": {
                     "mandatory": [
                       "left_option"
-                    ],
-                    "optional": [
-                      "any"
                     ]
                   }
                 },

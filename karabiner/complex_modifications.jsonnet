@@ -6,10 +6,22 @@ local From(code, mod) = {
   },
 };
 
+// If you do not include any in modifiers.optional, your manipulator does not change event if extra modifiers
+// (modifiers which are not included in modifiers.mandatory) are pressed.
+// https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/from/modifiers/
+local FromStrict(code, mod) = {
+  key_code: code,
+  modifiers: {
+    mandatory: [mod]
+  },
+};
+
+
 local To(code, mod) = {
   key_code: code,
   modifiers: [mod],
 };
+
 
 /**
  * Ctrl to CMD
@@ -54,7 +66,7 @@ local ReplaceCtrlCmdItemOneDirection(code) =
 };
 
 
-local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['d' ,'f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 't', 'x', 'slash']);
+local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['d' ,'f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 't', 'x', 'slash', 'spacebar']);
 local ReplaceCtrlCmdRulesOneDirection() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'k','c', 'v', 'w', 'z']);
 
 /**
@@ -74,7 +86,7 @@ local ReplaceCtrlOption(code) = {
       type: 'basic',
     },
     {
-      from: From(code, 'left_option'),
+      from: FromStrict(code, 'left_option'),
       to: To(code, 'left_control'),
       type: 'basic'
     },
