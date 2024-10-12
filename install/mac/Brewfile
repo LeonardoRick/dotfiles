@@ -22,3 +22,5 @@ brew "stripe/stripe-cli/stripe"
 brew "watchman"
 # install go language binary
 brew "go"
+# install jsonnet to work with jsons
+brew "jsonnet"

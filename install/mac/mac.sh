@@ -3,7 +3,7 @@ source ~/.bashrc
 
 # Stop alert sound when pressing Ctrl + Cmd + Arrows.
 # Currently there's still an issue with Ctrl + Option + Cmd + DownArrow: https://github.com/electron/electron/issues/2617
-ln -sfv $DOTFILES/config/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+mkdir -p ~/Library/KeyBindings && ln -sfv $DOTFILES/config/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 # vscode mac setup
 ln -sfv $DOTFILES/config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json

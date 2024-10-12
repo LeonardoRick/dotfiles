@@ -179,7 +179,7 @@
       }
     ],
     "macros": {
-            "multiLineJumpUp5": [
+      "multiLineJumpUp5": [
           "list.focusUp",
           "list.focusUp",
           "list.focusUp",
@@ -227,7 +227,7 @@
         "scrollLineDown",
         "scrollLineDown",
         "scrollLineDown",
-        "scrollLineDown",
+        "scrollLineDown"
       ],
       "multiScrollLineUp": [
         "scrollLineUp",
@@ -265,7 +265,7 @@
         "cursorUp",
         "cursorUp",
         "cursorUp",
-        "cursorUp",
+        "cursorUp"
       ],
       "multiCursorDown10": [
         "cursorDown",
@@ -412,5 +412,6 @@
     "javascriptreact",
     "vue"
   ],
-  "template-string-converter.autoRemoveTemplateString": true
+  "template-string-converter.autoRemoveTemplateString": true,
+  "npm.keybindingsChangedWarningShown": true
 }

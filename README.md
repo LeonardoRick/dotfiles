@@ -29,10 +29,41 @@ To setup run `./install.sh`
 
 This will symbolic link all your files inside `dots` folder on your root `~`
 
+The way the scripts run are simplified because of the symlink we create of the whole project to ~/.dotfiles of the computer.
+This way, it's easy to access via a global variable the root of the project --> $DOTFILES;
+
+
+# Karabiner Elements
+First make sure to install it and after default setup ensure [this permission is enabled](https://github.com/pqrs-org/Karabiner-Elements/issues/3051#issuecomment-1355253877)
+
+
+The symlink should take care of the setup if you manage to run it `make_smlinks.sh` after karabiner is already installed
+
+It not, copy and paste this on the browser and karabiner should open allow you to import the setup.
+
+```
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/LeonardoRick/karabiner/refs/heads/main/shortcuts.json
+```
+
+// todo: revert back the behaviour of cmd + option +arrows
+// todo: delete karabiner project
+// todo: comment all jsonnet functions
+
+### convert jsonnet files to json
+```
+jsonnet shortcuts.jsonnet > shortcuts.json
+```
+
+### convert json to jsonnet
+```
+jsonnetfmt shortcuts.json > shortcuts.jsonnet
+```
+
 
 Read and study to improve terminal usage:
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
 
 
 This file may serve as a todo because probably everything here can be automated:
+
 1 - setup git installation

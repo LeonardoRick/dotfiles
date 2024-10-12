@@ -7,13 +7,13 @@
 # Productivity
 cask "rectangle"  # Shortcuts for moving and sizing windows
 cask "mos"  # Smooths out your mouse scrolling
-cask karabiner-elements  # Keyboard customizer
+cask "karabiner-elements"  # Keyboard customizer
 cask "bettertouchtool"  # Customizes shortcuts
-cask "choosy"  # Chooses which browser to open links
+cask "choosy"  # Chooses which browser to open linksss
 cask "alt-tab"  # Windows-like alt-tab
 cask "iterm2" # terminal
-
-# # Microsoft (installed on mas)
+ 
+# # Microsoft (installed on mas Masfile)
 # cask "onedrive"  # Microsoft OneDrive
 # cask "microsoft-excel" # Microsoft Excel
 # cask "microsoft-word" # Microsoft Word
@@ -22,8 +22,8 @@ cask "iterm2" # terminal
 # Development
 cask "visual-studio-code"
 cask "postman"
-cask "figma"
-
+cask "figma"  
+ 
 # Fun
 cask "spotify"
 cask "discord"
@@ -40,4 +40,4 @@ cask "zoom"  # Zoom
 # Others
 cask "1password"  # Password manager
 
-cask "flux" # yellow light
+cask "flux" # yellow light     z
