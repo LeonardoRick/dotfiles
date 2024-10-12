@@ -48,7 +48,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 // todo: delete karabiner project
 // todo: comment all jsonnet functions
 // todo: apply OO concepts on the final solution I found
-
+// todo: show f keys when vscode is opened
 ### convert jsonnet files to json
 ```
 jsonnet shortcuts.jsonnet > shortcuts.json

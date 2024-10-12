@@ -1,4 +1,4 @@
-local complex = import 'complex_modifications.jsonnet'; // Import complex modifications
+local complex = import 'complex_modifications/complex_modifications.jsonnet'; // Import complex modifications
 
 {
   profiles: [

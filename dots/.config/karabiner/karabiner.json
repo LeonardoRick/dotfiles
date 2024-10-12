@@ -1,1346 +1,1414 @@
 {
-  "profiles": [
-    {
-      "complex_modifications": {
-        "rules": [
-          {
-            "description": "Remap (Ctrl + D or Fn + D to Cmd + D)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "d",
-                  "modifiers": [
-                    "left_command"
+   "profiles": [
+      {
+         "complex_modifications": {
+            "rules": [
+               {
+                  "description": "Remap (Ctrl + F or Fn + F to Cmd + F)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "f",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "f",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "f",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "f",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "f",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "f",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "d",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + J or Fn + J to Cmd + J)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "j",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "j",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "j",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "j",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "j",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "j",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "d",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "d",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + L or Fn + L to Cmd + L)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "l",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "l",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "l",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "l",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "l",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "l",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + F or Fn + F to Cmd + F)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "f",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + N or Fn + N to Cmd + N)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "n",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "n",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "n",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "n",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "n",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "n",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "f",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + O or Fn + O to Cmd + O)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "o",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "o",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "o",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "o",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "o",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "o",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "f",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "f",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + P or Fn + P to Cmd + P)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "p",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "p",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "p",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "p",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "p",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "p",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + J or Fn + J to Cmd + J)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "j",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + R or Fn + R to Cmd + R)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "r",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "r",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "r",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "r",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "r",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "r",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "j",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + S or Fn + S to Cmd + S)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "s",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "s",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "s",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "s",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "s",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "s",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "j",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "j",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + T or Fn + T to Cmd + T)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "t",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "t",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "t",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + L or Fn + L to Cmd + L)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "l",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + X or Fn + X to Cmd + X)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "x",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "x",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "x",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "x",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "x",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "x",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "l",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + SLASH or Fn + SLASH to Cmd + SLASH)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "slash",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "slash",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "slash",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "slash",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "slash",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "slash",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "l",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "l",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + A or Fn + A to Cmd + A)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "a",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "a",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "a",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "a",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + N or Fn + N to Cmd + N)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "n",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + K or Fn + K to Cmd + K)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "k",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "k",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "k",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "k",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "n",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + C or Fn + C to Cmd + C)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "c",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "c",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "c",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "c",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "n",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "n",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + V or Fn + V to Cmd + V)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "v",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "v",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "v",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "v",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + O or Fn + O to Cmd + O)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "o",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + W or Fn + W to Cmd + W)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "w",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "w",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "w",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "w",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "o",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + Z or Fn + Z to Cmd + Z)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "z",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "z",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "z",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "z",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "o",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "spacebar",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "spacebar",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "spacebar",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "spacebar",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + P or Fn + P to Cmd + P)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "p",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + D or Fn + D to Cmd + D)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "d",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "d",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "d",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "d",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "d",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "d",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "p",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap Ctrl/Fn + RIGHT_ARROW to Option + RIGHT_ARROW",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "right_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "right_arrow",
+                           "modifiers": [
+                              "left_option"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "right_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "right_arrow",
+                           "modifiers": [
+                              "left_option"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "right_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_option"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "right_arrow",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "p",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "p",
-                  "modifiers": [
-                    "left_control"
+               },
+               {
+                  "description": "Remap Ctrl/Fn + LEFT_ARROW to Option + LEFT_ARROW",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "left_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "left_arrow",
+                           "modifiers": [
+                              "left_option"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "left_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "left_arrow",
+                           "modifiers": [
+                              "left_option"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "left_arrow",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_option"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "left_arrow",
+                           "modifiers": [
+                              "left_control"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + R or Fn + R to Cmd + R)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "r",
-                  "modifiers": [
-                    "left_command"
+               },
+               {
+                  "description": "Remap (Ctrl + E or Fn + E to Cmd + E)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "e",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control",
+                                 "shift"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "e",
+                           "modifiers": [
+                              "left_command",
+                              "shift"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "e",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn",
+                                 "shift"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "e",
+                           "modifiers": [
+                              "left_command",
+                              "shift"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "e",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command",
+                                 "shift"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "e",
+                           "modifiers": [
+                              "left_control",
+                              "shift"
+                           ]
+                        },
+                        "type": "basic"
+                     }
                   ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "r",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "r",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "r",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + S or Fn + S to Cmd + S)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "s",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "s",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "s",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "s",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + T or Fn + T to Cmd + T)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "t",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "t",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "t",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "t",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + X or Fn + X to Cmd + X)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "x",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "x",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "x",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "x",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "x",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "x",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + SLASH or Fn + SLASH to Cmd + SLASH)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "slash",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "slash",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "slash",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "slash",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "slash",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_command"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "slash",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + A or Fn + A to Cmd + A)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "a",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "a",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "a",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + K or Fn + K to Cmd + K)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "k",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "k",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "k",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "k",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + C or Fn + C to Cmd + C)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "c",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "c",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + V or Fn + V to Cmd + V)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "v",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "v",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "v",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "v",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + W or Fn + W to Cmd + W)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "w",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "w",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "w",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "w",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + Z or Fn + Z to Cmd + Z)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "z",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "z",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "z",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "z",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "spacebar",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "spacebar",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "spacebar",
-                  "modifiers": [
-                    "left_command"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap Ctrl/Fn + RIGHT_ARROW to Option + RIGHT_ARROW",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "right_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "right_arrow",
-                  "modifiers": [
-                    "left_option"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "right_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "right_arrow",
-                  "modifiers": [
-                    "left_option"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "right_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_option"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "right_arrow",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Remap Ctrl/Fn + LEFT_ARROW to Option + LEFT_ARROW",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "left_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_control"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "left_arrow",
-                  "modifiers": [
-                    "left_option"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "left_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "fn"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "left_arrow",
-                  "modifiers": [
-                    "left_option"
-                  ]
-                },
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "left_arrow",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_option"
-                    ],
-                    "optional": [
-                      "shift",
-                      "caps_lock"
-                    ]
-                  }
-                },
-                "to": {
-                  "key_code": "left_arrow",
-                  "modifiers": [
-                    "left_control"
-                  ]
-                },
-                "type": "basic"
-              }
-            ]
-          }
-        ],
-        "title": "Leonardo Perfect remap"
-      },
-      "devices": [
-        {
-          "identifiers": {
-            "is_keyboard": true
-          },
-          "simple_modifications": [
+               }
+            ],
+            "title": "Leonardo Perfect remap"
+         },
+         "devices": [
             {
-              "from": {
-                "key_code": "grave_accent_and_tilde"
-              },
-              "to": [
-                {
-                  "key_code": "non_us_backslash"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "non_us_backslash"
-              },
-              "to": [
-                {
-                  "key_code": "grave_accent_and_tilde"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "right_command"
-              },
-              "to": [
-                {
-                  "key_code": "right_option"
-                }
-              ]
-            },
-            {
-              "from": {
-                "key_code": "right_option"
-              },
-              "to": [
-                {
-                  "key_code": "right_command"
-                }
-              ]
+               "identifiers": {
+                  "is_keyboard": true
+               },
+               "simple_modifications": [
+                  {
+                     "from": {
+                        "key_code": "grave_accent_and_tilde"
+                     },
+                     "to": [
+                        {
+                           "key_code": "non_us_backslash"
+                        }
+                     ]
+                  },
+                  {
+                     "from": {
+                        "key_code": "non_us_backslash"
+                     },
+                     "to": [
+                        {
+                           "key_code": "grave_accent_and_tilde"
+                        }
+                     ]
+                  },
+                  {
+                     "from": {
+                        "key_code": "right_command"
+                     },
+                     "to": [
+                        {
+                           "key_code": "right_option"
+                        }
+                     ]
+                  },
+                  {
+                     "from": {
+                        "key_code": "right_option"
+                     },
+                     "to": [
+                        {
+                           "key_code": "right_command"
+                        }
+                     ]
+                  }
+               ]
             }
-          ]
-        }
-      ],
-      "name": "Default profile",
-      "selected": true,
-      "virtual_hid_keyboard": {
-        "keyboard_type_v2": "ansi"
+         ],
+         "name": "Default profile",
+         "selected": true,
+         "virtual_hid_keyboard": {
+            "keyboard_type_v2": "ansi"
+         }
       }
-    }
-  ]
+   ]
 }
