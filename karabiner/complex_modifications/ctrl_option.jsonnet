@@ -14,6 +14,9 @@ local ReplaceCtrlOption(code) = {
   ]
 };
 
+/**
+ * Replace behaviour of navigating through words from option to control
+ */
 local ReplaceCtrlOptionRules() = std.map(ReplaceCtrlOption, ['right_arrow', 'left_arrow']);
 
 {

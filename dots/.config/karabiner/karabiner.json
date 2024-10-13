@@ -548,74 +548,6 @@
                   ]
                },
                {
-                  "description": "Remap (Ctrl + T or Fn + T to Cmd + T)",
-                  "manipulators": [
-                     {
-                        "from": {
-                           "key_code": "t",
-                           "modifiers": {
-                              "mandatory": [
-                                 "left_control"
-                              ],
-                              "optional": [
-                                 "shift",
-                                 "caps_lock"
-                              ]
-                           }
-                        },
-                        "to": {
-                           "key_code": "t",
-                           "modifiers": [
-                              "left_command"
-                           ]
-                        },
-                        "type": "basic"
-                     },
-                     {
-                        "from": {
-                           "key_code": "t",
-                           "modifiers": {
-                              "mandatory": [
-                                 "fn"
-                              ],
-                              "optional": [
-                                 "shift",
-                                 "caps_lock"
-                              ]
-                           }
-                        },
-                        "to": {
-                           "key_code": "t",
-                           "modifiers": [
-                              "left_command"
-                           ]
-                        },
-                        "type": "basic"
-                     },
-                     {
-                        "from": {
-                           "key_code": "t",
-                           "modifiers": {
-                              "mandatory": [
-                                 "left_command"
-                              ],
-                              "optional": [
-                                 "shift",
-                                 "caps_lock"
-                              ]
-                           }
-                        },
-                        "to": {
-                           "key_code": "t",
-                           "modifiers": [
-                              "left_control"
-                           ]
-                        },
-                        "type": "basic"
-                     }
-                  ]
-               },
-               {
                   "description": "Remap (Ctrl + X or Fn + X to Cmd + X)",
                   "manipulators": [
                      {
@@ -884,6 +816,53 @@
                         },
                         "to": {
                            "key_code": "c",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     }
+                  ]
+               },
+               {
+                  "description": "Remap (Ctrl + T or Fn + T to Cmd + T)",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_control"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "t",
+                           "modifiers": [
+                              "left_command"
+                           ]
+                        },
+                        "type": "basic"
+                     },
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "fn"
+                              ],
+                              "optional": [
+                                 "shift",
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": {
+                           "key_code": "t",
                            "modifiers": [
                               "left_command"
                            ]
@@ -1348,6 +1327,31 @@
                               "shift"
                            ]
                         },
+                        "type": "basic"
+                     }
+                  ]
+               },
+               {
+                  "description": "Open iTerm",
+                  "manipulators": [
+                     {
+                        "from": {
+                           "key_code": "t",
+                           "modifiers": {
+                              "mandatory": [
+                                 "left_command",
+                                 "shift"
+                              ],
+                              "optional": [
+                                 "caps_lock"
+                              ]
+                           }
+                        },
+                        "to": [
+                           {
+                              "shell_command": "open -a iTerm"
+                           }
+                        ],
                         "type": "basic"
                      }
                   ]

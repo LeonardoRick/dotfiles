@@ -50,11 +50,11 @@ local ReplaceCtrlCmdOnlyShiftItem(code) = {
 /**
  * list all the binds I want to replace on both directions: Ctrl+F -> Cmd+F and Cmd+F -> Ctrl+F
  */
-local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 't', 'x', 'slash']);
+local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['f', 'j', 'l', 'n', 'o', 'p', 'r', 's', 'x', 'slash']);
 /**
  * list all the binds I want to replace only one direction: Ctrl+A -> Cmd+A. Both shortcuts do the same thing
  */
-local ReplaceCtrlCmdOneDirectionRules() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'k','c', 'v', 'w', 'z', 'spacebar']);
+local ReplaceCtrlCmdOneDirectionRules() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'k','c', 't', 'v', 'w', 'z', 'spacebar']);
 /**
  * list all the binds I want to replace both directions but the Ctrl + Shift + <KEY> should NOT be replaced
  */
