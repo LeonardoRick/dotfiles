@@ -20,6 +20,9 @@ sudo scutil --set LocalHostName "$USER"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USER"
 
 
+# enable key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # Set language and text formats
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
