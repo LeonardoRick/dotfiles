@@ -40,7 +40,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+shift+alt+k",
+        "key": "ctrl+shift+alt+k",
         "command": "workbench.action.terminal.newInActiveWorkspace",
         "when": "terminalFocus"
     },
