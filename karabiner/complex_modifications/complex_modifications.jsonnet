@@ -3,6 +3,7 @@ local utils = import 'utils.libsonnet';
 local ctrlCmd = import 'ctrl_cmd.jsonnet';
 local ctrlOption = import 'ctrl_option.jsonnet';
 local openApps = import 'open_apps.jsonnet';
+local general = import 'general.jsonnet';
 
 local FromStrictTo = utils.FromStrictTo;
 
@@ -16,6 +17,7 @@ local ReplaceCtrlOptionRules = ctrlOption.ReplaceCtrlOptionRules;
 local OptionCtrlOneDirectionRules = ctrlOption.OptionCtrlOneDirectionRules;
 
 local OpenAppsRules = openApps.OpenAppsRules;
+
 
 {
   complex_modifications: {
@@ -31,5 +33,7 @@ local OpenAppsRules = openApps.OpenAppsRules;
 
 
     + OpenAppsRules()
+    + [ general ]
+
   }
 }
