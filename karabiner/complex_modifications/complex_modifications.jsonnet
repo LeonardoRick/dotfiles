@@ -13,6 +13,7 @@ local ReplaceCtrlCmdNoShiftRules = ctrlCmd.ReplaceCtrlCmdNoShiftRules;
 local ReplaceCtrlCmdOnlyShiftRules = ctrlCmd.ReplaceCtrlCmdOnlyShiftRules;
 
 local ReplaceCtrlOptionRules = ctrlOption.ReplaceCtrlOptionRules;
+local OptionCtrlOneDirectionRules = ctrlOption.OptionCtrlOneDirectionRules;
 
 local OpenAppsRules = openApps.OpenAppsRules;
 
@@ -23,9 +24,11 @@ local OpenAppsRules = openApps.OpenAppsRules;
     + ReplaceCtrlCmdRules()
     + ReplaceCtrlCmdOneDirectionRules()
     + ReplaceCtrlCmdNoShiftRules()
+    + ReplaceCtrlCmdOnlyShiftRules()
 
     + ReplaceCtrlOptionRules()
-    + ReplaceCtrlCmdOnlyShiftRules()
+    + OptionCtrlOneDirectionRules()
+
 
     + OpenAppsRules()
   }
