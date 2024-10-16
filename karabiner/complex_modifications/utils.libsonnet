@@ -24,11 +24,20 @@ local FromStrict(code, mod) = From(code, mod, strictOptional);
  * Utility function to wap from one modifier to another a specific code key
  * Ex: FromStrictTo('a', 'left_control', 'left_command', optional <modifiers>),
  */
-local FromStrictTo(code, from_mod, to_mod, optional = strictOptional) = {
+local FromStrictTo(code, from_mod, to_mod, optional = strictOptional, conditions = null) = {
   from: From(code, from_mod, optional),
   to: To(code, to_mod),
-  type: 'basic',
-};
+  type: 'basic'
+} + (if conditions != null && std.length(conditions) > 0 then { conditions: conditions } else {});
+
+local AppCondition(name) = [
+    {
+    bundle_identifiers:[
+        '^com.apple.'+ name +'$'
+    ],
+    type: 'frontmost_application_if'
+    }
+];
 
 {
   strictOptional: strictOptional,
@@ -36,4 +45,5 @@ local FromStrictTo(code, from_mod, to_mod, optional = strictOptional) = {
   To: To,
   FromStrict: FromStrict,
   FromStrictTo: FromStrictTo,
+  AppCondition: AppCondition
 }

@@ -15,7 +15,7 @@ local ReplaceCtrlOption(code) = {
 };
 
 local ReplaceOptionCtrlOneDirection(code) = {
-    description: 'Remap Option + ' + std.asciiUpper(code) + 'to Ctrl + '+ std.asciiUpper(code),
+    description: 'Remap Option + ' + std.asciiUpper(code) + ' to Ctrl + '+ std.asciiUpper(code),
     manipulators: [
         FromStrictTo(code, 'left_option', 'left_control')
     ]
