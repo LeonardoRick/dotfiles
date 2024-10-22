@@ -53,5 +53,22 @@
 			"console.dir(${1:$CLIPBOARD}, { depth: null });"
 		],
 		"description": "Wrap selected text with console.dir();"
-	}
+	},
+    "Reverse Loop": {
+        "scope": "javascript,typescript",
+        "prefix": "reverseloop",
+        "body": [
+            "for (let i = $1.length - 1; i >= 0; i--) {",
+            "   $2",
+            "}"
+        ],
+        "description": "Create a loop in reverse in javascript"
+    },
+    "Separator": {
+        "scope": "javascript,typescript",
+        "prefix": "separator",
+        "body": [
+            "console.log('============================================')"
+        ]
+    }
 }

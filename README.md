@@ -32,6 +32,9 @@ This will symbolic link all your files inside `dots` folder on your root `~`
 The way the scripts run are simplified because of the symlink we create of the whole project to ~/.dotfiles of the computer.
 This way, it's easy to access via a global variable the root of the project --> $DOTFILES;
 
+# Terminal setup
+
+Every `source` command needed you should add on `.bashrc` since it's being imported by `.zshrc` indirectly when importing `.bash_profile`
 
 # Karabiner Elements
 First make sure to install it and after default setup ensure [this permission is enabled](https://github.com/pqrs-org/Karabiner-Elements/issues/3051#issuecomment-1355253877)
