@@ -110,11 +110,22 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
+
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
+
+# Remove delay from Dock animation
+defaults write com.apple.dock autohide-delay -float 0;
+
+# Speed up dock animation
+defaults write com.apple.dock autohide-time-modifier -float 0.15;
+
+# Speed up dock animation
+defaults write com.apple.dock autohide-time-modifier -float 0.40;
+
 
 ###############################################################################
 # Mail                                                                        #

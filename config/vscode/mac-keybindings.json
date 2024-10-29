@@ -29,6 +29,7 @@
         "command": "workbench.action.quickSwitchWindow",
         "when": "isMacNative"
     },
+    // integrated terminal navigation using J and K
     {
         "key": "cmd+shift+k",
         "command": "workbench.action.terminal.focusNext",
@@ -39,10 +40,20 @@
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
+    // integrated terminal killing and apawning using J andK
     {
         "key": "ctrl+shift+alt+k",
         "command": "workbench.action.terminal.newInActiveWorkspace",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "-notebook.cell.joinAbove",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.terminal.kill"
     },
     {
         "key": "ctrl+shift+down",
@@ -797,7 +808,7 @@
         "when": "editorHasSelection && editorTextFocus"
     },
     {
-        "key": "ctrl+shift+alt+c",
+        "key": "ctrl+alt+cmd+c",
         "command": "turboConsoleLog.uncommentAllLogMessages"
     },
     {
@@ -817,5 +828,39 @@
         "key": "shift+cmd+c",
         "command": "-workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
+    },
+    // ##############################################################
+    // # COPILOT SETUP
+    // ##############################################################
+    // focus on the chat
+    {
+        "key": "shift+cmd+c",
+        "command": "workbench.panel.chat.view.copilot.focus"
+    },
+    // Remove cmd i since this github.copilot.chat.editor.enableLineTrigger apparently doesn't exist anymore.
+    // This shortcut is already being used as the shortcut to start inline chat but with some input first
+    {
+        "key": "cmd+i",
+        "command": "-inlineChat.startWithCurrentLine",
+        "when": "editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+    },
+    // add reference to files on the current copilot chat
+    {
+        "key": "ctrl+shift+x",
+        "command": "workbench.action.chat.attachContext",
+        "when": "inChatInput && chatLocation == 'panel' || config.chat.experimental.variables.editor && inChatInput && chatLocation == 'editor' || config.chat.experimental.variables.notebook && inChatInput && chatLocation == 'notebook' || config.chat.experimental.variables.terminal && inChatInput && chatLocation == 'terminal'"
+    },
+    {
+        "key": "cmd+/",
+        "command": "-workbench.action.chat.attachContext",
+        "when": "inChatInput && chatLocation == 'panel' || config.chat.experimental.variables.editor && inChatInput && chatLocation == 'editor' || config.chat.experimental.variables.notebook && inChatInput && chatLocation == 'notebook' || config.chat.experimental.variables.terminal && inChatInput && chatLocation == 'terminal'"
+    },
+    // insert currrent selection as input to the copilot chat
+    {
+        "key": "shift+alt+cmd+c",
+        "command": "github.copilot.chat.attachSelection",
+        // currently the isInDiffEditor is not working for this comand, but when it ttarts working, change the when clause
+        // "when": "editorFocus || isInDiffEditor"
+        "when": "editorFocus"
     }
 ]
