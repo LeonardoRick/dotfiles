@@ -30,12 +30,17 @@ local FromStrictTo(code, from_mod, to_mod, optional = strictOptional, conditions
   type: 'basic'
 } + (if conditions != null && std.length(conditions) > 0 then { conditions: conditions } else {});
 
-local AppCondition(name) = [
+/**
+ * Accept a list of applications and return an object that should be used as
+ * restriction to limit where the shortcuts should work. use the command
+ * $> osascript -e 'id of app "<AppName>"'
+ * to identify the bundle name of the application you want to target, where
+ * where AppName is the naeme as it's written inside the Applications folder.
+ */
+local AppCondition(names, mode = 'include') = [
     {
-    bundle_identifiers:[
-        '^com.apple.'+ name +'$'
-    ],
-    type: 'frontmost_application_if'
+        bundle_identifiers: std.map(function(name) '^'+ name +'$', names),
+        type: if mode == 'exclude' then 'frontmost_application_unless' else 'frontmost_application_if'
     }
 ];
 
