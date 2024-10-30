@@ -69,6 +69,522 @@
                         ]
                     },
                     {
+                        "description": "On specific text editing apps, cursor jumping lines funcionality I do in VSCode like",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    },
+                                    {
+                                        "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^md.obsidian$",
+                                            "^com.apple.TextEdit$",
+                                            "^com.microsoft.onenote.mac$",
+                                            "^com.google.Chrome$",
+                                            "^com.brave.Browser$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    },
+                                    {
+                                        "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Apps Remap Ctrl + Shift + F to Command + Option + F to ease searching globally",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.Notes$",
+                                            "^com.apple.mail$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "f",
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.apple.Notes$",
+                                            "^com.apple.mail$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "f",
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd + . to remap to Cmd + ? since ABNT-2 is weird in shortcuts that envolved question mark (?)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command",
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "modifiers": [
+                                            "left_command"
+                                        ],
+                                        "shell_command": "osascript -e 'tell application \"System Events\" to keystroke \"?\"'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Remap (Ctrl + F or Fn + F to Cmd + F)",
                         "manipulators": [
                             {

@@ -1,10 +1,8 @@
 local utils = import '../utils.libsonnet';
-local From = utils.From;
-local To = utils.To;
 local FromStrictTo = utils.FromStrictTo;
 local AppCondition = utils.AppCondition;
 
-local finder = 'finder';
+local finder = ['com.apple.finder'];
 local FinderRules() = [
   {
     description: 'Finder Remap Ctrl + Shift + V to Command + Option + V to ease moving files',
