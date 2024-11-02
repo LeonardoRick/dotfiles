@@ -8,32 +8,21 @@ local From = utils.From;
 local AppCondition = utils.AppCondition;
 
 local HelpRules() = [
-    {
-        description: 'Cmd + . to remap to Cmd + ? since ABNT-2 is weird in shortcuts that envolved question mark (?)',
-        manipulators: [
-            {
-                from: {
-                    // this key is actually the ';' in ABNT-2, but the keycode is slash
-                    key_code: 'slash',
-                    modifiers: {
-                        mandatory: ['left_command', 'left_shift'],
-                        optional: ['any']
-                    }
-                },
-                to: [
-                    {
-                        // To avoid triggering command + w and closing the window, this solution is a hack that generates
-                        // the question mark without pressing w. This allos us to remap anything to Cmd + ?
-                        shell_command: "osascript -e 'tell application \"System Events\" to keystroke \"?\"'",
-                        modifiers: ["left_command"]
-                    }
-                ],
-                type: 'basic',
-                // ? add here any application name that gives a weird behaviour on this and you simply want to disable.
-                conditions: AppCondition([''], 'exclude')
-            }
-        ]
-    }
+    // ? This solution works but it's slower than BTT so we keep it disabled here and use it there.
+    // {
+    //     description: 'Cmd + . to remap to Cmd + ? since ABNT-2 is weird in shortcuts that envolved question mark (?)',
+    //     manipulators: [
+    //         {
+    //             from: From('slash', ['left_command', 'left_shift'], []),
+    //         to: [
+    //         {
+    //             shell_command: "osascript -e 'tell application \"System Events\" to tell (first process whose frontmost is true) to click menu bar item \"Help\" of menu bar 1'"
+    //         },
+    //         ],
+    //             type: 'basic',
+    //         },
+    //     ],
+    // }
 ];
 
 {

@@ -97,6 +97,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -157,6 +158,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -217,6 +219,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -261,6 +264,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -305,6 +309,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -365,6 +370,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -425,6 +431,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -469,6 +476,7 @@
                                         "bundle_identifiers": [
                                             "^md.obsidian$",
                                             "^com.apple.TextEdit$",
+                                            "^com.apple.Notes$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
                                             "^com.brave.Browser$",
@@ -572,42 +580,6 @@
                                         "left_option"
                                     ]
                                 },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Cmd + . to remap to Cmd + ? since ABNT-2 is weird in shortcuts that envolved question mark (?)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command",
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "modifiers": [
-                                            "left_command"
-                                        ],
-                                        "shell_command": "osascript -e 'tell application \"System Events\" to keystroke \"?\"'"
-                                    }
-                                ],
                                 "type": "basic"
                             }
                         ]
@@ -808,74 +780,6 @@
                                 },
                                 "to": {
                                     "key_code": "l",
-                                    "modifiers": [
-                                        "left_control"
-                                    ]
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap (Ctrl + N or Fn + N to Cmd + N)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "shift",
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "n",
-                                    "modifiers": [
-                                        "left_command"
-                                    ]
-                                },
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "shift",
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "n",
-                                    "modifiers": [
-                                        "left_command"
-                                    ]
-                                },
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "shift",
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "n",
                                     "modifiers": [
                                         "left_control"
                                     ]
@@ -1425,6 +1329,53 @@
                                 },
                                 "to": {
                                     "key_code": "k",
+                                    "modifiers": [
+                                        "left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Remap (Ctrl + N or Fn + N to Cmd + N)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "n",
+                                    "modifiers": [
+                                        "left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "n",
                                     "modifiers": [
                                         "left_command"
                                     ]
@@ -2077,6 +2028,30 @@
                                     "modifiers": [
                                         "left_command",
                                         "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Replace \"Œ\" symbol with \"/\" that is done when we press option + w with caps lock enabled. I just want my slash everytime ",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "caps_lock"
+                                        ],
+                                        "optional": []
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "q",
+                                    "modifiers": [
+                                        "option"
                                     ]
                                 },
                                 "type": "basic"

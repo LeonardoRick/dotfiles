@@ -442,7 +442,7 @@
         "key": "ctrl+down",
         "command": "search.action.focusSearchList",
         "when": "sideBarFocus && searchViewletVisible && inputFocus"
-    }
+    },
     // ##############################################################
     // # SOURCE CONTROL
     // ##############################################################
@@ -889,6 +889,11 @@
     {
         "key": "ctrl+shift+d",
         "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+l",
+        "command": "macros.consoleLogCurrentVariable",
         "when": "editorFocus"
     }
 ]

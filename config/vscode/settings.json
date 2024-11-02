@@ -449,5 +449,10 @@
     }
   },
   "leetnotion.hint.commentDescription": false,
-  "leetnotion.hint.configWebviewMarkdown": false
+  "leetnotion.hint.configWebviewMarkdown": false,
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.logMessageSuffix": "",
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false
 }

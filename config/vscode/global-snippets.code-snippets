@@ -19,7 +19,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "lg",
 		"body": [
-			"console.log($1)"
+			"console.log($1);"
 		]
 	},
 	"consoleLogJSONStringify": {

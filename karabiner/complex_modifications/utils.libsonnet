@@ -10,7 +10,7 @@ local From(code, mod, optional = ['any']) = {
   },
 };
 
-local To(code, mod) = {
+local To(code, mod = []) = {
   key_code: code,
   modifiers: if std.isArray(mod) then mod else [mod],
 };
@@ -23,6 +23,7 @@ local FromStrict(code, mod) = From(code, mod, strictOptional);
 /**
  * Utility function to wap from one modifier to another a specific code key
  * Ex: FromStrictTo('a', 'left_control', 'left_command', optional <modifiers>),
+ * OBS: this is specifically to changing the modifier keys for the same character.
  */
 local FromStrictTo(code, from_mod, to_mod, optional = strictOptional, conditions = null) = {
   from: From(code, from_mod, optional),
