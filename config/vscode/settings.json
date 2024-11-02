@@ -1,6 +1,6 @@
 {
     "window.titleBarStyle": "custom",
-    "markdown.preview.fontSize": 12,
+    "markdown.preview.fontSize": 16,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.scrollback": 2000,
     "workbench.colorTheme": "Atom One Dark",
@@ -89,6 +89,12 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     },
+    // https://stackoverflow.com/a/76690193/10526869
+    "eslint.codeActionsOnSave.rules": [
+      "!prefer-const",
+      "*"
+    ],
+    "eslint.codeActionsOnSave.mode": "all",
     "eslint.validate": [
       "javascript",
       "javascriptreact",
@@ -367,7 +373,6 @@
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "turboConsoleLog.includeFileNameAndLineNum": false,
-  "CodeGPT.organizationId": "org-JzFVQ5d6DvaOLI3xiSfbjbfQ",
   "center-editor-window.offset": 1,
   "editor.cursorWidth": 3,
   "mdb.confirmRunAll": false,
@@ -378,6 +383,29 @@
     // colors from iterm2 Tango Dark color preset
     "terminal.ansiBrightMagenta": "#bc93b6",
     "terminal.ansiBrightBlue": "#83afd8"
+  },
+  "editor.tokenColorCustomizations": {
+    // add support color highlighting where it's not working well like display: flex
+    "textMateRules": [
+      {
+        "name": "CSS Property Name",
+        "scope": [
+          "support.type.property-name.css"
+        ],
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "name": "CSS Property Value",
+        "scope": [
+          "support.constant.property-value.css"
+        ],
+        "settings": {
+          "foreground": "#E6AB75"
+        }
+      }
+    ]
   },
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": -1,
@@ -412,5 +440,14 @@
     "vue"
   ],
   "template-string-converter.autoRemoveTemplateString": true,
-  "npm.keybindingsChangedWarningShown": true
+  "leetnotion.defaultLanguage": "javascript",
+  "leetnotion.workspaceFolder": "/Users/leonardorick/.leetcode",
+  "leetnotion.filePath": {
+    "default": {
+      "folder": "",
+      "filename": "${id}-${kebab-case-name}.${ext}"
+    }
+  },
+  "leetnotion.hint.commentDescription": false,
+  "leetnotion.hint.configWebviewMarkdown": false
 }

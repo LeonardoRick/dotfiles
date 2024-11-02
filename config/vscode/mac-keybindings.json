@@ -400,27 +400,49 @@
         "key": "ctrl+down",
         "command": "-gotoNextPreviousMember.nextMember"
     },
-    // navigate through files
+    // ##############################################################
+    // # Navigate through files in file explorer, file search and source control view
+    // ##############################################################
     {
         "key": "ctrl+up",
-        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "when": "sideBarFocus && (explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible)",
         "command": "macros.multiLineJumpUp5"
     },
     {
         "key": "ctrl+down",
-        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "when": "sideBarFocus && (explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible)",
         "command": "macros.multiLineJumpDown5"
     },
     {
         "key": "ctrl+cmd+up",
-        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "when": "sideBarFocus && (explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible)",
         "command": "macros.multiLineJumpUp10"
     },
     {
         "key": "ctrl+cmd+down",
-        "when": "(explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible) && !inputFocus",
+        "when": "sideBarFocus && (explorerViewletVisible && filesExplorerFocus || activeViewlet == 'workbench.view.scm' || searchViewletVisible)",
         "command": "macros.multiLineJumpDown10"
     },
+    // Overwride above rule for SOURCE CONTROL VIEW specifically when we are focused on the input.
+    // There, I want to focus on the next group, which will be the first block changes. If in a workspace
+    // with more than one repo, the 'focus on previous group' comes into hand as well
+    {
+        "key": "ctrl+down",
+        "command": "workbench.scm.action.focusNextResourceGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && workbench.scm.active && inputFocus"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.scm.action.focusPreviousResourceGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm' && workbench.scm.active && inputFocus"
+    },
+    // Override above rules for SEARCH VIEW specifically when we are focused on the input.
+    // There, I want to focus on the list
+    {
+        "key": "ctrl+down",
+        "command": "search.action.focusSearchList",
+        "when": "sideBarFocus && searchViewletVisible && inputFocus"
+    }
     // ##############################################################
     // # SOURCE CONTROL
     // ##############################################################
@@ -861,6 +883,12 @@
         "command": "github.copilot.chat.attachSelection",
         // currently the isInDiffEditor is not working for this comand, but when it ttarts working, change the when clause
         // "when": "editorFocus || isInDiffEditor"
+        "when": "editorFocus"
+    },
+    // creates the relative shortcut to  the cmd + d that selects the next match
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
         "when": "editorFocus"
     }
 ]

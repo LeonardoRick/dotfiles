@@ -57,6 +57,10 @@ function killport() {
     log.info "No processes found on port $1"
   fi
 }
+
+function getappid() {
+    osascript -e "id of app \"$1\""
+}
 ##############################################################
 # Background functions
 ##############################################################

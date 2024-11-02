@@ -4,6 +4,26 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Disable right_option (Which is actually remapped to right command key) + Spacebar because it keeps activating ChatGPT when Im placing question marks",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_option"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Finder Remap Ctrl + Shift + V to Command + Option + V to ease moving files",
                         "manipulators": [
                             {
@@ -79,7 +99,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -138,7 +159,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -197,7 +219,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -240,7 +263,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -283,7 +307,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -342,7 +367,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -401,7 +427,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -444,7 +471,8 @@
                                             "^com.apple.TextEdit$",
                                             "^com.microsoft.onenote.mac$",
                                             "^com.google.Chrome$",
-                                            "^com.brave.Browser$"
+                                            "^com.brave.Browser$",
+                                            "^com.openai.chat$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
