@@ -454,5 +454,9 @@
   "turboConsoleLog.logMessagePrefix": "",
   "turboConsoleLog.logMessageSuffix": "",
   "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false
+  "turboConsoleLog.insertEnclosingFunction": false,
+
+  "applescript.alwaysShowOutput": true,
+  "applescript.osascript.outputStyle": "hs",
+  "notebook.output.textLineLimit": 100
 }
