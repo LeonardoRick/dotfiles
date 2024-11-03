@@ -89,21 +89,15 @@
                         ]
                     },
                     {
-                        "description": "On specific text editing apps, cursor jumping lines funcionality I do in VSCode like",
+                        "description": "Excluding some apps, cursor jumping lines funcionality I do in VSCode like",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -156,15 +150,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -217,15 +205,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -261,16 +243,8 @@
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
-                                        ],
-                                        "type": "frontmost_application_if"
+                                        "bundle_identifiers": [],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -307,15 +281,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -368,15 +336,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -429,15 +391,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -474,15 +430,9 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^md.obsidian$",
-                                            "^com.apple.TextEdit$",
-                                            "^com.apple.Notes$",
-                                            "^com.microsoft.onenote.mac$",
-                                            "^com.google.Chrome$",
-                                            "^com.brave.Browser$",
-                                            "^com.openai.chat$"
+                                            "^com.microsoft.VSCode$"
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -511,6 +461,83 @@
                                     },
                                     {
                                         "key_code": "down_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Excluding some apps, ctrl + tab is tab 5x (already works for shift)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.microsoft.onenote.mac$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.microsoft.onenote.mac$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
+                                    },
+                                    {
+                                        "key_code": "tab"
                                     }
                                 ],
                                 "type": "basic"
@@ -2061,50 +2088,88 @@
                 ],
                 "title": "Leonardo Perfect remap"
             },
-            "name": "Default profile",
-            "selected": true,
-            "simple_modifications": [
+            "devices": [
                 {
-                    "from": {
-                        "key_code": "grave_accent_and_tilde"
+                    "identifiers": {
+                        "is_keyboard": true
                     },
-                    "to": [
+                    "name": "Apple Internal Keyboard",
+                    "simple_modifications": [
                         {
-                            "key_code": "non_us_backslash"
+                            "from": {
+                                "key_code": "grave_accent_and_tilde"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "non_us_backslash"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "non_us_backslash"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "grave_accent_and_tilde"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "right_option"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "right_command"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "from": {
-                        "key_code": "non_us_backslash"
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 50503,
+                        "vendor_id": 1133
                     },
-                    "to": [
+                    "name": "Logitech Keyboard",
+                    "simple_modifications": [
                         {
-                            "key_code": "grave_accent_and_tilde"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_command"
-                    },
-                    "to": [
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_option"
+                                }
+                            ]
+                        },
                         {
-                            "key_code": "right_option"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_command"
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_command"
+                                }
+                            ]
                         }
                     ]
                 }
             ],
+            "name": "Default profile",
+            "selected": true,
             "virtual_hid_keyboard": {
                 "keyboard_type_v2": "ansi"
             }

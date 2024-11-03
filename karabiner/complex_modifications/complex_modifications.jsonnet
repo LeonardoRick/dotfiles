@@ -9,6 +9,7 @@ local stubs = import 'stubs.jsonnet';
 
 local finder = import 'apps/finder.jsonnet';
 local text = import 'apps/text.jsonnet';
+local tab = import 'apps/tab.jsonnet';
 local search = import 'apps/search.jsonnet';
 local help = import 'apps/help.jsonnet';
 
@@ -36,6 +37,7 @@ local StubRules = stubs.StubRules;
  */
 local FinderRules = finder.FinderRules;
 local TextEditorRules = text.TextEditorRules;
+local TabRules = tab.TabRules;
 local AppSearchRules = search.AppSearchRules;
 local HelpRules = help.HelpRules;
 
@@ -52,6 +54,7 @@ local HelpRules = help.HelpRules;
     // ? Apps rules needs to come first to take priority
     + FinderRules()
     + TextEditorRules()
+    + TabRules()
     + AppSearchRules()
     + HelpRules()
 

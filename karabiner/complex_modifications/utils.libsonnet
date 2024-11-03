@@ -1,8 +1,9 @@
 
 
 local strictOptional = ['shift', 'caps_lock'];
+local freeOptional = ['any'];
 
-local From(code, mod, optional = ['any']) = {
+local From(code, mod, optional = freeOptional) = {
   key_code: code,
   modifiers: {
     mandatory: if std.isArray(mod) then mod else [mod],
@@ -45,11 +46,24 @@ local AppCondition(names, mode = 'include') = [
     }
 ];
 
+local RepeatKey(code, modifiers, optional = freeOptional, times = 5, apps = [], appsMode = 'exclude') = {
+    type: 'basic',
+    from: From(code, modifiers, optional),
+    to: [
+        { key_code: code } for _ in std.range(1, times)
+    ],
+    conditions: AppCondition(apps, appsMode)
+};
+
 {
-  strictOptional: strictOptional,
   From: From,
   To: To,
   FromStrict: FromStrict,
   FromStrictTo: FromStrictTo,
-  AppCondition: AppCondition
+  AppCondition: AppCondition,
+  RepeatKey: RepeatKey,
+
+  // constants
+  strictOptional: strictOptional,
+  freeOptional: freeOptional
 }

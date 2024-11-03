@@ -1,32 +1,26 @@
 local utils = import '../utils.libsonnet';
+
 local From = utils.From;
+
 local AppCondition = utils.AppCondition;
+local RepeatKey = utils.RepeatKey;
 
-local apps = ['md.obsidian', 'com.apple.TextEdit', 'com.apple.Notes', 'com.microsoft.onenote.mac', 'com.google.Chrome', 'com.brave.Browser', 'com.openai.chat'];
+local appsToExclude = ['com.microsoft.VSCode'];
+local optional = utils.freeOptional;
 
-
-local MultiKey(code, modifiers, times) = {
-    type: 'basic',
-    from: From(code, modifiers),
-    to: [
-        { key_code: code } for _ in std.range(1, times)
-    ],
-    conditions: AppCondition(apps)
-};
 
 local TextEditorRules() = [
     {
-        description: 'On specific text editing apps, cursor jumping lines funcionality I do in VSCode like',
+        description: 'Excluding some apps, cursor jumping lines funcionality I do in VSCode like',
         manipulators: [
-            MultiKey('up_arrow', ['left_control', 'left_command'], 10),
-            MultiKey('up_arrow', ['fn', 'left_command'], 10),
-            MultiKey('up_arrow', ['left_control'], 5),
-            MultiKey('up_arrow', ['fn'], 5),
-
-            MultiKey('down_arrow', ['left_control', 'left_command'], 10),
-            MultiKey('down_arrow', ['fn', 'left_command'], 10),
-            MultiKey('down_arrow', ['left_control'], 5),
-            MultiKey('down_arrow', ['fn'], 5),
+            RepeatKey('up_arrow', ['left_control', 'left_command'], optional, 10, appsToExclude),
+            RepeatKey('up_arrow', ['fn', 'left_command'], optional, 10, appsToExclude),
+            RepeatKey('up_arrow', ['left_control'], optional, 5, appsToExclude),
+            RepeatKey('up_arrow', ['fn'], optional, 5),
+            RepeatKey('down_arrow', ['left_control', 'left_command'], optional, 10, appsToExclude),
+            RepeatKey('down_arrow', ['fn', 'left_command'], optional, 10, appsToExclude),
+            RepeatKey('down_arrow', ['left_control'], optional, 5, appsToExclude),
+            RepeatKey('down_arrow', ['fn'], optional, 5, appsToExclude),
         ]
     }
 ];
