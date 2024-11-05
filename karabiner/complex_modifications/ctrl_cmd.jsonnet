@@ -48,13 +48,14 @@ local ReplaceCtrlCmdOnlyShiftItem(code) = {
 
 
 /**
- * list all the binds I want to replace on both directions: Ctrl+F -> Cmd+F and Cmd+F -> Ctrl+F
+ * list all the binds I want to replace on both directions: Ctrl+F -> Cmd+F and Cmd+F -> Ctrl+F.
+ * spacebar is here because we want to be able to use cmd + spacebar in vscode to trigger suggestion
  */
-local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['f', 'j', 'l', 'o', 'p', 'r', 's', 'x', 'slash']);
+local ReplaceCtrlCmdRules() = std.map(ReplaceCtrlCmdItem, ['f', 'j', 'l', 'o', 'p', 'r', 's', 'x', 'slash', 'spacebar']);
 /**
  * list all the binds I want to replace only one direction: Ctrl+A -> Cmd+A. Both shortcuts do the same thing
  */
-local ReplaceCtrlCmdOneDirectionRules() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'c', 'k', 'n', 't', 'v', 'w', 'z', 'spacebar', 'delete_or_backspace']);
+local ReplaceCtrlCmdOneDirectionRules() = std.map(ReplaceCtrlCmdItemOneDirection, ['a', 'c', 'k', 'n', 't', 'v', 'w', 'z', 'delete_or_backspace']);
 /**
  * list all the binds I want to replace both directions but the Ctrl + Shift + <KEY> should NOT be replaced
  */

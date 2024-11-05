@@ -458,5 +458,6 @@
 
   "applescript.alwaysShowOutput": true,
   "applescript.osascript.outputStyle": "hs",
-  "notebook.output.textLineLimit": 100
+  "notebook.output.textLineLimit": 100,
+  "vitest.nodeExecutable": "/Users/leonardorick/.nvm/versions/node/v20.18.0/bin/node"
 }

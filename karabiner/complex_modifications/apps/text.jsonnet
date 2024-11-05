@@ -16,7 +16,7 @@ local TextEditorRules() = [
             RepeatKey('up_arrow', ['left_control', 'left_command'], optional, 10, appsToExclude),
             RepeatKey('up_arrow', ['fn', 'left_command'], optional, 10, appsToExclude),
             RepeatKey('up_arrow', ['left_control'], optional, 5, appsToExclude),
-            RepeatKey('up_arrow', ['fn'], optional, 5),
+            RepeatKey('up_arrow', ['fn'], optional, 5, appsToExclude),
             RepeatKey('down_arrow', ['left_control', 'left_command'], optional, 10, appsToExclude),
             RepeatKey('down_arrow', ['fn', 'left_command'], optional, 10, appsToExclude),
             RepeatKey('down_arrow', ['left_control'], optional, 5, appsToExclude),

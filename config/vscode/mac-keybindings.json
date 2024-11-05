@@ -305,7 +305,7 @@
     {
         "key": "ctrl+shift+cmd+up",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorUpSelect5"
+        "command": "macros.multiCursorUpSelect10"
         // "command": "cursorMove",
         // "args": {
         //   "by": "line",
@@ -317,7 +317,7 @@
     {
         "key": "ctrl+shift+cmd+down",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorDownSelect5"
+        "command": "macros.multiCursorDownSelect10"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove",
@@ -357,7 +357,7 @@
     {
         "key": "ctrl+shift+alt+cmd+up",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorUpSelect10"
+        "command": "macros.multiCursorUpSelect5"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove",
@@ -371,7 +371,7 @@
     {
         "key": "ctrl+shift+alt+cmd+down",
         "when": "editorTextFocus || isInDiffEditor",
-        "command": "macros.multiCursorDownSelect10"
+        "command": "macros.multiCursorDownSelect5"
         // can't use cursorMove with args because it breaks when we want to jump
         // a folded object. It opens it navigating through it
         // "command": "cursorMove",

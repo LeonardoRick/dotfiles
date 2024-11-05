@@ -12,6 +12,7 @@ local text = import 'apps/text.jsonnet';
 local tab = import 'apps/tab.jsonnet';
 local search = import 'apps/search.jsonnet';
 local help = import 'apps/help.jsonnet';
+local onenote = import 'apps/onenote.jsonnet';
 
 local FromStrictTo = utils.FromStrictTo;
 
@@ -40,6 +41,7 @@ local TextEditorRules = text.TextEditorRules;
 local TabRules = tab.TabRules;
 local AppSearchRules = search.AppSearchRules;
 local HelpRules = help.HelpRules;
+local OneNoteRules = onenote.OneNoteRules;
 
 /**
  * Final JSON
@@ -57,6 +59,7 @@ local HelpRules = help.HelpRules;
     + TabRules()
     + AppSearchRules()
     + HelpRules()
+    + OneNoteRules()
 
     + ReplaceCtrlCmdRules()
     + ReplaceCtrlCmdOneDirectionRules()
@@ -69,6 +72,5 @@ local HelpRules = help.HelpRules;
 
     + OpenAppsRules()
     + GeneralRules()
-
   }
 }

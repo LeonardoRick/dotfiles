@@ -243,7 +243,9 @@
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [],
+                                        "bundle_identifiers": [
+                                            "^com.microsoft.VSCode$"
+                                        ],
                                         "type": "frontmost_application_unless"
                                     }
                                 ],
@@ -605,6 +607,69 @@
                                     "modifiers": [
                                         "left_command",
                                         "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Remap Cmd+Option + up/down arrows to Option + Shift up/down arrows so moving a line up and down behaves like VSCode",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.microsoft.onenote.mac$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.microsoft.onenote.mac$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "down_arrow",
+                                    "modifiers": [
+                                        "command",
+                                        "option"
                                     ]
                                 },
                                 "type": "basic"
@@ -1224,6 +1289,74 @@
                         ]
                     },
                     {
+                        "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ],
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ],
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_control"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Remap (Ctrl + A or Fn + A to Cmd + A)",
                         "manipulators": [
                             {
@@ -1591,53 +1724,6 @@
                                 },
                                 "to": {
                                     "key_code": "z",
-                                    "modifiers": [
-                                        "left_command"
-                                    ]
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap (Ctrl + SPACEBAR or Fn + SPACEBAR to Cmd + SPACEBAR)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "shift",
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "spacebar",
-                                    "modifiers": [
-                                        "left_command"
-                                    ]
-                                },
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ],
-                                        "optional": [
-                                            "shift",
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "spacebar",
                                     "modifiers": [
                                         "left_command"
                                     ]
