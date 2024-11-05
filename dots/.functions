@@ -85,6 +85,8 @@ function setup_nvm(){
     NODE_VERSION=$(cat .nvmrc)
     # Attempt to use the desired Node.js version; if not installed, install and use it
     nvm use "$NODE_VERSION" || nvm install "$NODE_VERSION"
+  else
+    nvm use --lts >/dev/null 2>&1 || nvm install --lts
   fi
 }
 
