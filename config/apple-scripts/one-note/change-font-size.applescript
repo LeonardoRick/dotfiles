@@ -1,3 +1,12 @@
+tell application "Microsoft OneNote"
+    activate
+end tell
+
+delay 0.5 -- Wait for OneNote to activate
+
+-- ? --------------------------------------------------------------------------------------------------------------
+-- ? ---- copy from this line below  as the script to run with some shortcut when OneNote is already activated ----
+-- ? --------------------------------------------------------------------------------------------------------------
 on changeFontSize(size)
     tell application "System Events"
         tell (first process whose frontmost is true)
@@ -37,5 +46,5 @@ on changeFontSize(size)
 end changeFontSize
 
 
-changeFontSize(-2)
+changeFontSize(1)
 

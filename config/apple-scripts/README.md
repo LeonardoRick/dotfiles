@@ -1,12 +1,11 @@
 # Apple Scripts
 
-Some util apple scripts. To be able to run files you need to first compile the files that export functions
+Some util apple scripts. To run the files in a Mac install the AppleScript extension in VSCode and run the command:
 
-To do that run compile.sh
-
-```bash
-./config/apple-scripts/compile.sh
 ```
+AppleScript: Run Script (Option + Shift + R)
+```
+
 
 ### Test
 Imports needs to have the real path name so if using another username it needs to change
