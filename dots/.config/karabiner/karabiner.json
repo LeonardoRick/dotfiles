@@ -24,6 +24,240 @@
                         ]
                     },
                     {
+                        "description": "Ctrl+Shift+Esc to open task manager",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "shift"
+                                        ],
+                                        "optional": []
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "escape",
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "shift"
+                                        ],
+                                        "optional": []
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "escape",
+                                    "modifiers": [
+                                        "left_command",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Replace \"Œ\" symbol with \"/\" that is done when we press option + w with caps lock enabled. I just want my slash everytime",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "q",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "caps_lock"
+                                        ],
+                                        "optional": []
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "q",
+                                    "modifiers": [
+                                        "option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Replace \" ' \" with \"\" but only for specific keyboards because we dont want to affect the keyboards with big left_shift 7",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "description": "my keyboard 1",
+                                                "is_built_in_keyboard": false
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "description": "my keyboard 1",
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": {
+                                        "optional": [
+                                            "shift",
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "grave_accent_and_tilde"
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Fix missing key since this left shift is super big without any reason :(",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": [
+                                        "left_shift"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": []
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "caps_lock"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": []
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": [
+                                        "fn",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "z",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "left_option"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": [
+                                        "left_control",
+                                        "left_option"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Finder Remap Ctrl + Shift + V to Command + Option + V to ease moving files",
                         "manipulators": [
                             {
@@ -2101,75 +2335,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "Ctrl+Shift+Esc to open task manager",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "shift"
-                                        ],
-                                        "optional": []
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "escape",
-                                    "modifiers": [
-                                        "left_command",
-                                        "left_option"
-                                    ]
-                                },
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn",
-                                            "shift"
-                                        ],
-                                        "optional": []
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "escape",
-                                    "modifiers": [
-                                        "left_command",
-                                        "left_option"
-                                    ]
-                                },
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Replace \"Œ\" symbol with \"/\" that is done when we press option + w with caps lock enabled. I just want my slash everytime ",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "option",
-                                            "caps_lock"
-                                        ],
-                                        "optional": []
-                                    }
-                                },
-                                "to": {
-                                    "key_code": "q",
-                                    "modifiers": [
-                                        "option"
-                                    ]
-                                },
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ],
                 "title": "Leonardo Perfect remap"
@@ -2181,26 +2346,6 @@
                     },
                     "name": "Apple Internal Keyboard",
                     "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "grave_accent_and_tilde"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "non_us_backslash"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "non_us_backslash"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "grave_accent_and_tilde"
-                                }
-                            ]
-                        },
                         {
                             "from": {
                                 "key_code": "right_command"

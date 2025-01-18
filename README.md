@@ -48,6 +48,8 @@ It not, copy and paste this on the browser and karabiner should open allow you t
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/LeonardoRick/karabiner/refs/heads/main/shortcuts.json
 ```
 
+Keep in mind that the realtime update of karabiner sometimes will not work if the generated json is valid but the rules are not.
+
 ### convert jsonnet files to json
 ```
 jsonnet shortcuts.jsonnet > shortcuts.json
