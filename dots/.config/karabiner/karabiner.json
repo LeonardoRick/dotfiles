@@ -93,7 +93,7 @@
                         ]
                     },
                     {
-                        "description": "Replace \" ' \" with \"\" but only for specific keyboards because we dont want to affect the keyboards with big left_shift 7",
+                        "description": "Replace \" ' \" with \"\" but only for specific keyboards because we dont want to affect the keyboards with big left_shift",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -111,8 +111,7 @@
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "optional": [
-                                            "shift",
-                                            "caps_lock"
+                                            "any"
                                         ]
                                     }
                                 },
@@ -127,7 +126,7 @@
                                         "identifiers": [
                                             {
                                                 "description": "my keyboard 1",
-                                                "is_built_in_keyboard": true
+                                                "is_built_in_keyboard": false
                                             }
                                         ],
                                         "type": "device_if"
@@ -137,8 +136,7 @@
                                     "key_code": "non_us_backslash",
                                     "modifiers": {
                                         "optional": [
-                                            "shift",
-                                            "caps_lock"
+                                            "any"
                                         ]
                                     }
                                 },

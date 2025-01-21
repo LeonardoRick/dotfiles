@@ -42,7 +42,7 @@ local FromStrictTo(code, from_mod, to_mod, optional = strictOptional, conditions
  * Usually the FromTo or FromStrictTo are for changing the modifiers that are triggered when other modifiers are pressed with a key.
  * This function is more straightforward and just replaces one code with the other, similar with a simple_modification in a complex
  */
-local BasicFromTo(code1, code2, optional = freeOptional, conditions = null) = {
+local BasicFromTo(code1, code2, optional = strictOptional, conditions = null) = {
     type: 'basic',
     from: { key_code: code1, modifiers: { optional: optional }},
     to: { key_code: code2 },
@@ -71,7 +71,7 @@ local DeviceCondition(device_id) = [
                 //  "device_id": 4294970238,
                 // vendor_id: 1111,
                 // "product_id": 591,
-                "is_built_in_keyboard": true,
+                "is_built_in_keyboard": false,
                 description: "my keyboard 1"
             },
 

@@ -12,7 +12,6 @@ local From = utils.From;
 
 local GeneralRules() = [
     {
-
         description: 'Ctrl+Shift+Esc to open task manager',
         manipulators: [
             FromStrictTo('escape', ['left_control', 'shift'], ['left_command', 'left_option'], []),
