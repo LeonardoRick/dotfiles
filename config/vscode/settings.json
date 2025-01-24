@@ -87,7 +87,8 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "always"
     },
     // https://stackoverflow.com/a/76690193/10526869
     "eslint.codeActionsOnSave.rules": [

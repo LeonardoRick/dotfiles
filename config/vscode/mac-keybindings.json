@@ -895,5 +895,9 @@
         "key": "ctrl+alt+cmd+l",
         "command": "macros.consoleLogCurrentVariable",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+c",
+        "command": "github.copilot.chat.attachFile"
     }
 ]

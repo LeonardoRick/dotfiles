@@ -3,7 +3,8 @@
     "@^\UF702" = "noop:";
     "@^\UF703" = "noop:";
     "@~^\UF701" = "noop:";
+
     "_superuser" =  "https://superuser.com/questions/1418419/macos-making-bell-sound-on-moving-line-down-in-visual-studio-code";
     "_github" = "https://github.com/electron/electron/issues/2617#issuecomment-571447707";
-    "_note:" "Remove beep sound in vscode when moving line up or down";
+    "_note:" = "Remove beep sound in vscode when moving line up or down";
 }
