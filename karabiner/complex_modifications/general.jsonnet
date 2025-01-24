@@ -25,7 +25,7 @@ local GeneralRules() = [
         ]
     },
     {
-        description: 'Replace " \' " with "" but only for specific keyboards because we dont want to affect the keyboards with big left_shift 14',
+        description: 'Replace " \' " with "" but only for specific keyboards because we dont want to affect the keyboards with big left_shift',
         manipulators: [
             BasicFromTo('grave_accent_and_tilde', 'non_us_backslash', freeOptional, DeviceCondition(123)),
             BasicFromTo('non_us_backslash', 'grave_accent_and_tilde', freeOptional, DeviceCondition(123)),

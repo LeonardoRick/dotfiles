@@ -63,6 +63,9 @@ local AppCondition(names, mode = 'include') = [
     }
 ];
 
+// todo: implement real device identification. I didn't do it because I didn't managed to differentiate two internal keyboards from one mac to the other.
+// todo: Don't trust this function until it's properly implemented and change the ids on the (" vs |) rule. Remember to run it with "false" in a mac that has
+// todo: A additional key at the side of the left_shift.
 local DeviceCondition(device_id) = [
     {
         type: "device_if",
