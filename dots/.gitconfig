@@ -2,6 +2,11 @@
 [user]
 	email = leonardo@lanytecnologia.com.br
 	name = Leonardo Rick
+	signingkey = /Users/leonardo.rick/.ssh/id_ed25519
 [pager]
 	branch = false
 	stash = false
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh

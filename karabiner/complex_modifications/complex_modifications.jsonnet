@@ -52,6 +52,7 @@ local OneNoteRules = onenote.OneNoteRules;
     rules: []
 
     + StubRules()
+    + GeneralRules()
 
     // ? Apps rules needs to come first to take priority
     + FinderRules()
@@ -71,6 +72,5 @@ local OneNoteRules = onenote.OneNoteRules;
 
 
     + OpenAppsRules()
-    + GeneralRules()
   }
 }

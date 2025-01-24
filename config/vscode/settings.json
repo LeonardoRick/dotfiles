@@ -87,7 +87,8 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "always"
     },
     // https://stackoverflow.com/a/76690193/10526869
     "eslint.codeActionsOnSave.rules": [
@@ -430,7 +431,6 @@
   "vue.server.hybridMode": true,
   "markdown-auto-preview.autoClosePreviewAfterSwitch": true,
   "markdown-auto-preview.autoClosePreviewWindow": true,
-  "svg.preview.autoShow": true,
   "template-string-converter.validLanguages": [
     "svelte",
     "typescript",

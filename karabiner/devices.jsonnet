@@ -6,14 +6,6 @@
         },
         simple_modifications: [
             {
-                from: { key_code: 'grave_accent_and_tilde' },
-                to: [{ key_code: 'non_us_backslash' }],
-            },
-            {
-                from: { key_code: 'non_us_backslash' },
-                to: [{ key_code: 'grave_accent_and_tilde' }],
-            },
-            {
                 from: { key_code: 'right_command' },
                 to: [{ key_code: 'right_option' }],
             },
