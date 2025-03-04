@@ -1,9 +1,6 @@
 INSTALL_DIR="$(realpath $(dirname $0)/install)"
 
-# Runs before everything to make this repo available inside ~/.dotfiles
-$INSTALL_DIR/setup.sh
-
-# Create symlinks of all files inside ./dist folder to ~/
+# Make this repo available inside ~/.dotfiles and create symlinks of all files inside ./dist folder to ~/
 $INSTALL_DIR/make_smlinks.sh
 
 # # Mac apps instalation

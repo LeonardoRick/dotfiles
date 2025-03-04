@@ -39,9 +39,9 @@ local GeneralRules() = [
             FromStrictTo('grave_accent_and_tilde', ['fn', 'left_shift'], [], ['caps_lock'], null, 'non_us_backslash'),
             FromStrictTo('grave_accent_and_tilde', ['left_control', 'left_shift'], [], ['caps_lock'], null, 'non_us_backslash'),
 
-            // makes Z behaves as the missing key for some shortcuts I've used in vscode
+            // makes Z behaves as the missing key for vscode shortcut that toggle focus between opening and closing of scope
             FromStrictTo('z', ['fn', 'left_option'], ['fn', 'left_option'], ['left_shift'], null, 'non_us_backslash'),
-            FromStrictTo('z', ['left_control', 'left_option'], ['left_control', 'left_option'], ['left_shift'], null, 'non_us_backslash')
+            FromStrictTo('z', ['left_control', 'left_option'], ['left_control', 'left_option'], ['left_shift'], null, 'non_us_backslash'),
         ]
     }
 
@@ -50,3 +50,4 @@ local GeneralRules() = [
 {
     GeneralRules: GeneralRules
 }
+

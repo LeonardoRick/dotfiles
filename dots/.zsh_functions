@@ -80,9 +80,30 @@ function wsdontsleep() {
 ##############################################################
 # Background functions (zsh only)
 ##############################################################
-function set_zsh_and_apply_leonardorick_theme(){
-  export ZSH=/Users/$USER/.oh-my-zsh
-  ZSH_THEME=leonardorick # set theme before sourcing oh-my-zsh
-  source $ZSH/oh-my-zsh.sh
-  autoload -Uz compinit && compinit # autocomplete
+function set_zsh_and_apply_leonardorick_theme() {
+  # Use your custom theme name.
+  ZSH_THEME="leonardorick"
+
+  if [ "$EUID" -eq 0 ]; then
+    # Root environment:
+    # ------------------------------------------------------
+    export ZSH_DISABLE_COMPFIX=true
+    # So oh-my-zsh won't complain about insecure dirs.
+
+    export ZSH_COMPDUMP="/var/root/.zcompdump"
+    # Tells oh-my-zsh (and compinit) to store the dump file in root's home,
+    # avoiding collisions with your user’s .zcompdump.
+
+    export ZSH="/var/root/.oh-my-zsh"
+    # Make sure /var/root/.oh-my-zsh exists or is a symlink to your user’s oh-my-zsh folder.
+  else
+    # Normal user environment:
+    # ------------------------------------------------------
+    export ZSH_DISABLE_COMPFIX=false
+    export ZSH_COMPDUMP="$HOME/.zcompdump"
+    export ZSH="$HOME/.oh-my-zsh"
+  fi
+
+  # oh-my-zsh.sh automatically calls compinit with the above settings.
+  source "$ZSH/oh-my-zsh.sh"
 }

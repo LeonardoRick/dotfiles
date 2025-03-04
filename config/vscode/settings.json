@@ -102,7 +102,9 @@
       "typescript",
       "typescriptreact",
       "vue",
-      "html"
+      "html",
+      "glimmer-ts",
+      "glimmer-js"
     ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "angular.view-engine": true,
@@ -459,5 +461,17 @@
   "applescript.alwaysShowOutput": true,
   "applescript.osascript.outputStyle": "hs",
   "notebook.output.textLineLimit": 100,
-  "vitest.nodeExecutable": "/Users/leonardorick/.nvm/versions/node/v20.18.0/bin/node"
+  "vitest.nodeExecutable": "/Users/leonardorick/.nvm/versions/node/v20.18.0/bin/node",
+  "[glimmer-js]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "[glimmer-ts]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "prettier.documentSelectors": [
+    "**/*.gts",
+    "**/*.gjs"
+  ]
 }

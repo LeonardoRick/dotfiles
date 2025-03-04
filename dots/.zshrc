@@ -20,7 +20,6 @@ source ~/.bash_profile
 # allow the usage of direnv to manage environment variables and .envrc files
 eval "$(direnv hook zsh)"
 
-
 # Load Angular CLI autocompletion.
 { source <(ng completion script); } &>/dev/null
 
