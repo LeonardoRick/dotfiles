@@ -1,6 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
-	email = leonardo@lanytecnologia.com.br
+	email = leonardo.rick@qonto.com
 	name = Leonardo Rick
 	signingkey = /Users/leonardo.rick/.ssh/id_ed25519
 [pager]
@@ -10,3 +10,5 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+[pull]
+	rebase = true

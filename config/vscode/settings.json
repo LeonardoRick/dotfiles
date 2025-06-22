@@ -11,10 +11,22 @@
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true
     },
+    "folder_exclude_patterns":
+    [
+        "node_modules",
+        ".vagrant",
+        ".svn",
+        ".git",
+        ".hg",
+        "CVS",
+        "tmp",
+        ".tmp"
+    ],
     "explorer.confirmDragAndDrop": false,
     "js/ts.implicitProjectConfig.experimentalDecorators": true,
     "workbench.iconTheme": "material-icon-theme",
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
     "[json]": {
       "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -72,7 +84,8 @@
       "editor.defaultFormatter": "vscode.html-language-features",
     },
     "workbench.editorAssociations": {
-      "*.ipynb": "jupyter-notebook"
+      "*.ipynb": "jupyter-notebook",
+      "*.svg": "default"
     },
     "notebook.cellToolbarLocation": {
       "default": "right",
@@ -473,5 +486,6 @@
   "prettier.documentSelectors": [
     "**/*.gts",
     "**/*.gjs"
-  ]
+  ],
+  "githubPullRequests.pullBranch": "never"
 }
