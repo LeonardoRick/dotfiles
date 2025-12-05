@@ -17,6 +17,3 @@ export NVM_DIR="$HOME/.nvm"
 
 # Used for installation of this files on the machine
 export DOTFILES=~/.dotfiles
-
-# Qonto related
-export LOKALISE_API_KEY=ca38c1e86113b9ec55b8f8e2211ef980ad3ec3e8
