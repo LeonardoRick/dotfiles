@@ -24,10 +24,13 @@ eval "$(direnv hook zsh)"
 { source <(ng completion script); } &>/dev/null
 
 # pnpm
-export PNPM_HOME="/Users/$USER/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 source ~/completion-for-pnpm.zsh
 # pnpm end
+
+# amp
+export PATH="$HOME/.local/bin:$PATH"

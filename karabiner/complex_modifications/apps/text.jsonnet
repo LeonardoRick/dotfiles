@@ -5,7 +5,7 @@ local From = utils.From;
 local AppCondition = utils.AppCondition;
 local RepeatKey = utils.RepeatKey;
 
-local appsToExclude = ['com.microsoft.VSCode'];
+local appsToExclude = ['com.microsoft.VSCode', 'dev.zed.Zed'];
 local optional = utils.freeOptional;
 
 

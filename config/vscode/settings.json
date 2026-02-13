@@ -6,25 +6,40 @@
     "workbench.colorTheme": "Atom One Dark",
     "editor.fontSize": 12,
     "editor.snippetSuggestions": "top",
-
     "files.watcherExclude": {
+      "**/node_modules/*": true,
+      "**/dist/*": true,
+      "**/build/*": true,
+      "**/.next/*": true,
+      "**/tmp/*": true,
+      "**/coverage/*": true,
+      "**/.output/*": true,
+      "**/ember-cli-live-reload.js": true,
+      "**/.cache/*": true,
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true
     },
-    "folder_exclude_patterns":
-    [
-        "node_modules",
-        ".vagrant",
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        "tmp",
-        ".tmp"
-    ],
+    "search.exclude": {
+      "**/node_modules/*": true,
+      "**/dist/*": true,
+      "**/build/*": true,
+      "**/.next/*": true,
+      "**/tmp/*": true,
+      "**/coverage/*": true,
+      "**/.output/*": true,
+      "**/ember-cli-live-reload.js": true,
+      "**/.cache/*": true
+    },
+    "files.exclude": {
+      "**/ember-cli-live-reload.js": true,
+      "**/.cache/*": true,
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "apps/verification/**": true,
+      "apps/qonto-embed/**": true
+    },
     "explorer.confirmDragAndDrop": false,
     "js/ts.implicitProjectConfig.experimentalDecorators": true,
-    "workbench.iconTheme": "material-icon-theme",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "[json]": {
@@ -81,7 +96,7 @@
     },
     "tailwindCSS.emmetCompletions": true,
     "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features",
+      "editor.defaultFormatter": "vscode.html-language-features"
     },
     "workbench.editorAssociations": {
       "*.ipynb": "jupyter-notebook",
@@ -145,6 +160,24 @@
       "markdown": false,
       "scminput": false
     },
+    "githubPullRequests.queries": [
+            {
+                "label": "Waiting For My Review",
+                "query": "is:open review-requested:${user}"
+            },
+            {
+            "label": "Waiting My Review (Closed)",
+            "query": "is:pr is:closed archived:false review-requested:${user} -reviewed-by:${user} -review:changes_requested sort:updated-desc"
+            },
+            {
+                "label": "Assigned To Me",
+                "query": "is:open assignee:${user}"
+            },
+            {
+                "label": "Created By Me",
+                "query": "is:open author:${user}"
+            }
+    ],
     "vue.inlayHints.optionsWrapper": false,
     "github.copilot.advanced": {},
     "html.format.wrapAttributes": "force-expand-multiline",
@@ -487,5 +520,17 @@
     "**/*.gts",
     "**/*.gjs"
   ],
-  "githubPullRequests.pullBranch": "never"
+  "mdb.mcp.server": "prompt",
+  "githubPullRequests.pullBranch": "never",
+  // tsserver
+  // Reduce multi-process churn in monorepos
+  "typescript.tsserver.useSeparateSyntaxServer": false,
+  // Turn off project-wide diagnostics (saves memory)
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  // Prefer fs events to polling
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "useFsEvents"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "chat.mcp.gallery.enabled": true
 }

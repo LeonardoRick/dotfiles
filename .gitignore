@@ -3,3 +3,4 @@ Caskfile.lock.json
 .DS_Store
 test*
 dots/.config/karabiner/automatic_backups/
+dots/.config/zed/prompts/

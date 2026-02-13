@@ -327,7 +327,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -382,7 +383,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -437,7 +439,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -476,7 +479,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -515,7 +519,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -570,7 +575,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -625,7 +631,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -664,7 +671,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.microsoft.VSCode$"
+                                            "^com.microsoft.VSCode$",
+                                            "^dev.zed.Zed$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }

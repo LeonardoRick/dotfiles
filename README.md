@@ -50,17 +50,29 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 
 Keep in mind that the realtime update of karabiner sometimes will not work if the generated json is valid but the rules are not.
 
-### convert jsonnet files to json
-```
+### convert .jsonnet to .json
+```bash
 jsonnet shortcuts.jsonnet > shortcuts.json
 ```
 
-### convert json to jsonnet
-```
+### convert .json > .jsonnet
+```bash
 jsonnetfmt shortcuts.json > shortcuts.jsonnet
 ```
 
+To get bundle name of app
+```bash
+osascript -e 'id of app "<NAME_OF_APPLICATION>"'
+```
 
+Once everything is set run
+```bash
+~/.config/karabiner/build.sh
+```
+Check your `karabiner.json` file for the final result
+---------------------------------------
+
+# General
 Read and study to improve terminal usage:
 - https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
 

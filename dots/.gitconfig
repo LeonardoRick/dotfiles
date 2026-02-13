@@ -12,3 +12,5 @@
 	format = ssh
 [pull]
 	rebase = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/leonardo.rick/.dotfiles/dots/.ssh/git_allowed_signers

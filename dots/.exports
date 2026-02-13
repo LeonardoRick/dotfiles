@@ -17,3 +17,14 @@ export NVM_DIR="$HOME/.nvm"
 
 # Used for installation of this files on the machine
 export DOTFILES=~/.dotfiles
+
+# Node
+export NODE_OPTIONS=--max_old_space_size=8192
+
+# PostgreSQL
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+
+# go
+if command -v go &> /dev/null; then
+    export PATH="$PATH:$(go env GOPATH)/bin"
+fi

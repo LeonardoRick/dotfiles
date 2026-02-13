@@ -10,6 +10,8 @@ brew "ccat"
 brew "nvm"
 # install mongoldb
 brew "mongodb/brew/mongodb-community"
+# install postgresql
+brew "postgresql@18"
 # install switchaudio-osx to switch audio output from command line
 brew "switchaudio-osx"
 # install pyenv to manage python versions
@@ -24,3 +26,5 @@ brew "watchman"
 brew "go"
 # install jsonnet to work with jsons
 brew "jsonnet"
+# install mitmproxy for reverse engineering
+brew "mitmproxy"

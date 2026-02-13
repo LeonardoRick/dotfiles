@@ -45,3 +45,6 @@ cask "flux" # yellow light
 # Program to setup Keybaorad Layout
 cask "ukelele"
 cask "chatgpt"
+
+# Database tool
+cask "dbeaver-community"

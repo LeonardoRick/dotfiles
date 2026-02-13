@@ -5,16 +5,16 @@ DOTFILES="$(realpath "$(dirname "$0")/..")"
 # rm -rf ~/.dotfiles && ln -s $DOTFILES ~/.dotfiles
 
 # # source .exports because we need $DOTFILES to be defined
-# source ~/.dotfiles/dots/.exports
+source ~/.dotfiles/dots/.exports
 
 # # Now let's symlinc all our dotfiles to the directory where they are expected (our home directory)
-# for FILE in $DOTFILES/dots/.*; do
-#   [ -f "$FILE" ] && ln -sfv $FILE ~
-# done
+for FILE in $DOTFILES/dots/.*; do
+  [ -f "$FILE" ] && ln -sfv $FILE ~
+done
 
 # # link files inside folders
-# ln -sfv $DOTFILES/dots/.ssh/config ~/.ssh/config
-# rm -rf ~/.config/karabiner && ln -sfv $DOTFILES/dots/.config/karabiner ~/.config/karabiner
+ln -sfv $DOTFILES/dots/.ssh/config ~/.ssh/config
+rm -rf ~/.config/karabiner && ln -sfv $DOTFILES/dots/.config/karabiner ~/.config/karabiner
 
 ###################################################################################
 ####### link local setup to root setup terminal (requires root permissions) #######

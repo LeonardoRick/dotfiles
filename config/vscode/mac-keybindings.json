@@ -105,6 +105,10 @@
         "command": "workbench.action.focusSideBar"
     },
     {
+        "key": "ctrl+0",
+        "command": "-workbench.action.lastEditorInGroup"
+    },
+    {
         "key": "cmd+0",
         "command": "-workbench.action.focusSideBar"
     },
@@ -191,10 +195,6 @@
     {
         "key": "ctrl+8",
         "command": "-workbench.action.openEditorAtIndex8"
-    },
-    {
-        "key": "cmd+9",
-        "command": "workbench.action.openEditorAtIndex9"
     },
     {
         "key": "ctrl+9",
@@ -860,7 +860,8 @@
         "command": "workbench.panel.chat.view.copilot.focus"
     },
     // Remove cmd i since this github.copilot.chat.editor.enableLineTrigger apparently doesn't exist anymore.
-    // This shortcut is already being used as the shortcut to start inline chat but with some input first
+    // This shortcut is already being used as the shortcut to start inline chat but with some input first.
+    // ? so use cmd+i and it will in did work to open the inline chat
     {
         "key": "cmd+i",
         "command": "-inlineChat.startWithCurrentLine",
@@ -899,5 +900,40 @@
     {
         "key": "ctrl+shift+alt+c",
         "command": "github.copilot.chat.attachFile"
+    },
+    // for claude code to accept shift enter to add a new line
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\\\r\n"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+right", // alt+shift+right (karabiner early remap)
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+shift+right", // alt+shift+right (karabiner early remap)
+        "command": "workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "ctrl+shift+left", // alt+shift+left (karabiner early remap)
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k shift+cmd+left",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+shift+left", // alt+shift+left (karabiner early remap
+        "command": "workbench.action.moveEditorLeftInGroup"
     }
 ]

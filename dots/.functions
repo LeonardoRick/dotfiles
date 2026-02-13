@@ -58,6 +58,14 @@ function killport() {
   fi
 }
 
+function listport() {
+    if [ -z "$1" ]; then
+        echo "Usage: listport <port_number>"
+        return 1
+    fi
+    lsof -iTCP:$1 -sTCP:LISTEN
+}
+
 function getappid() {
     osascript -e "id of app \"$1\""
 }
@@ -102,4 +110,13 @@ function setup_pyenv() {
 function cplo() {
   # Run the last command, capture its output, and send it to pbcopy
   eval "$(fc -ln -1)" | tr -d '\n' | pbcopy
+}
+
+
+function replaceaudio() {
+    if [ -z "$1" ] || [ -z "$2" ]; then
+        echo "Usage: replaceaudio <video_file> <audio_file>"
+        return 1
+    fi
+    ffmpeg -i $1 -i $2 -c:v copy -c:a aac -b:a 256k -map 0:v:0 -map 1:a:0 output.mov
 }
