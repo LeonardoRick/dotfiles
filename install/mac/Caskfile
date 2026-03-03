@@ -23,6 +23,7 @@ cask "iterm2" # terminal
 cask "visual-studio-code"
 cask "postman"
 cask "figma"
+cask "docker-desktop"  # Docker Desktop (daemon + VM + CLI). Plugins docker-compose and docker-buildx are in Brewfile
 
 # Fun
 cask "spotify"

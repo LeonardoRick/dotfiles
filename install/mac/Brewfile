@@ -28,3 +28,11 @@ brew "go"
 brew "jsonnet"
 # install mitmproxy for reverse engineering
 brew "mitmproxy"
+# install pipx for reverse engineering executing binaries from Python packages in isolated environments
+brew "pipx"
+# install tailscale for acessing my personal servers
+brew "tailscale"
+# install docker-compose plugin (needed alongside cask "docker")
+brew "docker-compose"
+# install docker-buildx plugin (needed for docker compose build)
+brew "docker-buildx"

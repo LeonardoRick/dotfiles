@@ -4,3 +4,6 @@ Caskfile.lock.json
 test*
 dots/.config/karabiner/automatic_backups/
 dots/.config/zed/prompts/
+dots/.docker/*
+!dots/.docker/config.json
+!dots/.docker/daemon.json
