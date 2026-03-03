@@ -36,3 +36,5 @@ brew "tailscale"
 brew "docker-compose"
 # install docker-buildx plugin (needed for docker compose build)
 brew "docker-buildx"
+# install fzf for interactive fuzzy selection in scripts
+brew "fzf"

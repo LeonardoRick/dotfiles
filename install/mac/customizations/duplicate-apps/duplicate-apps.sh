@@ -128,6 +128,12 @@ create_wrapper() {
     plist_set "$plist" "CFBundleDisplayName" "$wrapper_name"
     # Prevent the localized name table from overriding our display name
     /usr/libexec/PlistBuddy -c "Set :LSHasLocalizedDisplayName 0"   "$plist" 2>/dev/null || true
+    # Override display name in all localized InfoPlist.strings so Spotlight shows it correctly
+    find "$wrapper/Contents/Resources" -name "InfoPlist.strings" -print0 2>/dev/null \
+        | while IFS= read -r -d '' strings_file; do
+            plutil -replace CFBundleDisplayName -string "$wrapper_name" "$strings_file" 2>/dev/null || true
+            plutil -replace CFBundleName -string "$wrapper_name" "$strings_file" 2>/dev/null || true
+        done
     # Detach from Brave's auto-updater so updates don't overwrite this copy
     /usr/libexec/PlistBuddy -c "Set :KSProductID $bundle_id"        "$plist" 2>/dev/null || true
 
@@ -158,7 +164,8 @@ create_wrapper() {
     rm -rf "$wrapper/Contents/_CodeSignature"
     xattr -cr "$wrapper" 2>/dev/null || true
 
-    # Deep-sign the full bundle — covers all frameworks, helpers, and the browser binary.
+    # Deep-sign the full bundle with ad-hoc signature (no entitlements — runs
+    # unsandboxed, which gives the wrapper more permissions, not fewer).
     codesign -f -s - --deep "$wrapper" 2>/dev/null || true
 
     # Chromium only: re-sign the browser binary with our bundle ID so Launch Services
@@ -178,6 +185,14 @@ create_wrapper() {
 }
 
 # ——— Main ———
+
+FORCE_RECREATE=false
+for arg in "$@"; do
+    case "$arg" in
+        --force-recreate) FORCE_RECREATE=true ;;
+        *) echo "Usage: bash duplicate-apps.sh [--force-recreate]"; exit 1 ;;
+    esac
+done
 
 echo -e "${BLUE}Setting up app profile wrappers...${NC}"
 echo ""
@@ -219,6 +234,13 @@ for app_dir in "$ICONS_DIR"/*/; do
     for icon_path in "$app_dir"*.png; do
         [ -f "$icon_path" ] || continue
         profile_name=$(basename "$icon_path" .png)
+
+        wrapper="$APPS_DIR/$app_name ($profile_name).app"
+        if [ "$FORCE_RECREATE" = false ] && [ -d "$wrapper" ]; then
+            echo -e "  ${BLUE}exists${NC}  $app_name ($profile_name).app"
+            skipped=$((skipped + 1))
+            continue
+        fi
 
         user_data_dir=""
         is_fresh_instance=false
