@@ -35,6 +35,10 @@
       "**/.cache/*": true,
       "**/.git": true,
       "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/.pnpm-store": true,
+      "**/dist": true,
+      "**/tmp": true,
       "apps/verification/**": true,
       "apps/qonto-embed/**": true
     },
@@ -470,8 +474,6 @@
   "files.trimTrailingWhitespace": true,
   // settings for webgl + glsl extensions
   "glsl-canvas.refreshOnChange": false,
-  // avoid inner browser inside vscode on vite projects
-  "vite.autoStart": false,
   "go.alternateTools": {
     "go": "/opt/homebrew/bin/go"
   },
@@ -527,10 +529,17 @@
   "typescript.tsserver.useSeparateSyntaxServer": false,
   // Turn off project-wide diagnostics (saves memory)
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  // Cap each TS server instance to 3GB
+  "typescript.tsserver.maxTsServerMemory": 3072,
   // Prefer fs events to polling
   "typescript.tsserver.watchOptions": {
     "watchFile": "useFsEvents"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "chat.mcp.gallery.enabled": true
+  "chat.mcp.gallery.enabled": true,
+  "git.blame.editorDecoration.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "default",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }

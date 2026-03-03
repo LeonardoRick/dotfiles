@@ -1,0 +1,20 @@
+{
+    "permissions": {
+        "allow": [
+            "WebSearch",
+            "WebFetch(domain:docs.n8n.io)",
+            "WebFetch(domain:docs.dokploy.com)",
+            "WebFetch(domain:raw.githubusercontent.com)",
+            "WebFetch(domain:github.com)",
+            "WebFetch(domain:developers.cloudflare.com)",
+            "Bash(pnpm dev:*)",
+            "Bash(ls:*)",
+            "Bash(pnpm start:*)",
+            "Bash(npx tsc:*)",
+            "Bash(ps aux:*)",
+            "mcp__postman__getCollectionRequest",
+            "mcp__postman__getCollection"
+        ]
+    },
+    "model": "opus"
+}
