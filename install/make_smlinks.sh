@@ -16,6 +16,7 @@ done
 ln -sfv $DOTFILES/dots/.ssh/config ~/.ssh/config
 rm -rf ~/.config/karabiner && ln -sfv $DOTFILES/dots/.config/karabiner ~/.config/karabiner
 ln -sfv $DOTFILES/dots/.claude/settings.json ~/.claude/settings.json
+ln -sfv $DOTFILES/dots/.claude/CLAUDE.md ~/.claude/CLAUDE.md
 mkdir -p ~/.docker
 ln -sfv $DOTFILES/dots/.docker/config.json ~/.docker/config.json
 ln -sfv $DOTFILES/dots/.docker/daemon.json ~/.docker/daemon.json
