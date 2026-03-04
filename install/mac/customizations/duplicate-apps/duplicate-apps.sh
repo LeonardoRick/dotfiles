@@ -115,6 +115,17 @@ create_wrapper() {
     bundle_id="com.custom.$(printf '%s.%s' "$app_name" "$profile_name" \
         | tr ' ' '.' | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:].')"
 
+    # Quit the wrapper app if it's running before replacing it
+    if [ -d "$wrapper" ]; then
+        osascript -e "tell application \"$wrapper_name\" to quit" 2>/dev/null || true
+        # Wait briefly for the app to fully quit
+        local retries=10
+        while pgrep -f "$wrapper_name" >/dev/null 2>&1 && [ $retries -gt 0 ]; do
+            sleep 0.5
+            retries=$((retries - 1))
+        done
+    fi
+
     rm -rf "$wrapper"
 
     # Clone Contents (APFS copy-on-write — instant; falls back to real copy on non-APFS)

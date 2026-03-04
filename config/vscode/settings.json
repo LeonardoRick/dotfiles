@@ -7,136 +7,133 @@
     "editor.fontSize": 12,
     "editor.snippetSuggestions": "top",
     "files.watcherExclude": {
-      "**/node_modules/*": true,
-      "**/dist/*": true,
-      "**/build/*": true,
-      "**/.next/*": true,
-      "**/tmp/*": true,
-      "**/coverage/*": true,
-      "**/.output/*": true,
-      "**/ember-cli-live-reload.js": true,
-      "**/.cache/*": true,
-      "**/.git/objects/**": true,
-      "**/.git/subtree-cache/**": true
+        "**/node_modules/*": true,
+        "**/dist/*": true,
+        "**/build/*": true,
+        "**/.next/*": true,
+        "**/tmp/*": true,
+        "**/coverage/*": true,
+        "**/.output/*": true,
+        "**/ember-cli-live-reload.js": true,
+        "**/.cache/*": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true
     },
     "search.exclude": {
-      "**/node_modules/*": true,
-      "**/dist/*": true,
-      "**/build/*": true,
-      "**/.next/*": true,
-      "**/tmp/*": true,
-      "**/coverage/*": true,
-      "**/.output/*": true,
-      "**/ember-cli-live-reload.js": true,
-      "**/.cache/*": true
+        "**/node_modules/*": true,
+        "**/dist/*": true,
+        "**/build/*": true,
+        "**/.next/*": true,
+        "**/tmp/*": true,
+        "**/coverage/*": true,
+        "**/.output/*": true,
+        "**/ember-cli-live-reload.js": true,
+        "**/.cache/*": true
     },
     "files.exclude": {
-      "**/ember-cli-live-reload.js": true,
-      "**/.cache/*": true,
-      "**/.git": true,
-      "**/.DS_Store": true,
-      "**/node_modules": true,
-      "**/.pnpm-store": true,
-      "**/dist": true,
-      "**/tmp": true,
-      "apps/verification/**": true,
-      "apps/qonto-embed/**": true
+        "**/ember-cli-live-reload.js": true,
+        "**/.cache/*": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/.pnpm-store": true,
+        "**/dist": true,
+        "**/tmp": true,
+        "apps/verification/**": true,
+        "apps/qonto-embed/**": true
     },
     "explorer.confirmDragAndDrop": false,
     "js/ts.implicitProjectConfig.experimentalDecorators": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "[json]": {
-      "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "css.customData": [".vscode/css_custom_data.json"],
     "launch": {
-      "configurations": [],
-      "compounds": []
+        "configurations": [],
+        "compounds": []
     },
     "css.validate": false,
     "stylelint.enable": true,
     "peacock.favoriteColors": [
-      {
-        "name": "Angular Red",
-        "value": "#dd0531"
-      },
-      {
-        "name": "Azure Blue",
-        "value": "#007fff"
-      },
-      {
-        "name": "JavaScript Yellow",
-        "value": "#f9e64f"
-      },
-      {
-        "name": "Mandalorian Blue",
-        "value": "#1857a4"
-      },
-      {
-        "name": "Node Green",
-        "value": "#215732"
-      },
-      {
-        "name": "React Blue",
-        "value": "#61dafb"
-      },
-      {
-        "name": "Something Different",
-        "value": "#832561"
-      },
-      {
-        "name": "Svelte Orange",
-        "value": "#ff3d00"
-      },
-      {
-        "name": "Vue Green",
-        "value": "#42b883"
-      }
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        }
     ],
     "javascript.updateImportsOnFileMove.enabled": "always",
     "tailwindCSS.includeLanguages": {
-      "plaintext": "html"
+        "plaintext": "html"
     },
     "tailwindCSS.emmetCompletions": true,
     "[html]": {
-      "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "workbench.editorAssociations": {
-      "*.ipynb": "jupyter-notebook",
-      "*.svg": "default"
+        "*.ipynb": "jupyter-notebook",
+        "*.svg": "default"
     },
     "notebook.cellToolbarLocation": {
-      "default": "right",
-      "jupyter-notebook": "left"
+        "default": "right",
+        "jupyter-notebook": "left"
     },
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.profiles.windows": {
-      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
-        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "args": []
-      }
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": []
+        }
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.fixAll.stylelint": "always"
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "always"
     },
     // https://stackoverflow.com/a/76690193/10526869
-    "eslint.codeActionsOnSave.rules": [
-      "!prefer-const",
-      "*"
-    ],
+    "eslint.codeActionsOnSave.rules": ["!prefer-const", "*"],
     "eslint.codeActionsOnSave.mode": "all",
     "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-      "vue",
-      "html",
-      "glimmer-ts",
-      "glimmer-js"
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue",
+        "html",
+        "glimmer-ts",
+        "glimmer-js"
     ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "angular.view-engine": true,
@@ -145,42 +142,42 @@
     "prettier.requireConfig": true,
     "react-native-tools.showUserTips": false,
     "[python]": {
-      "editor.formatOnType": true
+        "editor.formatOnType": true
     },
     "git.suggestSmartCommit": false,
     "[vue]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.tabSize": 4,
-      "editor.insertSpaces": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     },
     "[javascript]": {
-      "editor.tabSize": 4,
-      "editor.insertSpaces": true
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     },
-    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.enabled": false,
     "github.copilot.enable": {
-      "*": false,
-      "plaintext": true,
-      "markdown": false,
-      "scminput": false
+        "*": false,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
     },
     "githubPullRequests.queries": [
-            {
-                "label": "Waiting For My Review",
-                "query": "is:open review-requested:${user}"
-            },
-            {
+        {
+            "label": "Waiting For My Review",
+            "query": "is:open review-requested:${user}"
+        },
+        {
             "label": "Waiting My Review (Closed)",
             "query": "is:pr is:closed archived:false review-requested:${user} -reviewed-by:${user} -review:changes_requested sort:updated-desc"
-            },
-            {
-                "label": "Assigned To Me",
-                "query": "is:open assignee:${user}"
-            },
-            {
-                "label": "Created By Me",
-                "query": "is:open author:${user}"
-            }
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "is:open author:${user}"
+        }
     ],
     "vue.inlayHints.optionsWrapper": false,
     "github.copilot.advanced": {},
@@ -191,355 +188,343 @@
     "terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}",
     "editor.formatOnSave": true,
     "better-comments.tags": [
-      {
-        "tag": "!",
-        "color": "#FF2D00",
-        "strikethrough": false,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": false
-      },
-      {
-        "tag": "?",
-        "color": "#3498DB",
-        "strikethrough": false,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": false
-      },
-      {
-        "tag": "//",
-        "color": "#474747",
-        "strikethrough": true,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": false
-      },
-      {
-        "tag": "todo",
-        "color": "#FF8C00",
-        "strikethrough": false,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": false
-      },
-      {
-        "tag": "*",
-        "color": "#98C379",
-        "strikethrough": false,
-        "underline": false,
-        "backgroundColor": "transparent",
-        "bold": false,
-        "italic": false
-      }
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
     ],
     "macros": {
-      "multiLineJumpUp5": [
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp"
-      ],
-      "multiLineJumpDown5": [
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown"
-      ],
-      "multiLineJumpUp10": [
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp",
-          "list.focusUp"
-      ],
-      "multiLineJumpDown10": [
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown",
-          "list.focusDown"
-      ],
-      "multiScrollLineDown": [
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown",
-        "scrollLineDown"
-      ],
-      "multiScrollLineUp": [
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp",
-        "scrollLineUp"
-      ],
-      "multiCursorUp5": [
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp"
-      ],
-      "multiCursorDown5": [
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown"
-      ],
-      "multiCursorUp10": [
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp",
-        "cursorUp"
-      ],
-      "multiCursorDown10": [
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown",
-        "cursorDown"
-      ],
-      "multiCursorUpSelect5": [
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect"
-      ],
-      "multiCursorDownSelect5": [
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect"
-      ],
-      "multiCursorUpSelect10": [
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect",
-        "cursorUpSelect"
-      ],
-      "multiCursorDownSelect10": [
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect",
-        "cursorDownSelect"
-      ]
-  },
-  "multiCommand.commands": [
-    // somehow this was not working with macros so I had to install multicommand
-    {
-      "command": "multiCommand.goToNextProblemAndCenter",
-      "sequence": [
-        "editor.action.marker.next",
-        "center-editor-window.center"
-      ]
-    },
-    {
-      "command": "multiCommand.goToPrevProblemAndCenter",
-      "sequence": [
-        "editor.action.marker.prev",
-        "center-editor-window.center"
-      ]
-    },
-    {
-      "command": "multiCommand.goToLineAndCenter",
-      "interval": 1000,
-      "sequence": [
-        "justgotoline.gotoline",
-        "center-editor-window.center"
-      ]
-    }
-  ],
-  "editor.guides.bracketPairs": true,
-  "importCost.largePackageDarkColor": "#ff8a8a",
-  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
-  "markdown-preview-enhanced.previewTheme": "github-dark.css",
-  "markdown-preview-enhanced.mermaidTheme": "dark",
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]",
-    "todo"
-  ],
-  "todo-tree.highlights.enabled": false,
-  "turboConsoleLog.addSemicolonInTheEnd": true,
-  "turboConsoleLog.quote": "'",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
-  "turboConsoleLog.includeFileNameAndLineNum": false,
-  "center-editor-window.offset": 1,
-  "editor.cursorWidth": 3,
-  "mdb.confirmRunAll": false,
-  "black-formatter.args": [
-    "--skip-string-normalization"
-  ],
-  "workbench.colorCustomizations": {
-    // colors from iterm2 Tango Dark color preset
-    "terminal.ansiBrightMagenta": "#bc93b6",
-    "terminal.ansiBrightBlue": "#83afd8"
-  },
-  "editor.tokenColorCustomizations": {
-    // add support color highlighting where it's not working well like display: flex
-    "textMateRules": [
-      {
-        "name": "CSS Property Name",
-        "scope": [
-          "support.type.property-name.css"
+        "multiLineJumpUp5": [
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp"
         ],
-        "settings": {
-          "foreground": "#9CDCFE"
-        }
-      },
-      {
-        "name": "CSS Property Value",
-        "scope": [
-          "support.constant.property-value.css"
+        "multiLineJumpDown5": [
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown"
         ],
-        "settings": {
-          "foreground": "#E6AB75"
+        "multiLineJumpUp10": [
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp",
+            "list.focusUp"
+        ],
+        "multiLineJumpDown10": [
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown",
+            "list.focusDown"
+        ],
+        "multiScrollLineDown": [
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown",
+            "scrollLineDown"
+        ],
+        "multiScrollLineUp": [
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp",
+            "scrollLineUp"
+        ],
+        "multiCursorUp5": [
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp"
+        ],
+        "multiCursorDown5": [
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown"
+        ],
+        "multiCursorUp10": [
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp",
+            "cursorUp"
+        ],
+        "multiCursorDown10": [
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown",
+            "cursorDown"
+        ],
+        "multiCursorUpSelect5": [
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect"
+        ],
+        "multiCursorDownSelect5": [
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect"
+        ],
+        "multiCursorUpSelect10": [
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect",
+            "cursorUpSelect"
+        ],
+        "multiCursorDownSelect10": [
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect",
+            "cursorDownSelect"
+        ]
+    },
+    "multiCommand.commands": [
+        // somehow this was not working with macros so I had to install multicommand
+        {
+            "command": "multiCommand.goToNextProblemAndCenter",
+            "sequence": [
+                "editor.action.marker.next",
+                "center-editor-window.center"
+            ]
+        },
+        {
+            "command": "multiCommand.goToPrevProblemAndCenter",
+            "sequence": [
+                "editor.action.marker.prev",
+                "center-editor-window.center"
+            ]
+        },
+        {
+            "command": "multiCommand.goToLineAndCenter",
+            "interval": 1000,
+            "sequence": ["justgotoline.gotoline", "center-editor-window.center"]
         }
-      }
-    ]
-  },
-  "editor.accessibilitySupport": "off",
-  "window.zoomLevel": -1,
-  "window.confirmBeforeClose": "keyboardOnly",
-  "svg.preview.autoOpen": true,
-  "svg.preview.boundingBox": true,
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
-  },
-  "explorer.autoRevealExclude": {
-    "**/node_modules": false
-  },
-  "files.trimTrailingWhitespace": true,
-  // settings for webgl + glsl extensions
-  "glsl-canvas.refreshOnChange": false,
-  "go.alternateTools": {
-    "go": "/opt/homebrew/bin/go"
-  },
-  "workbench.sideBar.location": "right",
-  "vue.server.hybridMode": true,
-  "markdown-auto-preview.autoClosePreviewAfterSwitch": true,
-  "markdown-auto-preview.autoClosePreviewWindow": true,
-  "template-string-converter.validLanguages": [
-    "svelte",
-    "typescript",
-    "javascript",
-    "typescriptreact",
-    "javascriptreact",
-    "vue"
-  ],
-  "template-string-converter.autoRemoveTemplateString": true,
-  "leetnotion.defaultLanguage": "javascript",
-  "leetnotion.workspaceFolder": "/Users/leonardorick/.leetcode",
-  "leetnotion.filePath": {
-    "default": {
-      "folder": "",
-      "filename": "${id}-${kebab-case-name}.${ext}"
-    }
-  },
-  "leetnotion.hint.commentDescription": false,
-  "leetnotion.hint.configWebviewMarkdown": false,
-  "turboConsoleLog.delimiterInsideMessage": "",
-  "turboConsoleLog.logMessagePrefix": "",
-  "turboConsoleLog.logMessageSuffix": "",
-  "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
+    ],
+    "editor.guides.bracketPairs": true,
+    "importCost.largePackageDarkColor": "#ff8a8a",
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
+    "markdown-preview-enhanced.mermaidTheme": "dark",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "todo"
+    ],
+    "todo-tree.highlights.enabled": false,
+    "turboConsoleLog.addSemicolonInTheEnd": true,
+    "turboConsoleLog.quote": "'",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "center-editor-window.offset": 1,
+    "editor.cursorWidth": 3,
+    "mdb.confirmRunAll": false,
+    "black-formatter.args": ["--skip-string-normalization"],
+    "workbench.colorCustomizations": {
+        // colors from iterm2 Tango Dark color preset
+        "terminal.ansiBrightMagenta": "#bc93b6",
+        "terminal.ansiBrightBlue": "#83afd8"
+    },
+    "editor.tokenColorCustomizations": {
+        // add support color highlighting where it's not working well like display: flex
+        "textMateRules": [
+            {
+                "name": "CSS Property Name",
+                "scope": ["support.type.property-name.css"],
+                "settings": {
+                    "foreground": "#9CDCFE"
+                }
+            },
+            {
+                "name": "CSS Property Value",
+                "scope": ["support.constant.property-value.css"],
+                "settings": {
+                    "foreground": "#E6AB75"
+                }
+            }
+        ]
+    },
+    "editor.accessibilitySupport": "off",
+    "window.zoomLevel": -1,
+    "window.confirmBeforeClose": "keyboardOnly",
+    "svg.preview.autoOpen": true,
+    "svg.preview.boundingBox": true,
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "explorer.autoRevealExclude": {
+        "**/node_modules": false
+    },
+    "files.trimTrailingWhitespace": true,
+    // settings for webgl + glsl extensions
+    "glsl-canvas.refreshOnChange": false,
+    "go.alternateTools": {
+        "go": "/opt/homebrew/bin/go"
+    },
+    "workbench.sideBar.location": "right",
+    "vue.server.hybridMode": true,
+    "markdown-auto-preview.autoClosePreviewAfterSwitch": true,
+    "markdown-auto-preview.autoClosePreviewWindow": true,
+    "template-string-converter.validLanguages": [
+        "svelte",
+        "typescript",
+        "javascript",
+        "typescriptreact",
+        "javascriptreact",
+        "vue"
+    ],
+    "template-string-converter.autoRemoveTemplateString": true,
+    "leetnotion.defaultLanguage": "javascript",
+    "leetnotion.workspaceFolder": "/Users/leonardorick/.leetcode",
+    "leetnotion.filePath": {
+        "default": {
+            "folder": "",
+            "filename": "${id}-${kebab-case-name}.${ext}"
+        }
+    },
+    "leetnotion.hint.commentDescription": false,
+    "leetnotion.hint.configWebviewMarkdown": false,
+    "turboConsoleLog.delimiterInsideMessage": "",
+    "turboConsoleLog.logMessagePrefix": "",
+    "turboConsoleLog.logMessageSuffix": "",
+    "turboConsoleLog.insertEnclosingClass": false,
+    "turboConsoleLog.insertEnclosingFunction": false,
 
-  "applescript.alwaysShowOutput": true,
-  "applescript.osascript.outputStyle": "hs",
-  "notebook.output.textLineLimit": 100,
-  "vitest.nodeExecutable": "/Users/leonardorick/.nvm/versions/node/v20.18.0/bin/node",
-  "[glimmer-js]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.foldingStrategy": "indentation"
-  },
-  "[glimmer-ts]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.foldingStrategy": "indentation"
-  },
-  "prettier.documentSelectors": [
-    "**/*.gts",
-    "**/*.gjs"
-  ],
-  "mdb.mcp.server": "prompt",
-  "githubPullRequests.pullBranch": "never",
-  // tsserver
-  // Reduce multi-process churn in monorepos
-  "typescript.tsserver.useSeparateSyntaxServer": false,
-  // Turn off project-wide diagnostics (saves memory)
-  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  // Cap each TS server instance to 3GB
-  "typescript.tsserver.maxTsServerMemory": 3072,
-  // Prefer fs events to polling
-  "typescript.tsserver.watchOptions": {
-    "watchFile": "useFsEvents"
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "chat.mcp.gallery.enabled": true,
-  "git.blame.editorDecoration.enabled": true,
-  "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "default",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+    "applescript.alwaysShowOutput": true,
+    "applescript.osascript.outputStyle": "hs",
+    "notebook.output.textLineLimit": 100,
+    "vitest.nodeExecutable": "/Users/leonardorick/.nvm/versions/node/v20.18.0/bin/node",
+    "[glimmer-js]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "[glimmer-ts]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingStrategy": "indentation"
+    },
+    "prettier.documentSelectors": ["**/*.gts", "**/*.gjs"],
+    "mdb.mcp.server": "prompt",
+    "githubPullRequests.pullBranch": "never",
+    // tsserver
+    // Reduce multi-process churn in monorepos
+    "typescript.tsserver.useSeparateSyntaxServer": false,
+    // Turn off project-wide diagnostics (saves memory)
+    "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+    // Cap each TS server instance to 3GB
+    "typescript.tsserver.maxTsServerMemory": 3072,
+    // Prefer fs events to polling
+    "typescript.tsserver.watchOptions": {
+        "watchFile": "useFsEvents"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "chat.mcp.gallery.enabled": true,
+    "git.blame.editorDecoration.enabled": true,
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.selectedModel": "default",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }

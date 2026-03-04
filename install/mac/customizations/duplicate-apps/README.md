@@ -141,10 +141,22 @@ bash tint-icon.sh "Brave Browser" REM 90
 
 After generating the PNG, re-run `bash duplicate-apps.sh` to rebuild the wrapper apps.
 
+## Updating
+
+Wrapper apps have a unique bundle ID and are detached from the original app's auto-updater.
+Attempting to update from within a wrapper (e.g. `brave://settings/help`) will fail.
+
+To update wrapper apps after the original app receives an update:
+
+1. Update the **original** app normally (e.g. update Brave Browser)
+2. Re-run `bash duplicate-apps.sh --force-recreate` to rebuild the wrappers from the updated original
+3. Running wrappers will be **gracefully quit** before being replaced
+
+Custom keyboard shortcuts and other user preferences are **not affected** by recreating
+wrappers — they are stored in `~/Library/Preferences/` by bundle ID, not inside the app bundle.
+
 ## Notes
 
-- **App updates are safe.** When the original app updates, the wrappers are unaffected —
-  they point to the updated binary and keep their custom icons. No action needed.
 - Wrappers are registered with Launch Services on creation, so Spotlight indexes them
   immediately without needing a logout.
 - Re-running the script is safe and idempotent.
