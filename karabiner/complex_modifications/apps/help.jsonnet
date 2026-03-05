@@ -8,21 +8,29 @@ local From = utils.From;
 local AppCondition = utils.AppCondition;
 
 local HelpRules() = [
-    // ? This solution works but it's slower than BTT so we keep it disabled here and use it there.
-    // {
-    //     description: 'Cmd + . to remap to Cmd + ? since ABNT-2 is weird in shortcuts that envolved question mark (?)',
-    //     manipulators: [
-    //         {
-    //             from: From('slash', ['left_command', 'left_shift'], []),
-    //         to: [
-    //         {
-    //             shell_command: "osascript -e 'tell application \"System Events\" to tell (first process whose frontmost is true) to click menu bar item \"Help\" of menu bar 1'"
-    //         },
-    //         ],
-    //             type: 'basic',
-    //         },
-    //     ],
-    // }
+    {
+        description: 'Ctrl+Shift+; or Fn+Shift+; to focus Help menu search',
+        manipulators: [
+            {
+                from: From('slash', ['left_control', 'shift']),
+                to: [
+                    {
+                        shell_command: "/usr/bin/osascript -e 'tell application \"System Events\" to tell (first process whose frontmost is true) to click menu bar item \"Help\" of menu bar 1'",
+                    },
+                ],
+                type: 'basic',
+            },
+            {
+                from: From('slash', ['fn', 'shift']),
+                to: [
+                    {
+                        shell_command: "/usr/bin/osascript -e 'tell application \"System Events\" to tell (first process whose frontmost is true) to click menu bar item \"Help\" of menu bar 1'",
+                    },
+                ],
+                type: 'basic',
+            },
+        ],
+    },
 ];
 
 {

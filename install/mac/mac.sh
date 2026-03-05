@@ -9,7 +9,8 @@ if ! defaults write com.apple.universalaccess __fda_check true 2>/dev/null; then
     echo ""
     echo "Opening Full Disk Access settings..."
     open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    read -rp "Grant Full Disk Access to your terminal, then press Enter to continue... "
+    echo -n "Grant Full Disk Access to your terminal, then press Enter to continue... "
+    read -r
 
     if ! defaults write com.apple.universalaccess __fda_check true 2>/dev/null; then
         echo "ERROR: Still no Full Disk Access. Exiting."
@@ -17,6 +18,18 @@ if ! defaults write com.apple.universalaccess __fda_check true 2>/dev/null; then
     fi
 fi
 defaults delete com.apple.universalaccess __fda_check 2>/dev/null
+
+# Ensure Accessibility access is granted for terminal apps and editors.
+# Manual step: System Settings > Privacy & Security > Accessibility
+# Add: iTerm, Terminal, Visual Studio Code
+echo ""
+echo "Make sure the following apps have Accessibility access:"
+echo "  System Settings > Privacy & Security > Accessibility"
+echo "  - iTerm.app"
+echo "  - Terminal.app"
+echo "  - Visual Studio Code.app"
+echo "  - karabiner_console_user_server (required for shell_command rules)"
+echo ""
 
 # Stop alert sound when pressing Ctrl + Cmd + Arrows.
 # Currently there's still an issue with Ctrl + Option + Cmd + DownArrow: https://github.com/electron/electron/issues/2617

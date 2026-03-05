@@ -30,39 +30,41 @@ register_custommenu_app() {
     fi
 }
 
-# Write shortcuts for a given domain and register it
+# Register the app first, then write its shortcuts
 write_shortcuts() {
     local domain="$1"
     shift
-    defaults write "$domain" NSUserKeyEquivalents -dict-add "$@"
     register_custommenu_app "$domain"
+    defaults write "$domain" NSUserKeyEquivalents -dict-add "$@"
 }
 
 # ============================================
 # All Applications (NSGlobalDomain)
 # ============================================
 write_shortcuts NSGlobalDomain \
-    "Show Help menu" "@$/" \
-    "Move Tab to New Window" "^$M" \
-    "Lock Screen" "@$L" \
-    "New Window" "@$N" \
-    "Search Tabs..." "^~@$A" \
-    "Delete" "@$D"
+    "Move Tab to New Window" '^$M' \
+    "Lock Screen" '@$L' \
+    "New Window" '@$N' \
+    "Search Tabs..." '^~@$L' \
+    "Delete" '@$D' \
+    "Send" $'@\r'
+echo "  Applied shortcuts to NSGlobalDomain"
 
 # ============================================
 # Microsoft OneNote
 # ============================================
 write_shortcuts com.microsoft.onenote.mac \
-    "Numbering" "^;" \
-    "Set Proofing Language..." "~@L"
+    "Numbering" '^;' \
+    "Set Proofing Language..." '~@L'
+echo "  Applied shortcuts to com.microsoft.onenote.mac"
 
 # ============================================
 # Chromium browsers (Chrome, Brave, and all duplicate-app variants)
 # ============================================
 chromium_shortcuts=(
-    "Duplicate Tab" "^~D"
-    "Search Tabs..." "^~$@L"
-    "Move Tab to New Window" "^~M"
+    "Duplicate Tab" '^$D'
+    "Search Tabs..." '^~@$L'
+    "Move Tab to New Window" '^$M'
 )
 
 for domain in $(defaults domains | tr ',' '\n' | grep -i -E 'chrome|brave' | tr -d ' '); do
@@ -71,10 +73,40 @@ for domain in $(defaults domains | tr ',' '\n' | grep -i -E 'chrome|brave' | tr 
 done
 
 # ============================================
+# Sandboxed Apple Apps (via configuration profile)
+# ============================================
+# Some Apple apps (Mail, Calendar, Notes, etc.) use DataVault-protected containers,
+# which prevents `defaults write` from setting NSUserKeyEquivalents. We use a
+# .mobileconfig profile with managed preferences (MCX) to bypass this restriction.
+# Edit sandboxed-apps-shortcuts.mobileconfig to add/modify these shortcuts.
+SANDBOXED_PROFILE_ID="com.dotfiles.sandboxed-shortcuts"
+SANDBOXED_PROFILE="$DOTFILES/install/mac/customizations/shortcuts/sandboxed-apps-shortcuts.mobileconfig"
+if profiles list 2>/dev/null | grep -qF "$SANDBOXED_PROFILE_ID"; then
+    if [ "${1:-}" = "--update-profile" ]; then
+        echo "  Removing old sandboxed apps shortcuts profile..."
+        profiles remove -identifier "$SANDBOXED_PROFILE_ID" 2>/dev/null
+        echo "  Installing updated profile..."
+        open "$SANDBOXED_PROFILE"
+        echo "  Approve the profile in System Settings > General > Device Management"
+        echo -n "  Press Enter after installing the profile... "
+        read -r
+    else
+        echo "  Sandboxed apps shortcuts profile already installed (use --update-profile to reinstall)"
+    fi
+else
+    echo "  Installing sandboxed apps shortcuts profile..."
+    open "$SANDBOXED_PROFILE"
+    echo "  Approve the profile in System Settings > General > Device Management"
+    echo -n "  Press Enter after installing the profile... "
+    read -r
+fi
+
+# ============================================
 # Figma
 # ============================================
 write_shortcuts com.figma.Desktop \
-    "Copy as SVG" "^~@C"
+    "Copy as SVG" '^~@C'
+echo "  Applied shortcuts to com.figma.Desktop"
 
 if [ ${#CUSTOMMENU_MISSING_APPS[@]} -gt 0 ]; then
     echo ""
@@ -88,7 +120,8 @@ if [ ${#CUSTOMMENU_MISSING_APPS[@]} -gt 0 ]; then
     echo ""
     echo "Opening Full Disk Access settings..."
     open "x-apple.systempreferences:com.apple.preference.security?Privacy_AllFiles"
-    read -rp "Grant Full Disk Access to your terminal, then press Enter to retry... "
+    echo -n "Grant Full Disk Access to your terminal, then press Enter to retry... "
+    read -r
 
     # Retry registration for missing apps
     local retry_failed=()

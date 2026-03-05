@@ -506,7 +506,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.foldingStrategy": "indentation"
     },
-    "prettier.documentSelectors": ["**/*.gts", "**/*.gjs"],
+    "prettier.documentSelectors": [
+        "**/*.gts",
+        "**/*.gjs"
+    ],
     "mdb.mcp.server": "prompt",
     "githubPullRequests.pullBranch": "never",
     // tsserver

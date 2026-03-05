@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+    Keyboard Shortcuts for Sandboxed Apple Apps
+
+    Some Apple apps (Mail, Calendar, Notes, etc.) use DataVault-protected containers,
+    which prevents `defaults write` from setting NSUserKeyEquivalents. This profile
+    uses macOS managed preferences (MCX) to bypass that restriction.
+
+    NOTE: Shortcuts set here will NOT appear in System Settings > App Shortcuts.
+    If a shortcut can apply globally (e.g. "Send"), prefer adding it to NSGlobalDomain
+    in shortcuts.sh instead — those appear in the UI and work everywhere.
+
+    To add shortcuts for another sandboxed app, add a new entry inside PayloadContent
+    following the existing com.apple.mail pattern:
+
+        <key>com.apple.THE_APP_BUNDLE_ID</key>
+        <dict>
+            <key>Forced</key>
+            <array>
+                <dict>
+                    <key>mcx_preference_settings</key>
+                    <dict>
+                        <key>NSUserKeyEquivalents</key>
+                        <dict>
+                            <key>Menu Item Name</key>
+                            <string>SHORTCUT</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </array>
+        </dict>
+
+    Modifier keys (same as defaults write):
+        @ = ⌘ Command    ~ = ⌥ Option
+        $ = ⇧ Shift      ^ = ⌃ Control
+
+    Special keys use XML character references:
+        Enter/Return = &#x000d;
+        Escape       = &#x001b;
+        Tab          = &#x0009;
+        Backspace    = &#x0008;
+        Delete (Fwd) = &#x007f;
+        Up Arrow     = &#x001e;  (&#x2191; also works in some contexts)
+        Down Arrow   = &#x001f;
+        Left Arrow   = &#x001c;
+        Right Arrow  = &#x001d;
+
+    After editing, validate with: plutil -lint sandboxed-apps-shortcuts.mobileconfig
+    Then re-run shortcuts.sh to install the updated profile.
+    Manage installed profiles at: System Settings > General > Device Management
+-->
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.ManagedClient.preferences</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.dotfiles.sandboxed-shortcuts.mcx</string>
+            <key>PayloadUUID</key>
+            <string>25D7CBF4-DDFD-4D1D-A6EA-A032A898DAD0</string>
+            <key>PayloadDisplayName</key>
+            <string>Sandboxed Apps Keyboard Shortcuts</string>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadContent</key>
+            <dict>
+                <!-- ======================== -->
+                <!-- Mail.app                 -->
+                <!-- ======================== -->
+                <key>com.apple.mail</key>
+                <dict>
+                    <key>Forced</key>
+                    <array>
+                        <dict>
+                            <key>mcx_preference_settings</key>
+                            <dict>
+                                <key>NSUserKeyEquivalents</key>
+                                <dict>
+                                    <!-- Forward: ⌃⇧F -->
+                                    <key>Forward</key>
+                                    <string>^$f</string>
+                                    <!-- Mailbox Search: ⌘⇧F -->
+                                    <key>Mailbox Search</key>
+                                    <string>@$f</string>
+                                </dict>
+                            </dict>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Sandboxed Apps Keyboard Shortcuts</string>
+    <key>PayloadIdentifier</key>
+    <string>com.dotfiles.sandboxed-shortcuts</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>9F49713D-3854-4E8B-9F38-DD5BC67C68FE</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+</dict>
+</plist>
