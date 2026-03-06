@@ -39,6 +39,14 @@ defaults write com.apple.dock autohide-delay -float 0              # no delay wh
 echo "  Applied Dock defaults"
 
 # ============================================
+# Terminal.app
+# ============================================
+defaults write com.apple.Terminal useOptionAsMetaKey -bool false    # option key sends special chars, not meta/esc
+# also set it on the per-profile level (overrides the global setting)
+/usr/libexec/PlistBuddy -c "Set ':Window Settings:Basic:useOptionAsMetaKey' false" ~/Library/Preferences/com.apple.Terminal.plist 2>/dev/null
+echo "  Applied Terminal.app defaults"
+
+# ============================================
 # Restart affected services
 # ============================================
 killall Finder 2>/dev/null
