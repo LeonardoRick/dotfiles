@@ -852,38 +852,17 @@
         "when": "!terminalFocus"
     },
     // ##############################################################
-    // # COPILOT SETUP
+    // # CODEX SETUP
     // ##############################################################
-    // focus on the chat
+    // focus on the codex sidebar
     {
         "key": "shift+cmd+c",
-        "command": "workbench.panel.chat.view.copilot.focus"
+        "command": "chatgpt.openSidebar"
     },
-    // Remove cmd i since this github.copilot.chat.editor.enableLineTrigger apparently doesn't exist anymore.
-    // This shortcut is already being used as the shortcut to start inline chat but with some input first.
-    // ? so use cmd+i and it will in did work to open the inline chat
-    {
-        "key": "cmd+i",
-        "command": "-inlineChat.startWithCurrentLine",
-        "when": "editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
-    },
-    // add reference to files on the current copilot chat
-    {
-        "key": "ctrl+shift+x",
-        "command": "workbench.action.chat.attachContext",
-        "when": "inChatInput && chatLocation == 'panel' || config.chat.experimental.variables.editor && inChatInput && chatLocation == 'editor' || config.chat.experimental.variables.notebook && inChatInput && chatLocation == 'notebook' || config.chat.experimental.variables.terminal && inChatInput && chatLocation == 'terminal'"
-    },
-    {
-        "key": "cmd+/",
-        "command": "-workbench.action.chat.attachContext",
-        "when": "inChatInput && chatLocation == 'panel' || config.chat.experimental.variables.editor && inChatInput && chatLocation == 'editor' || config.chat.experimental.variables.notebook && inChatInput && chatLocation == 'notebook' || config.chat.experimental.variables.terminal && inChatInput && chatLocation == 'terminal'"
-    },
-    // insert currrent selection as input to the copilot chat
+    // add current selection to codex thread
     {
         "key": "shift+alt+cmd+c",
-        "command": "github.copilot.chat.attachSelection",
-        // currently the isInDiffEditor is not working for this comand, but when it ttarts working, change the when clause
-        // "when": "editorFocus || isInDiffEditor"
+        "command": "chatgpt.addToThread",
         "when": "editorFocus"
     },
     // creates the relative shortcut to  the cmd + d that selects the next match
@@ -899,7 +878,27 @@
     },
     {
         "key": "ctrl+shift+alt+c",
-        "command": "github.copilot.chat.attachFile"
+        "command": "chatgpt.addFileToThread"
+    },
+    // ##############################################################
+    // opencode setup
+    // ##############################################################
+    //pass ctrl+t and cmd+t through to terminal (e.g. for opencode)
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0014"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u0014"
+        },
+        "when": "terminalFocus"
     },
     // for claude code to accept shift enter to add a new line
     {
@@ -935,5 +934,64 @@
     {
         "key": "ctrl+shift+left", // alt+shift+left (karabiner early remap
         "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    // ##############################################################
+    // # TERMINAL SPLIT/UNSPLIT (ctrl+cmd+right/left)
+    // ##############################################################
+    // Disable default "Move Editor into Next/Previous Group" when in terminal
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup",
+        "when": "terminalFocus"
+    },
+    // Split terminal when in terminal focus
+    {
+        "key": "ctrl+cmd+right",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    // Unsplit terminal pane when in terminal focus
+    {
+        "key": "ctrl+cmd+left",
+        "command": "workbench.action.terminal.unsplit",
+        "when": "terminalFocus"
+    },
+    // Remove default terminal resize shortcuts
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.terminal.resizePaneRight"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.terminal.resizePaneLeft"
+    },
+    // ##############################################################
+    // # LIST VIEW: JUMP TO FIRST/LAST ITEM
+    // ##############################################################
+    {
+        "key": "cmd+down",
+        "command": "list.focusLast",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "list.focusFirst",
+        "when": "listFocus && !inputFocus"
+    },
+    // disabled because of the above shortcuts (use Enter to open files, Backspace for parent folder)
+    {
+        "key": "cmd+down",
+        "command": "-list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-list.focusParent",
+        "when": "listFocus && !inputFocus"
     }
 ]

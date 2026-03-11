@@ -38,3 +38,5 @@ brew "docker-compose"
 brew "docker-buildx"
 # install fzf for interactive fuzzy selection in scripts
 brew "fzf"
+# install opencode AI coding agent
+brew "anomalyco/tap/opencode"

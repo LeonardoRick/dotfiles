@@ -43,6 +43,9 @@ ln -sfv $DOTFILES/config/vscode/global-snippets.code-snippets ~/Library/Applicat
 # macOS custom keyboard shortcuts
 source $DOTFILES/install/mac/customizations/shortcuts/shortcuts.sh
 
+# Claude Code setup (plugins, etc.)
+source $DOTFILES/config/claude/setup.sh
+
 # pnpm setup (this just runs the first time you setup your mac and that's why it's not inside .functions/setup_nvm)
 nvm install --lts # install node lts version
 corepack enable

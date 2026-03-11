@@ -3,6 +3,14 @@
     "markdown.preview.fontSize": 16,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.scrollback": 2000,
+    "terminal.integrated.commandsToSkipShell": [
+        // fix opencode not allowing ctrl+0 to focus on sidebar
+        "workbench.action.focusSideBar",
+        // fix opencode not allowing ctrl+shift+e to focus explorer
+        "workbench.view.explorer",
+        // fix opencode not allowing ctrl+shift+f to open search
+        "workbench.action.findInFiles"
+    ],
     "workbench.colorTheme": "Atom One Dark",
     "editor.fontSize": 12,
     "editor.snippetSuggestions": "top",
@@ -156,10 +164,7 @@
     },
     "editor.inlineSuggest.enabled": false,
     "github.copilot.enable": {
-        "*": false,
-        "plaintext": true,
-        "markdown": false,
-        "scminput": false
+        "*": false
     },
     "githubPullRequests.queries": [
         {
@@ -526,8 +531,20 @@
     "workbench.iconTheme": "material-icon-theme",
     "chat.mcp.gallery.enabled": true,
     "git.blame.editorDecoration.enabled": true,
+    "json.schemaDownload.enable": true,
+    "json.schemaDownload.trustedDomains": {
+        // defaults
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+
+        // custom
+        "https://opencode.ai/": true,
+        "https://models.dev/": true
+    },
     "claudeCode.preferredLocation": "panel",
-    "claudeCode.selectedModel": "default",
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+    "claudeCode.useTerminal": true,
+    "claudeCode.selectedModel": "default"
 }
