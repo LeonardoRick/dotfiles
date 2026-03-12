@@ -883,6 +883,15 @@
     // ##############################################################
     // opencode setup
     // ##############################################################
+    // pass option+d as alt+d escape sequence to terminal (e.g. for opencode exit)
+    {
+        "key": "alt+d",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001bd"
+        },
+        "when": "terminalFocus"
+    },
     //pass ctrl+t and cmd+t through to terminal (e.g. for opencode)
     {
         "key": "ctrl+t",

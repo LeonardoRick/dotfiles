@@ -16,7 +16,8 @@ done
 source $DOTFILES/config/claude/symlinks.sh
 ln -sfv $DOTFILES/dots/.ssh/config ~/.ssh/config
 rm -rf ~/.config/karabiner && ln -sfv $DOTFILES/dots/.config/karabiner ~/.config/karabiner
-mkdir -p ~/.config && ln -sfv $DOTFILES/dots/.config/opencode.jsonc ~/.config/opencode.jsonc
+mkdir -p ~/.config/opencode && ln -sfv $DOTFILES/dots/.config/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
+ln -sfv $DOTFILES/dots/.config/opencode/tui.json ~/.config/opencode/tui.json
 mkdir -p ~/.docker
 ln -sfv $DOTFILES/dots/.docker/config.json ~/.docker/config.json
 ln -sfv $DOTFILES/dots/.docker/daemon.json ~/.docker/daemon.json
