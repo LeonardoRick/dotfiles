@@ -7,3 +7,4 @@ dots/.config/zed/prompts/
 dots/.docker/*
 !dots/.docker/config.json
 !dots/.docker/daemon.json
+__pycache__/
