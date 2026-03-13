@@ -44,3 +44,5 @@ brew "anomalyco/tap/opencode"
 brew "mise"
 # install watchexec for file watching (used by mise watch)
 brew "watchexec"
+# install terminal-notifier for macOS desktop notifications with click actions
+brew "terminal-notifier"

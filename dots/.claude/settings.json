@@ -34,7 +34,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "command": "osascript -e 'display notification \"Needs approval\" with title \"Claude Code\"'"
+                        "command": "terminal-notifier -title 'Claude Code' -message \"Needs approval in $(basename $PWD)\" -execute \"open -a 'Visual Studio Code' '$PWD'\""
                     }
                 ]
             },
@@ -43,7 +43,7 @@
                 "hooks": [
                     {
                         "type": "command",
-                        "command": "osascript -e 'display notification \"Done working\" with title \"Claude Code\"'"
+                        "command": "terminal-notifier -title 'Claude Code' -message \"Done working in $(basename $PWD)\" -execute \"open -a 'Visual Studio Code' '$PWD'\""
                     }
                 ]
             }
