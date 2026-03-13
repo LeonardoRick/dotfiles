@@ -1,5 +1,6 @@
 {
     "$schema": "https://opencode.ai/config.json",
+    "plugins": ["opencode-notifier"],
     "model": "moonshotai/kimi-k2.5",
     "permission": {
         "*": "ask",

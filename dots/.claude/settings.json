@@ -7,14 +7,56 @@
             "WebFetch(domain:raw.githubusercontent.com)",
             "WebFetch(domain:github.com)",
             "WebFetch(domain:developers.cloudflare.com)",
-            "Bash(pnpm dev:*)",
+            "WebFetch(domain:www.npmjs.com)",
+            "WebFetch(domain:opencode.ai)",
+            "Bash(cat:*)",
+            "Bash(find:*)",
             "Bash(ls:*)",
+            "Bash(ps aux:*)",
+            "Bash(sed -n:*)",
+            "Bash(grep:*)",
+            "Bash(pnpm dev:*)",
             "Bash(pnpm start:*)",
             "Bash(npx tsc:*)",
-            "Bash(ps aux:*)",
             "mcp__postman__getCollectionRequest",
-            "mcp__postman__getCollection"
+            "mcp__postman__getCollection",
+            "Bash(git pull:*)",
+            "Bash(git mv:*)",
+            "Bash(git add:*)",
+            "Bash(gh repo view:*)",
+            "Bash(gh repo list:*)"
         ]
     },
-    "model": "opus"
+    "hooks": {
+        "Notification": [
+            {
+                "matcher": "permission_prompt",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "osascript -e 'display notification \"Needs approval\" with title \"Claude Code\"'"
+                    }
+                ]
+            },
+            {
+                "matcher": "idle_prompt",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "osascript -e 'display notification \"Done working\" with title \"Claude Code\"'"
+                    }
+                ]
+            }
+        ]
+    },
+    "model": "opus",
+    "enabledPlugins": {},
+    "extraKnownMarketplaces": {
+        "ui-ux-pro-max-skill": {
+            "source": {
+                "source": "github",
+                "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+            }
+        }
+    }
 }
