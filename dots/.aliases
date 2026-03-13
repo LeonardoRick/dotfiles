@@ -47,7 +47,7 @@ alias downloads="cd ~/Downloads/"
 
 # opencode
 alias oc="opencode"
-alias ocy="OPENCODE_CONFIG_CONTENT='{\"permission\":\"allow\"}' opencode" # y = yes to all permissions
+alias ocy='OPENCODE_CONFIG="$HOME/.config/opencode/opencode-yolo.jsonc" opencode' # y = yes to all permissions
 
 # fun
 alias stfu="osascript -e 'set volume output muted true'"
