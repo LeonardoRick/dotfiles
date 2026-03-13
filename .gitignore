@@ -10,3 +10,8 @@ dots/.docker/*
 dots/.claude/skills/font-type-studio/.venv/
 dots/.claude/skills/sign-doc/.venv/
 __pycache__/
+
+# font-type-studio workspace artifacts (keep session.json, source fonts, and fonts/)
+font-type-studio/*/generated/
+font-type-studio/*/export/
+font-type-studio/*/preview/

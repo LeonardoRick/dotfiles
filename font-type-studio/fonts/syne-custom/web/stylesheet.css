@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Syne Custom';
+  src: url('./fonts/syne-custom-edited-syne-wght.woff2') format('woff2'),
+       url('./fonts/syne-custom-edited-syne-wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}

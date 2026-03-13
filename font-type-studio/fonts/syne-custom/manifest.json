@@ -1,0 +1,135 @@
+{
+  "export_family": "Syne Custom",
+  "source_family": "Syne",
+  "category": "Sans Serif",
+  "license": "ofl",
+  "repo_path": "ofl/syne",
+  "designers": [
+    {
+      "name": "Bonjour Monde",
+      "bio": "<p>\nBonjour Monde is a working group looking into alternative processes in the field of visual creation. Functioning mostly through workshops and self-initiated experiments, they question tools, open and understand them in order to divert them from their initial function, in an infinite search for noise, error and happy accidents.\n</p>\n<p>\n<a href=\"http://bonjourmonde.net\" target=\"_blank\">Homepage</a> |\n<a href=\"https://gitlab.com/bonjour-monde\" target=\"_blank\">Gitlab</a>\n\n</p>\n",
+      "imageUrl": "https://lh3.googleusercontent.com/iCoiRnZoA89ndWoixIP74__PocP81xueR6LkNZ4VIQkT-s_rS_nqT5n811U"
+    },
+    {
+      "name": "Lucas Descroix",
+      "bio": "<p>\nLucas Descroix is a type and graphic designer who likes to draw shapes and build systems. After researching at the National Institute for Typographic Research in Nancy (Fr), he is now designing typefaces, books, posters and visual identities. You can also find him experimenting alternative tools and organizing workshops with Bonjour Monde.\n</p>\n<p>\n<a href=\"https://www.lucasdescroix.fr\" target=\"_blank\">Homepage</a>\n</p>\n",
+      "imageUrl": "https://lh3.googleusercontent.com/slQPjhq7S9yTVPtuivdJgC4scxa2dvbwNCuVzgnyuHYbSpM-N9BXR_X65to"
+    },
+    {
+      "name": "George Triantafyllakos",
+      "bio": "<p>George Triantafyllakos holds a PhD in Participatory Design of Educational Software from the Computer Science Department, Aristotle University of Thessaloniki, Greece. On September 2015 he started the Atypical type foundry. He has designed typefaces for the Greek Font Society. In 2017 he participated in the team of designers that won the competition for the design of the new visual identity of the National Library of Greece (George D. Matthiopoulos, Dimitris Papazoglou, George Triantafyllakos and Axel Peem\u00f6ller). The same year he was a member of the jury committee of the Greek Graphic Design and Illustration Awards (\u0395\u0392\u0393\u0395 2017). On October 2019 he was awarded at the 11th GRANSHAN Type Design Competition for the design of the Dolce Noir type family.</p>\n<p><a href=\"https://atypical.gr\">atypical.gr</a></p>\n",
+      "imageUrl": "https://lh3.googleusercontent.com/0dgGYDSrJ5KIE-z7-EkTPTXhESrkw6E2sh8ajE3v8fVUaLRP0znW_cqfQXs"
+    }
+  ],
+  "sample_text": "R$ 207,30",
+  "axes": [
+    {
+      "tag": "wght",
+      "min": 400.0,
+      "max": 800.0,
+      "default": 400.0,
+      "current": 760.0
+    }
+  ],
+  "metrics": {
+    "width_scale": 1.0,
+    "height_scale": 1.0,
+    "tracking": 0.0,
+    "baseline_shift": 0.0,
+    "ascender_shift": 0.0,
+    "descender_shift": 0.0
+  },
+  "glyph_edits": [
+    {
+      "target": "3",
+      "scale_x": 1.0,
+      "scale_y": 0.9,
+      "shift_x": 0.0,
+      "shift_y": 35.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "4",
+      "scale_x": 1.0,
+      "scale_y": 0.93,
+      "shift_x": 0.0,
+      "shift_y": 28.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "5",
+      "scale_x": 1.0,
+      "scale_y": 0.91,
+      "shift_x": 0.0,
+      "shift_y": 40.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "6",
+      "scale_x": 1.0,
+      "scale_y": 0.86,
+      "shift_x": 0.0,
+      "shift_y": -65.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "7",
+      "scale_x": 1.0,
+      "scale_y": 0.93,
+      "shift_x": 0.0,
+      "shift_y": 34.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "8",
+      "scale_x": 1.0,
+      "scale_y": 0.85,
+      "shift_x": 0.0,
+      "shift_y": -70.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    },
+    {
+      "target": "9",
+      "scale_x": 1.0,
+      "scale_y": 0.91,
+      "shift_x": 0.0,
+      "shift_y": 32.0,
+      "advance_delta": 0.0,
+      "lsb_delta": 0.0
+    }
+  ],
+  "descriptors": [
+    "sans serif",
+    "variable"
+  ],
+  "notes": [
+    "Workspace initialized from a real online font family.",
+    "Converted numerals toward a more lining alignment for review.",
+    "Rebalanced numeral edits to keep more of Syne's original weight and personality while improving alignment.",
+    "Pulled 6 and 8 slightly lower to improve top alignment while preserving Syne character.",
+    "Lowered 6 and 8 further and widened specimen layout to reduce clipping at heavy weights."
+  ],
+  "name_suggestions": [
+    "Syne Custom",
+    "Syne Studio",
+    "Sans Serif Syne",
+    "Syne Sans Serif",
+    "Variable Syne",
+    "Syne Variable",
+    "Syne Foundry",
+    "Syne Signal"
+  ],
+  "license_files": [
+    "OFL.txt"
+  ],
+  "export_notices": [
+    "syne-custom-edited-syne-wght.ttf: renamed internal font family metadata"
+  ],
+  "exported_at": "2026-03-13T19:04:41.082781+00:00"
+}
