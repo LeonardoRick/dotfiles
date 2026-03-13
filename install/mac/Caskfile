@@ -46,6 +46,7 @@ cask "flux" # yellow light
 # Program to setup Keybaorad Layout
 cask "ukelele"
 cask "chatgpt"
+cask "obsidian"  # Markdown-based knowledge base
 
 # Database tool
 cask "dbeaver-community"

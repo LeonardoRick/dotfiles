@@ -29,30 +29,36 @@
         "command": "workbench.action.quickSwitchWindow",
         "when": "isMacNative"
     },
-    // integrated terminal navigation using J and K
+    // integrated terminal navigation using vertical arrows
     {
-        "key": "cmd+shift+k",
+        "key": "alt+cmd+down",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+shift+j",
+        "key": "alt+cmd+up",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
     },
-    // integrated terminal killing and apawning using J andK
+    // .focus[Next|Previous]Pane works also with horizontal arrows so this can be removed
     {
-        "key": "ctrl+shift+alt+k",
+        "key": "alt+cmd+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
+    },
+    // integrated terminal killing and apawning using vertical arrows
+    {
+        "key": "shift+alt+cmd+down",
         "command": "workbench.action.terminal.newInActiveWorkspace",
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+shift+alt+j",
-        "command": "-notebook.cell.joinAbove",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+shift+alt+j",
+        "key": "shift+alt+cmd+up",
         "command": "workbench.action.terminal.kill"
     },
     {

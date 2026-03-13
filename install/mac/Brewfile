@@ -40,3 +40,7 @@ brew "docker-buildx"
 brew "fzf"
 # install opencode AI coding agent
 brew "anomalyco/tap/opencode"
+# install mise for task running and file watching
+brew "mise"
+# install watchexec for file watching (used by mise watch)
+brew "watchexec"
