@@ -1,0 +1,29 @@
+{
+  "sound": false,
+  "notification": false,
+  "suppressWhenFocused": false,
+  "showProjectName": true,
+  "showSessionTitle": false,
+  "events": {
+    "permission": { "sound": false, "notification": false },
+    "complete": { "sound": false, "notification": false },
+    "subagent_complete": { "sound": false, "notification": false },
+    "error": { "sound": false, "notification": false },
+    "question": { "sound": false, "notification": false },
+    "user_cancelled": { "sound": false, "notification": false }
+  },
+  "command": {
+    "enabled": true,
+    "path": "/bin/bash",
+    "args": ["-c", "$HOME/.config/opencode/notify.sh '{event}' '{message}'"],
+    "minDuration": 0
+  },
+  "messages": {
+    "permission": "Needs approval in {projectName}",
+    "complete": "Done working in {projectName}",
+    "subagent_complete": "Subagent completed in {projectName}",
+    "error": "Error in {projectName}",
+    "question": "Has a question in {projectName}",
+    "user_cancelled": "Cancelled in {projectName}"
+  }
+}
