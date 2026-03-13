@@ -7,4 +7,6 @@ dots/.config/zed/prompts/
 dots/.docker/*
 !dots/.docker/config.json
 !dots/.docker/daemon.json
+dots/.claude/skills/font-type-studio/.venv/
+dots/.claude/skills/sign-doc/.venv/
 __pycache__/

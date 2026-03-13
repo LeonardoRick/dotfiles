@@ -73,6 +73,22 @@ function getappid() {
 # Background functions
 ##############################################################
 
+# Symlink a folder: replaces existing symlinks, warns if target is a non-empty real dir
+function symlink_folder() {
+  local src="$1" target="$2" label="$3"
+  if [ -L "$target" ]; then
+    rm "$target"
+    ln -sfv "$src" "$target"
+  elif [ -d "$target" ] && [ -z "$(ls -A "$target" 2>/dev/null)" ]; then
+    rmdir "$target"
+    ln -sfv "$src" "$target"
+  elif [ ! -d "$target" ]; then
+    ln -sfv "$src" "$target"
+  else
+    log.warning "$target exists and is not empty. Skipping $label symlink — merge manually."
+  fi
+}
+
 function setup_nvm(){
   export NVM_DIR="$HOME/.nvm"
 
@@ -112,6 +128,52 @@ function cplo() {
   eval "$(fc -ln -1)" | tr -d '\n' | pbcopy
 }
 
+
+# Sync .mcp.json (Claude format) → opencode.json mcp key
+# Run from any project directory that has a .mcp.json
+function sync-mcp() {
+  local mcp_file="${1:-.mcp.json}"
+  local opencode_file="opencode.jsonc"
+
+  if [ ! -f "$mcp_file" ]; then
+    log.error "No $mcp_file found in current directory"
+    return 1
+  fi
+
+  node -e "
+    const fs = require('fs');
+    const claude = JSON.parse(fs.readFileSync('$mcp_file', 'utf8'));
+    const servers = claude.mcpServers || {};
+
+    // Read existing opencode.json if it exists
+    let opencode = {};
+    if (fs.existsSync('$opencode_file')) {
+      opencode = JSON.parse(fs.readFileSync('$opencode_file', 'utf8'));
+    }
+
+    const mcp = {};
+    for (const [name, cfg] of Object.entries(servers)) {
+      if (cfg.type === 'http' || cfg.url) {
+        mcp[name] = {
+          type: 'remote',
+          url: cfg.url,
+          ...(cfg.headers && { headers: cfg.headers }),
+        };
+      } else {
+        const cmd = [cfg.command, ...(cfg.args || [])];
+        mcp[name] = {
+          type: 'local',
+          command: cmd,
+          ...(cfg.env && Object.keys(cfg.env).length > 0 && { environment: cfg.env }),
+        };
+      }
+    }
+
+    opencode.mcp = mcp;
+    fs.writeFileSync('$opencode_file', JSON.stringify(opencode, null, 2) + '\n');
+  " && log.success "Synced $mcp_file → $opencode_file ($(node -e "console.log(Object.keys(JSON.parse(require('fs').readFileSync('$opencode_file','utf8')).mcp).length)") servers)" \
+    || log.error "Failed to sync MCP config"
+}
 
 function replaceaudio() {
     if [ -z "$1" ] || [ -z "$2" ]; then
